@@ -1,25 +1,40 @@
-# Duarte
+# Duarte Monteiro
 
-My background is in Industrial Engineering and Management, including work in R&D and innovation consulting. I build software for research and operational workflows, with a focus on controlled execution, traceable evidence and geospatial data.
+**Industrial Engineering & Management → R&D and innovation consulting → software, automation and AI systems.**
 
-## Featured work
+I build practical tools where reproducibility, clear evidence and reliable data matter. My work spans deterministic simulation, local-first agent infrastructure, geospatial data and interactive products.
 
-- **[WildfireWatch](https://github.com/WhiteBlindness/wildfire-watch):** Geospatial monitoring for NASA FIRMS thermal detections, which are observations rather than confirmed fires. It separates measured, derived and operational data, tracks provenance and feed freshness separately from ingestion health, and retains last-known-good snapshots. Includes API/CSP safeguards, accessibility, MapLibre 6 and WebGL2 fallback. [Live map](https://wildfire-watch.duartemonteiro.workers.dev)
-- **[JARVIS](https://github.com/WhiteBlindness/jarvis):** Local-first Rust execution core with a supervised Python worker, versioned typed protocol, default-deny capabilities, human approval, local RPC, SQLite audit and hostile-worker tests. No model is integrated yet.
-- **[CallBrief](https://github.com/WhiteBlindness/callbrief):** Python CLI for screening R&D funding calls against local documents, with bounded model/tool orchestration, citation-validated findings and offline evaluations. Remote providers require explicit approval.
+## Featured engineering
+
+### [Autonomous Systems V&V Lab](https://github.com/WhiteBlindness/autonomous-systems-vv-lab)
+A Rust verification laboratory for autonomous ground-vehicle missions. It combines seeded sensor, communication and actuator faults, temporal safety contracts, deterministic replay, bounded campaigns and counterexample minimization. The repository includes a local Mission Control interface backed by a versioned simulation adapter. M7 is merged; the current physical model is 2D, not real vehicle hardware.
+
+**Stack:** Rust, Python, SQLite-compatible artifacts, GitHub Actions. **Evidence:** canonical replay and Linux/Windows verification.
+
+### [WildfireWatch](https://github.com/WhiteBlindness/wildfire-watch)
+A [published satellite-observation map](https://wildfire-watch.duartemonteiro.workers.dev) using NASA FIRMS thermal detections. Observations are not presented as confirmed fires. The data pipeline tracks provenance and freshness, retains last-known-good snapshots and separates measured values from estimates and operational claims.
+
+**Stack:** TypeScript, Cloudflare Workers, MapLibre.
+
+### [JARVIS / Donna](https://github.com/WhiteBlindness/jarvis)
+A local-first assistant runtime built around a Rust policy and execution core, typed capabilities, audited approvals and OS-isolated workers. The merged desktop milestone includes a Windows Session Agent, Tauri client and local language-model inference without direct tool authority. Daily-driver privacy and lifecycle work remains under review.
+
+**Stack:** Rust, Python, TypeScript, Tauri, SQLite, Windows AppContainer, Linux Landlock/seccomp.
+
+## Published products and other work
+
+- **[Atlas Arcade](https://github.com/WhiteBlindness/atlas-arcade):** [Geography mini-games](https://atlasarcade.app) with deterministic daily challenges, real-world data and a shared game engine.
+- **[Murdoku / Alibi](https://github.com/WhiteBlindness/murdoku):** [Logic puzzle demo](https://murdoku-seven.vercel.app) with a TypeScript unique-solution solver, deterministic case generation and a 60-case catalogue. Further gameplay refinements are in development.
+- **[OmniQuiz](https://github.com/WhiteBlindness/omniquiz):** [Browser trivia demo](https://omniquiz-nine.vercel.app) with server-side answer data, deterministic scoring and themed game worlds.
+- **[Roundcraft](https://github.com/WhiteBlindness/roundcraft):** Counter-Strike 2 tactical decision training with server-side scoring and demo-based case preparation. Human content review precedes a public beta.
+- **[CallBrief](https://github.com/WhiteBlindness/callbrief):** Local funding-opportunity research with official-source adapters, provenance and evidence-backed eligibility evaluation. External distribution and commercial reuse are not implied.
 
 ## Building now
 
-- **JARVIS:** Windows AppContainer and Linux Landlock/seccomp isolation is proposed in [open PR #3](https://github.com/WhiteBlindness/jarvis/pull/3).
-- **WildfireWatch:** ANEPC operational incidents and deterministic reconciliation are proposed in [open PR #6](https://github.com/WhiteBlindness/wildfire-watch/pull/6).
+**Donna/JARVIS:** safer local assistant workflows, supervised desktop operation and privacy-preserving context.
 
-## More projects
-
-- **[Murdoku / Alibi](https://github.com/WhiteBlindness/murdoku):** Deterministic puzzle generation, a unique-solution TypeScript solver and structural validation. The hand-authored catalogue of 60 isometric cases passed visual QA on the branch in [open PR #1](https://github.com/WhiteBlindness/murdoku/pull/1). [Play Alibi](https://murdoku-seven.vercel.app)
-- **[Atlas Arcade](https://github.com/WhiteBlindness/atlas-arcade):** Live geography games with real-world data and distance scoring. [Play](https://atlasarcade.app)
-- **[Roundcraft](https://github.com/WhiteBlindness/roundcraft):** CS2 round-decision modelling from demo files. Its deterministic 100-point score allocates 50 points to the main decision, 20 to evidence and 30 to follow-up; human tactical review is separate from automated scoring. No case has completed tactical review; no public demo yet.
-- **[OmniQuiz](https://github.com/WhiteBlindness/omniquiz):** Browser trivia with deterministic scoring, themed worlds and server-side answer data. [Play](https://omniquiz-nine.vercel.app)
+**Autonomous Systems V&V Lab:** Mission Control, deterministic verification and modular simulation interfaces.
 
 ## Technologies
 
-Rust · Python · TypeScript · React · Next.js · Cloudflare Workers, KV and D1 · SQLite · MapLibre · Playwright · GitHub Actions
+Rust · Python · TypeScript · React · Tauri · Next.js · Cloudflare Workers / D1 / KV · SQLite · MapLibre · Playwright · GitHub Actions
