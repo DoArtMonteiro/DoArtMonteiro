@@ -7,7 +7,7 @@ I build practical tools where reproducibility, clear evidence and reliable data 
 ## Featured engineering
 
 ### [Autonomous Systems V&V Lab](https://github.com/WhiteBlindness/autonomous-systems-vv-lab)
-A Rust verification laboratory for autonomous ground-vehicle missions. It combines seeded sensor, communication and actuator faults, temporal safety contracts, deterministic replay, bounded campaigns and counterexample minimization. The repository includes a local Mission Control interface backed by a versioned simulation adapter. M7 is merged; the current physical model is 2D, not real vehicle hardware.
+A Rust verification laboratory for autonomous ground-vehicle missions. It combines seeded sensor, communication and actuator faults, temporal safety contracts, deterministic replay, bounded campaigns and counterexample minimization. The repository includes a local Mission Control interface backed by a versioned simulation adapter. M9/M9.1 are merged with independently reviewed, reproducible closed-loop landing campaigns on an idealised 6-DOF rocket model; M10.0 navigation-resilience architecture is under review in [PR #13](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/pull/13). The original ground-vehicle model remains 2D, and no hardware or flight-data validation is claimed.
 
 **Stack:** Rust, Python, SQLite-compatible artifacts, GitHub Actions. **Evidence:** canonical replay and Linux/Windows verification.
 
@@ -33,7 +33,7 @@ A local-first assistant runtime built around a Rust policy and execution core, t
 
 **Donna/JARVIS:** safer local assistant workflows, supervised desktop operation and privacy-preserving context.
 
-**Autonomous Systems V&V Lab:** Mission Control, deterministic verification and modular simulation interfaces.
+**Autonomous Systems V&V Lab:** evidence-led fault-tolerant navigation research (M10.0 design review), building on the merged M9/M9.1 landing-verification campaigns.
 
 ## Technologies
 
