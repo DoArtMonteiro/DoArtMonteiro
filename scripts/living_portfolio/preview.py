@@ -301,7 +301,7 @@ def build_preview(
                     "source": "GitHub REST List commits endpoint",
                     "scope": source_scope,
                     "metric": "Distinct commit objects linked to the profile in selected public default branches, bucketed by author timestamp in UTC.",
-                    "authentication": "No authorization token is sent to the public commit endpoint.",
+                    "authentication": "Read-only GitHub Actions GITHUB_TOKEN with contents:read, sent only to api.github.com for the reviewed owner/repository allowlist; no read:user scope or personal access token.",
                     "repositories": selected_repositories,
                     "cadence": "manual preview now; proposed daily after owner approval",
                     "data_through": calendar_manifest["observed_interval"]["end"],
@@ -461,7 +461,7 @@ def main(argv: list[str] | None = None) -> int:
         profile_rows = fetch_github_contribution_calendar(
             APPROVED_LOGIN, start, end, token=token,
         )
-        rows = fetch_public_calendar(APPROVED_LOGIN, repositories)
+        rows = fetch_public_calendar(APPROVED_LOGIN, repositories, token=token)
         snapshot = collect_projects(repositories)
         with tempfile.TemporaryDirectory(prefix="living-portfolio-sources-") as source_dir:
             contribution_path = Path(source_dir) / "contributions.csv"

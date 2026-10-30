@@ -12,6 +12,7 @@ from typing import Any
 from scripts.living_portfolio.fetch_contributions import (
     APPROVED_LOGIN,
     ContributionDataError,
+    _RejectRedirects,
     fetch_public_calendar,
     write_csv_atomic,
 )
@@ -98,6 +99,50 @@ class FetchContributionsTests(unittest.TestCase):
         self.assertNotIn("since", query)
         self.assertNotIn("until", query)
         self.assertNotIn("sha", query)
+
+    def test_read_only_token_is_sent_only_as_a_header_to_the_fixed_api_host(self) -> None:
+        captured: list[Any] = []
+        test_token = "read-only-test-token"
+
+        fetch_public_calendar(
+            APPROVED_LOGIN,
+            [REPOSITORY],
+            token=test_token,
+            opener=self.opener_for([], captured),
+            today=TODAY,
+        )
+
+        request, _timeout = captured
+        self.assertEqual(request.get_header("Authorization"), f"Bearer {test_token}")
+        self.assertEqual(urllib.parse.urlsplit(request.full_url).hostname, "api.github.com")
+        self.assertNotIn(test_token, request.full_url)
+
+    def test_rejects_invalid_token_before_network_call(self) -> None:
+        def must_not_run(*_args: Any, **_kwargs: Any) -> None:
+            self.fail("invalid token reached the network")
+
+        for token in ("", "token with whitespace"):
+            with self.subTest(token=token), self.assertRaises(ContributionDataError):
+                fetch_public_calendar(
+                    APPROVED_LOGIN,
+                    [REPOSITORY],
+                    token=token,
+                    opener=must_not_run,
+                    today=TODAY,
+                )
+
+    def test_redirect_handler_rejects_same_host_and_external_redirects(self) -> None:
+        handler = _RejectRedirects()
+        request = urllib.request.Request("https://api.github.com/repos/DoArtMonteiro/omniquiz/commits")
+
+        for destination in (
+            "https://api.github.com/repos/DoArtMonteiro/private-repo/commits",
+            "https://example.invalid/collect",
+        ):
+            with self.subTest(destination=destination):
+                self.assertIsNone(
+                    handler.redirect_request(request, None, 302, "Found", {}, destination)
+                )
 
     def test_rejects_unknown_profile_and_repository_before_network_call(self) -> None:
         def must_not_run(*_args: Any, **_kwargs: Any) -> None:

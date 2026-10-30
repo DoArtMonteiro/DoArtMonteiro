@@ -32,6 +32,17 @@ REPOSITORY_NAME = re.compile(r"[A-Za-z0-9_.-]{1,100}\Z")
 COMMIT_SHA = re.compile(r"[0-9a-f]{40}\Z")
 
 
+class _RejectRedirects(urllib.request.HTTPRedirectHandler):
+    """Never forward a bearer token through a redirect."""
+
+    def redirect_request(self, req: Any, fp: Any, code: int, msg: str,
+                         headers: Any, newurl: str) -> None:
+        return None
+
+
+_public_api_open = urllib.request.build_opener(_RejectRedirects()).open
+
+
 class ContributionDataError(RuntimeError):
     """Raised when public commit data is missing, invalid or out of scope."""
 
@@ -94,15 +105,19 @@ def _page_url(repository: str, login: str, page: int) -> str:
 def _read_page(
     url: str,
     *,
+    token: str | None,
     opener: Callable[..., Any],
 ) -> list[dict[str, Any]]:
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": USER_AGENT,
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    if token is not None:
+        headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(
         url,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": USER_AGENT,
-            "X-GitHub-Api-Version": "2022-11-28",
-        },
+        headers=headers,
         method="GET",
     )
     try:
@@ -143,16 +158,21 @@ def fetch_public_calendar(
     login: str,
     repositories: Iterable[str],
     *,
-    opener: Callable[..., Any] = urllib.request.urlopen,
+    token: str | None = None,
+    opener: Callable[..., Any] = _public_api_open,
     today: date | None = None,
 ) -> list[tuple[date, int]]:
     """Count distinct linked commits by author date in public default branches.
 
-    Requests are unauthenticated, so a repository that is private or no longer
-    publicly readable cannot be inspected through this collector.
+    When supplied, the bearer token is sent only to GitHub's fixed HTTPS API
+    host for the reviewed public repository allowlist. Redirects are rejected.
     """
     if not isinstance(login, str) or login.casefold() != APPROVED_LOGIN.casefold():
         raise ContributionDataError("Profile login is not in the reviewed allowlist")
+    if token is not None and (
+        not isinstance(token, str) or not token or any(char.isspace() for char in token)
+    ):
+        raise ContributionDataError("A valid injected bearer token is required")
     allowed = _validated_repositories(repositories)
     end = today or datetime.now(timezone.utc).date()
     if not isinstance(end, date) or isinstance(end, datetime):
@@ -165,6 +185,7 @@ def fetch_public_calendar(
         for page in range(1, MAX_PAGES + 1):
             payload = _read_page(
                 _page_url(repository, APPROVED_LOGIN, page),
+                token=token,
                 opener=opener,
             )
             for entry in payload:

@@ -86,6 +86,12 @@ class PreviewTests(unittest.TestCase):
             self.assertEqual(first["manifest"]["campaign_state"], "no approved campaign data")
             self.assertEqual(first["manifest"]["campaign_chart_count"], 0)
             provenance = json.loads((Path(first["bundle"]) / "provenance.json").read_text(encoding="utf-8"))
+            commit_authentication = provenance["sources"]["public_commits"]["authentication"]
+            self.assertIn("read-only github actions github_token", commit_authentication.casefold())
+            self.assertIn("contents:read", commit_authentication)
+            self.assertIn("api.github.com", commit_authentication)
+            self.assertIn("reviewed owner/repository allowlist", commit_authentication)
+            self.assertIn("no read:user scope", commit_authentication)
             self.assertIn(
                 "uploads a seven-day GitHub Actions diagnostic artifact",
                 provenance["refresh"]["failure_behaviour"],
