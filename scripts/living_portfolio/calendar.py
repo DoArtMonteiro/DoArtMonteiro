@@ -24,6 +24,10 @@ DEFAULT_INPUT = ROOT / "assets" / "contribution-values.csv"
 DEFAULT_OUTPUT = ROOT / "previews" / "living_portfolio"
 SOURCE_SCOPE_LABELS = {
     "historical_profile": "Historical profile CSV; may include anonymised private contributions.",
+    "github_public_contributions": (
+        "GitHub GraphQL contribution-calendar days visible to the public; the request uses no read:user scope "
+        "and does not request restricted-contribution fields."
+    ),
     "selected_public_repo_commits": (
         "Distinct commits linked to DoArtMonteiro on selected public repositories' default branches; "
         "dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph."
@@ -140,6 +144,12 @@ def _count_label(source_scope: str) -> str:
     return "commits" if source_scope == "selected_public_repo_commits" else "contributions"
 
 
+def _calendar_title(source_scope: str) -> str:
+    if source_scope == "selected_public_repo_commits":
+        return "Selected public-repository commits"
+    return "GitHub public contributions"
+
+
 def _header_summary(values: list[DailyValue], source_scope: str) -> str:
     active = sum(value.contributions > 0 for value in values)
     total = sum(value.contributions for value in values)
@@ -214,7 +224,7 @@ def _render_isometric(values: list[DailyValue], theme_name: str, source_scope: s
         f"Source scope: {SOURCE_SCOPE_LABELS[source_scope]} "
         "Aggregate counts do not measure work quality or intensity."
     )
-    parts = [_svg_header("Selected public-repository commits", description, 1200, 830,
+    parts = [_svg_header(_calendar_title(source_scope), description, 1200, 830,
                          str(theme["background"]), str(theme["ink"]), str(theme["muted"]),
                          str(theme["grid"]), str(theme["accent"]), _header_summary(values, source_scope), values[-1].day)]
     parts.append(f'<text x="34" y="101" fill="{theme["muted"]}" font-size="13">Source scope: {html.escape(SOURCE_SCOPE_LABELS[source_scope])} All {len(values)} dated cells are shown, including zeros; totals do not measure work quality or intensity.</text>')
@@ -273,7 +283,7 @@ def _render_accessible_2d(values: list[DailyValue], source_scope: str) -> str:
         f"Source scope: {SOURCE_SCOPE_LABELS[source_scope]} "
         "This aggregate does not measure work quality or intensity."
     )
-    parts = [_svg_header("Selected public-repository commits, daily values", description, width, height,
+    parts = [_svg_header(f"{_calendar_title(source_scope)}, daily values", description, width, height,
                          str(theme["background"]), str(theme["ink"]), str(theme["muted"]),
                          str(theme["grid"]), str(theme["accent"]), _header_summary(values, source_scope), values[-1].day)]
     parts.append(f'<text x="34" y="99" fill="#1f2328" font-size="13">Source scope: {html.escape(SOURCE_SCOPE_LABELS[source_scope])} All dated days are shown, including zero-count days.</text>')
@@ -308,6 +318,8 @@ def _build_artifacts(source_path: Path, source_bytes: bytes,
     source_digest = hashlib.sha256(source_bytes).hexdigest()
     active_values = [item for item in values if item.contributions > 0]
     week_count = max(week for week, _, _ in _calendar_positions(values).values()) + 1
+    activity_key = "commit_activity" if source_scope == "selected_public_repo_commits" else "contribution_activity"
+    metric_label = "commits" if source_scope == "selected_public_repo_commits" else "contributions"
     manifest = {
         "renderer": "living-portfolio-calendar",
         "renderer_version": 2,
@@ -322,13 +334,13 @@ def _build_artifacts(source_path: Path, source_bytes: bytes,
             "end": values[-1].day.isoformat(),
             "dated_days": len(values),
         },
-        "commit_activity": {
-            "total_commits": sum(item.contributions for item in values),
+        activity_key: {
+            f"total_{metric_label}": sum(item.contributions for item in values),
             "active_days": len(active_values),
             "zero_days": len(values) - len(active_values),
             "first_active_day": active_values[0].day.isoformat() if active_values else None,
             "last_active_day": active_values[-1].day.isoformat() if active_values else None,
-            "maximum_daily_commits": max(item.contributions for item in values),
+            f"maximum_daily_{metric_label}": max(item.contributions for item in values),
         },
         "level_intervals": [
             {"level": index, "minimum": low, "maximum": high}

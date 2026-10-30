@@ -10,30 +10,45 @@ TEST_WORKFLOW = ROOT / ".github" / "workflows" / "living-portfolio-tests.yml"
 
 
 class WorkflowContractTests(unittest.TestCase):
-    def test_workflow_is_manual_read_only_and_does_not_publish(self) -> None:
+    def test_preview_is_limited_to_pr_four_and_default_branch_dispatch(self) -> None:
         source = WORKFLOW.read_text(encoding="utf-8")
-        self.assertIn("on:\n  workflow_dispatch:", source)
-        self.assertIn("if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)", source)
+        self.assertIn("on:\n  pull_request:", source)
+        self.assertIn("\n  workflow_dispatch:", source)
+        self.assertIn("  pull_request:\n    types:", source)
+        self.assertIn("github.event_name == 'workflow_dispatch' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)", source)
+        self.assertIn("github.event_name == 'pull_request' && github.event.pull_request.number == 4", source)
+        self.assertIn("github.event.pull_request.head.sha", source)
+        self.assertIn("ref: ${{ github.event_name == 'pull_request'", source)
+        self.assertIn("github.event.repository.default_branch", source)
         self.assertNotIn("\n  schedule:", source)
         self.assertNotIn("\n  push:", source)
-        self.assertNotIn("\n  pull_request:", source)
+        self.assertNotIn("pull_request_target", source)
         self.assertIn("permissions:\n  contents: read", source)
         self.assertIn("permissions:\n      contents: read", source)
         self.assertIn("actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1", source)
+        self.assertIn("actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a", source)
         self.assertIn("persist-credentials: false", source)
-        self.assertIn("ref: ${{ github.event.repository.default_branch }}", source)
         self.assertNotIn("contents: write", source)
-        self.assertNotIn("upload-artifact", source)
+        self.assertIn("GH_TOKEN: ${{ github.token }}", source)
+        self.assertNotIn("read:user", source)
+        self.assertNotIn("secrets.GH_TOKEN", source)
         self.assertNotIn("git push", source)
         self.assertNotIn("vercel", source.casefold())
 
-    def test_workflow_has_one_pinned_external_action_and_unpublished_output(self) -> None:
+    def test_preview_uploads_complete_output_as_short_lived_artifact(self) -> None:
         source = WORKFLOW.read_text(encoding="utf-8")
         uses = [line.strip() for line in source.splitlines() if line.strip().startswith("uses:")]
-        self.assertEqual(len(uses), 1)
-        self.assertIn("No assets were uploaded, committed, published or deployed", source)
+        self.assertEqual(len(uses), 2)
+        self.assertIn("name: living-portfolio-preview-${{ github.run_id }}", source)
+        self.assertIn("path: ${{ runner.temp }}/living-portfolio-preview/", source)
+        self.assertIn("retention-days: 7", source)
+        self.assertIn("if-no-files-found: error", source)
+        self.assertIn("A diagnostic artifact is available for seven days", source)
+        self.assertIn("No diagnostic artifact is available", source)
         self.assertIn("stale after 36 hours", source)
-        self.assertIn("writes only to temporary runner storage and publishes nothing", source)
+        self.assertIn("last-valid published bundle remain unchanged", source)
+        self.assertIn("separate from the profile README assets", source)
+        self.assertIn("No README asset was committed and no application was deployed", source)
         self.assertNotIn("Any previously approved bundle remains unchanged", source)
 
     def test_pull_request_validation_is_read_only_and_runs_without_secrets(self) -> None:

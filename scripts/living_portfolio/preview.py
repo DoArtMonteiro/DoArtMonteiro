@@ -11,7 +11,7 @@ import re
 import stat
 import sys
 import tempfile
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -22,11 +22,16 @@ from scripts.living_portfolio.campaigns import (
     render_metric_summary,
     verify_registry,
 )
+from scripts.living_portfolio.animated_calendar import render_animated_calendars
 from scripts.living_portfolio.fetch_contributions import (
     APPROVED_LOGIN,
     ContributionDataError,
     csv_bytes,
     fetch_public_calendar,
+)
+from scripts.living_portfolio.github_contribution_calendar import (
+    ContributionCalendarError,
+    fetch_public_calendar as fetch_github_contribution_calendar,
 )
 from scripts.living_portfolio.project_visuals import write_dashboard
 from scripts.living_portfolio.projects import GitHubApiError, collect_projects
@@ -238,6 +243,7 @@ def build_preview(
     output_root: str | Path,
     *,
     source_scope: str,
+    github_contribution_csv: str | Path | None = None,
     campaign_registry: str | Path | None = None,
 ) -> dict[str, Any]:
     """Generate a content-addressed bundle; only its pointer changes on success.
@@ -258,6 +264,25 @@ def build_preview(
     with tempfile.TemporaryDirectory(prefix=".preview-stage-", dir=versions) as staging_name:
         stage = Path(staging_name)
         calendar_outputs = render_calendar(Path(contribution_csv), stage / "calendar", source_scope)
+        selected_animation = render_animated_calendars(
+            calendar_outputs["calendar-normalized"], stage / "calendar",
+            source_scope=source_scope,
+        )
+        github_calendar_outputs = None
+        github_calendar_manifest: dict[str, Any] | None = None
+        github_animation: dict[str, object] | None = None
+        if github_contribution_csv is not None:
+            github_calendar_outputs = render_calendar(
+                Path(github_contribution_csv), stage / "github-calendar",
+                "github_public_contributions",
+            )
+            github_animation = render_animated_calendars(
+                github_calendar_outputs["calendar-normalized"], stage / "github-calendar",
+                source_scope="github_public_contributions",
+            )
+            github_calendar_manifest = json.loads(
+                github_calendar_outputs["calendar-manifest"].read_text(encoding="utf-8")
+            )
         selected_repositories = [
             project["repository"] for project in project_snapshot["projects"]
         ]
@@ -281,7 +306,48 @@ def build_preview(
                     "cadence": "manual preview now; proposed daily after owner approval",
                     "data_through": calendar_manifest["observed_interval"]["end"],
                     "source_sha256": calendar_manifest["source_sha256"],
+                    "animation": {
+                        "format": "finite GIF, eight frames, no infinite-loop extension",
+                        "files": [
+                            "calendar/calendar-light-animated.gif",
+                            "calendar/calendar-dark-animated.gif",
+                        ],
+                        "source_sha256": selected_animation["source_sha256"],
+                        "alt_text": selected_animation["alt_text"],
+                        "static_fallbacks": [
+                            Path(calendar_outputs["calendar-light"]).relative_to(stage).as_posix(),
+                            Path(calendar_outputs["calendar-isometric"]).relative_to(stage).as_posix(),
+                        ],
+                    },
                 },
+                "github_public_contributions": (
+                    {
+                        "source": "GitHub GraphQL User.contributionsCollection.contributionCalendar",
+                        "scope": "Public contribution calendar; the query requests no private or restricted-contribution fields and the workflow token has no read:user permission.",
+                        "metric": "Daily contribution counts as returned by GitHub for the approved public profile.",
+                        "authentication": "Read-only GitHub Actions GITHUB_TOKEN with contents:read; no read:user scope or personal access token.",
+                        "cadence": "manual diagnostic preview; proposed daily only after owner approval",
+                        "data_through": github_calendar_manifest["observed_interval"]["end"],
+                        "source_sha256": github_calendar_manifest["source_sha256"],
+                        "animation": {
+                            "format": "finite GIF, eight frames, no infinite-loop extension",
+                            "files": [
+                                "github-calendar/calendar-light-animated.gif",
+                                "github-calendar/calendar-dark-animated.gif",
+                            ],
+                            "source_sha256": github_animation["source_sha256"],
+                            "alt_text": github_animation["alt_text"],
+                            "static_fallbacks": [
+                                Path(github_calendar_outputs["calendar-light"]).relative_to(stage).as_posix(),
+                                Path(github_calendar_outputs["calendar-isometric"]).relative_to(stage).as_posix(),
+                            ],
+                        },
+                    }
+                    if github_calendar_manifest is not None and github_animation is not None else {
+                        "state": "not included in this snapshot",
+                        "reason": "No public GraphQL contribution source data was supplied for this build.",
+                    }
+                ),
                 "projects": {
                     "source": "GitHub public REST API",
                     "cadence": "manual preview now; proposed daily after owner approval",
@@ -296,11 +362,11 @@ def build_preview(
                 },
             },
             "refresh": {
-                "workflow_mode": "manual workflow_dispatch until schedule and publication are separately approved",
+                "workflow_mode": "PR #4 diagnostic preview and default-branch workflow_dispatch; no schedule, persistent publication or deployment.",
                 "proposed_cadence": "daily after owner approval",
                 "stale_after_hours": 36,
                 "last_successful_refresh": "For an Actions run, use that run's timestamp. Execution time is kept outside the deterministic bundle.",
-                "failure_behaviour": "The workflow writes only to ephemeral runner storage and publishes nothing. A failed run creates no current asset. Any separately published older asset remains unchanged, and its data-through date continues to age. Local reruns in the same output directory preserve the last valid bundle and pointer.",
+                "failure_behaviour": "The preview writes generated files to temporary runner storage and uploads a seven-day GitHub Actions diagnostic artifact. It does not update the README assets or a persistent asset store. A failed refresh leaves the committed snapshot unchanged; any separately published older asset remains unchanged, and its data-through date continues to age. Local reruns in the same output directory preserve the last valid bundle and pointer.",
                 "recovery": "Inspect the failed run, correct the source or validator, then dispatch a new preview. Publish only after a complete successful review and separate owner approval.",
             },
             "accessibility": {
@@ -321,6 +387,16 @@ def build_preview(
                 "active_days": calendar_manifest["commit_activity"]["active_days"],
                 "scope": source_scope,
             },
+            "github_contribution_summary": (
+                {
+                    "data_through": github_calendar_manifest["observed_interval"]["end"],
+                    "dated_days": github_calendar_manifest["observed_interval"]["dated_days"],
+                    "total_public_contributions": github_calendar_manifest["contribution_activity"]["total_contributions"],
+                    "active_days": github_calendar_manifest["contribution_activity"]["active_days"],
+                    "scope": "github_public_contributions",
+                }
+                if github_calendar_manifest is not None else None
+            ),
             "project_count": len(project_snapshot["projects"]),
             "campaign_state": campaign_summary["state"],
             "campaign_chart_count": len(campaign_summary["charts"]),
@@ -352,6 +428,10 @@ def build_preview(
             "manifest": f"versions/{storage_id}/manifest.json",
             "data_through": calendar_manifest["observed_interval"]["end"],
             "stale_after_hours": 36,
+            "public_contributions_data_through": (
+                github_calendar_manifest["observed_interval"]["end"]
+                if github_calendar_manifest is not None else None
+            ),
         }
         pointer_bytes = _canonical_json(pointer)
         pointer_path = destination / "current.json"
@@ -374,24 +454,37 @@ def main(argv: list[str] | None = None) -> int:
     try:
         repositories = load_allowlist(DEFAULT_ALLOWLIST)
         token = os.environ.get(args.token_env, "")
+        if not token:
+            raise PreviewError("A read-only GitHub Actions token is required for the public GraphQL calendar and project data")
+        end = datetime.now(timezone.utc).date()
+        start = end - timedelta(days=364)
+        profile_rows = fetch_github_contribution_calendar(
+            APPROVED_LOGIN, start, end, token=token,
+        )
         rows = fetch_public_calendar(APPROVED_LOGIN, repositories)
         snapshot = collect_projects(repositories)
         with tempfile.TemporaryDirectory(prefix="living-portfolio-sources-") as source_dir:
             contribution_path = Path(source_dir) / "contributions.csv"
+            github_contribution_path = Path(source_dir) / "github-contributions.csv"
             contribution_path.write_bytes(csv_bytes(rows))
+            github_contribution_path.write_bytes(csv_bytes(profile_rows))
             result = build_preview(
                 contribution_path, snapshot, args.output_dir,
-                source_scope="selected_public_repo_commits", campaign_registry=DEFAULT_REGISTRY,
+                source_scope="selected_public_repo_commits",
+                github_contribution_csv=github_contribution_path,
+                campaign_registry=DEFAULT_REGISTRY,
             )
         print(json.dumps({
             "status": "preview generated; assets were not published",
             "version": result["version"],
             "calendar": result["manifest"]["calendar_summary"],
+            "github_contributions": result["manifest"]["github_contribution_summary"],
             "projects": result["manifest"]["project_count"],
             "campaign_state": result["manifest"]["campaign_state"],
             "campaign_charts": result["manifest"]["campaign_chart_count"],
         }, ensure_ascii=False, sort_keys=True))
-    except (PreviewError, ContributionDataError, GitHubApiError, OSError, ValueError) as error:
+    except (PreviewError, ContributionDataError, ContributionCalendarError,
+            GitHubApiError, OSError, ValueError) as error:
         print(f"Living portfolio preview failed: {error}", file=sys.stderr)
         return 1
     return 0

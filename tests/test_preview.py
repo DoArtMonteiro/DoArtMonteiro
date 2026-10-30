@@ -85,6 +85,17 @@ class PreviewTests(unittest.TestCase):
             first_pointer = (output / "current.json").read_bytes()
             self.assertEqual(first["manifest"]["campaign_state"], "no approved campaign data")
             self.assertEqual(first["manifest"]["campaign_chart_count"], 0)
+            provenance = json.loads((Path(first["bundle"]) / "provenance.json").read_text(encoding="utf-8"))
+            self.assertIn(
+                "uploads a seven-day GitHub Actions diagnostic artifact",
+                provenance["refresh"]["failure_behaviour"],
+            )
+            self.assertIn("does not update the README assets", provenance["refresh"]["failure_behaviour"])
+            graphql_status = provenance["sources"]["github_public_contributions"]
+            self.assertEqual(graphql_status["state"], "not included in this snapshot")
+            self.assertNotIn("fixture", json.dumps(graphql_status).casefold())
+            self.assertIn("PR #4 diagnostic preview", provenance["refresh"]["workflow_mode"])
+            self.assertIn("workflow_dispatch", provenance["refresh"]["workflow_mode"])
             self.assertEqual(Path(first["bundle"]).name, first["version"][:24])
             self.assertEqual(
                 json.loads(first_pointer)["manifest"],
@@ -101,9 +112,64 @@ class PreviewTests(unittest.TestCase):
             self.assertTrue((output / "versions" / first["version"][:24]).is_dir())
             self.assertEqual(json.loads((output / "current.json").read_text(encoding="utf-8"))["version"], third["version"])
             self.assertEqual(
-                [path.name for path in (output / "versions").iterdir() if path.is_dir() and not path.name.startswith(".")],
-                [first["version"][:24], third["version"][:24]],
+                sorted(path.name for path in (output / "versions").iterdir() if path.is_dir() and not path.name.startswith(".")),
+                sorted([first["version"][:24], third["version"][:24]]),
             )
+
+    def test_graphql_calendar_is_separate_animated_and_content_addressed(self) -> None:
+        with tempfile.TemporaryDirectory(dir=TEST_OUTPUT_ROOT) as temp_dir:
+            root = Path(temp_dir)
+            commits = root / "selected-repository-commits.csv"
+            github = root / "github-public-contributions.csv"
+            output = root / "preview"
+            write_contributions(commits)
+            write_contributions(github)
+
+            first = build_preview(
+                commits, project_snapshot(), output,
+                source_scope="selected_public_repo_commits",
+                github_contribution_csv=github,
+            )
+            first_pointer = (output / "current.json").read_bytes()
+            bundle = Path(first["bundle"])
+            profile_calendar = bundle / "github-calendar"
+            provenance = json.loads((bundle / "provenance.json").read_text(encoding="utf-8"))
+            self.assertEqual(first["manifest"]["calendar_summary"]["total_public_commits"], 0)
+            self.assertEqual(first["manifest"]["github_contribution_summary"]["total_public_contributions"], 0)
+            self.assertTrue((profile_calendar / "calendar-light-animated.gif").is_file())
+            self.assertTrue((profile_calendar / "calendar-dark-animated.gif").is_file())
+            self.assertIn("public contribution calendar", provenance["sources"]["github_public_contributions"]["scope"].casefold())
+            self.assertIn("no read:user scope", provenance["sources"]["github_public_contributions"]["authentication"])
+            self.assertIn("commits across", provenance["sources"]["public_commits"]["animation"]["alt_text"])
+            self.assertIn("contributions across", provenance["sources"]["github_public_contributions"]["animation"]["alt_text"])
+
+            same = build_preview(
+                commits, project_snapshot(), output,
+                source_scope="selected_public_repo_commits",
+                github_contribution_csv=github,
+            )
+            self.assertEqual(first["version"], same["version"])
+            self.assertEqual(first_pointer, (output / "current.json").read_bytes())
+
+            write_contributions(github, changed=True)
+            changed = build_preview(
+                commits, project_snapshot(), output,
+                source_scope="selected_public_repo_commits",
+                github_contribution_csv=github,
+            )
+            self.assertNotEqual(first["version"], changed["version"])
+            self.assertEqual(changed["manifest"]["github_contribution_summary"]["total_public_contributions"], 1)
+            self.assertEqual(changed["manifest"]["calendar_summary"]["total_public_commits"], 0)
+
+            pointer = (output / "current.json").read_bytes()
+            github.write_text("date,contributions\n2025-10-31,-1\n", encoding="utf-8")
+            with self.assertRaises(ValueError):
+                build_preview(
+                    commits, project_snapshot(), output,
+                    source_scope="selected_public_repo_commits",
+                    github_contribution_csv=github,
+                )
+            self.assertEqual((output / "current.json").read_bytes(), pointer)
 
     def test_failed_generation_keeps_last_good_pointer_and_bundle(self) -> None:
         with tempfile.TemporaryDirectory(dir=TEST_OUTPUT_ROOT) as temp_dir:

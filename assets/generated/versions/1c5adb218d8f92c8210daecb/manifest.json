@@ -1,0 +1,33 @@
+{
+  "asset_sha256": {
+    "calendar/calendar-dark-animated.gif": "d677f1ea11e8fd0cfdaf5e4746c95ca6d6c81d3b9c9fa9594c74fc696592f42f",
+    "calendar/calendar-light-animated.gif": "9bb9135393a413e91b9d363f4b4fb0f5fe6a6921ea7b15341e2fe1c4d7b1ab88",
+    "calendar/current.json": "cb99841face92977cd6295bd6e2748dd406d94ef565d4b06a110ce536cd78d27",
+    "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-accessible.svg": "763435a4404118b91d8cce6ac4780c33368e7b30b4e11ac064a3f9bdcb8c54f7",
+    "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-dark.svg": "ce3ada208ce714e6c2fd0f8b26d3f6b8715766cb76f93836f35f35a53a16d443",
+    "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-isometric.svg": "720e0e7b9fd5e1d500debe53b8e49450e65136b7f24f49cae38e6d6596104288",
+    "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-light.svg": "808f1e22d4a3f9f81bdb6424175c887396733b8fea6df89da5c4ef935f26b808",
+    "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-manifest.json": "17f8df3023204f26f7c95a2f33319d8c4cc0fb52b95ce06e388e38599548e497",
+    "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-normalized.csv": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72",
+    "projects-source.json": "15a26dba6597403dbb1328e8665fe2a3b749c2c4727c7f556ff639a0ba561641",
+    "projects/projects-activity.json": "15a26dba6597403dbb1328e8665fe2a3b749c2c4727c7f556ff639a0ba561641",
+    "projects/projects-activity.md": "70322afef4ab663b6d4c8f6c4652be37b9d36da71ef3f35b3745b58d83d45e4b",
+    "projects/projects-dashboard-dark.svg": "d7f9369eb2c99c87f9eec57ce60ad9b8843853e5b4fa3a457cb08d74d8cec0f6",
+    "projects/projects-dashboard-light.svg": "e69fced9df7ee84f88b5c8c50ae783d19d28adb5c652f293fd6f6a8cf8960209",
+    "projects/projects-dashboard-mobile-dark.svg": "9ba50af117e465899bd153b7ec9b97a336769cd98b3889708a78d548c841da06",
+    "projects/projects-dashboard-mobile-light.svg": "ba3852f7ccdda5d189d22b0c7c9568cf89b910096b2d875713590353606ac900",
+    "provenance.json": "f689a6a41dd6f97c0bff53a8bc1ddb4f679f251398089bdd026b6aa34acc28ed"
+  },
+  "calendar_summary": {
+    "active_days": 29,
+    "data_through": "2026-10-30",
+    "dated_days": 365,
+    "scope": "selected_public_repo_commits",
+    "total_public_commits": 195
+  },
+  "campaign_chart_count": 0,
+  "campaign_state": "no approved campaign data",
+  "github_contribution_summary": null,
+  "project_count": 8,
+  "schema_version": 1
+}

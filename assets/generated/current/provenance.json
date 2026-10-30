@@ -6,12 +6,12 @@
   },
   "profile": "DoArtMonteiro",
   "refresh": {
-    "failure_behaviour": "The workflow writes only to ephemeral runner storage and publishes nothing. A failed run creates no current asset. Any separately published older asset remains unchanged, and its data-through date continues to age. Local reruns in the same output directory preserve the last valid bundle and pointer.",
+    "failure_behaviour": "The preview writes generated files to temporary runner storage and uploads a seven-day GitHub Actions diagnostic artifact. It does not update the README assets or a persistent asset store. A failed refresh leaves the committed snapshot unchanged; any separately published older asset remains unchanged, and its data-through date continues to age. Local reruns in the same output directory preserve the last valid bundle and pointer.",
     "last_successful_refresh": "For an Actions run, use that run's timestamp. Execution time is kept outside the deterministic bundle.",
     "proposed_cadence": "daily after owner approval",
     "recovery": "Inspect the failed run, correct the source or validator, then dispatch a new preview. Publish only after a complete successful review and separate owner approval.",
     "stale_after_hours": 36,
-    "workflow_mode": "manual workflow_dispatch until schedule and publication are separately approved"
+    "workflow_mode": "PR #4 diagnostic preview and default-branch workflow_dispatch; no schedule, persistent publication or deployment."
   },
   "schema_version": 1,
   "sources": {
@@ -21,6 +21,10 @@
       "runs": 0,
       "state": "no approved campaign data",
       "text_alternatives": []
+    },
+    "github_public_contributions": {
+      "reason": "No public GraphQL contribution source data was supplied for this build.",
+      "state": "not included in this snapshot"
     },
     "product_screenshots": {
       "cadence": "Refresh only after a material product change and review",
@@ -43,6 +47,19 @@
       "source": "GitHub public REST API"
     },
     "public_commits": {
+      "animation": {
+        "alt_text": "Isometric daily commit calendar from 2025-10-31 to 2026-10-30: 195 commits across 29 active days and 365 dated days, including zero-count days.",
+        "files": [
+          "calendar/calendar-light-animated.gif",
+          "calendar/calendar-dark-animated.gif"
+        ],
+        "format": "finite GIF, eight frames, no infinite-loop extension",
+        "source_sha256": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72",
+        "static_fallbacks": [
+          "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-light.svg",
+          "calendar/versions/sha256-63e1872e530aa72f1aeb90b37080eb68f1417d90cc966ac4a65aa51583296c4b/calendar-isometric.svg"
+        ]
+      },
       "authentication": "No authorization token is sent to the public commit endpoint.",
       "cadence": "manual preview now; proposed daily after owner approval",
       "data_through": "2026-10-30",

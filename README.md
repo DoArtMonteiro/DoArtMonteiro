@@ -94,10 +94,14 @@ A free, account-free browser trivia game where uncommon recognised answers score
 
 ## Activity
 
-The generated 3D calendar counts distinct commits linked to this account in the default branches of eight selected public repositories. It excludes other repositories and non-commit contributions, so it is a focused activity view rather than a copy of the full native profile graph.
+The 3D calendar is a focused engineering-activity view, not a replica of GitHub's native contribution graph. It counts distinct commits linked to this account in the default branches of eight selected public repositories. The snapshot through 30 October 2026 contains 195 commits across 29 active days. It excludes other repositories and contribution types.
+
+GitHub's [native profile calendar](https://github.com/DoArtMonteiro?tab=overview#js-contribution-activity) remains the broader account view. The separate [GraphQL preview generator](docs/living-portfolio.md#github-contribution-calendar) uses GitHub's public contribution-calendar API; its output is not presented here as a current profile image until a complete refresh has been reviewed.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/current/calendar-isometric.svg">
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" srcset="assets/generated/current/calendar-dark-animated.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/current/calendar-dark.svg">
+  <source media="(prefers-color-scheme: light) and (prefers-reduced-motion: no-preference)" srcset="assets/generated/current/calendar-light-animated.gif">
   <source media="(prefers-color-scheme: light)" srcset="assets/generated/current/calendar-light.svg">
   <img alt="Isometric calendar of distinct commits in selected public repositories over the latest 365 days; exact daily counts and zero days are available in the accessible view" src="assets/generated/current/calendar-light.svg">
 </picture>
@@ -114,7 +118,7 @@ The generated 3D calendar counts distinct commits linked to this account in the 
 
 [Full project activity report](assets/generated/current/projects-activity.md) · [Project activity data](assets/generated/current/projects-activity.json)
 
-These are dated snapshots for draft review. Refresh automation and asset publication are not active. Treat the visuals as stale after the 36-hour limit in the [snapshot metadata](assets/generated/current.json). The native [GitHub contribution graph](https://github.com/DoArtMonteiro) follows GitHub's own visibility settings; neither view measures work quality or business impact. Data sources, update rules and recovery limits are described in the [living portfolio guide](docs/living-portfolio.md).
+These are dated snapshots for review. Scheduled refresh and public asset publication are not active. Treat the visuals as stale after the 36-hour limit in the [snapshot metadata](assets/generated/current.json). Neither view measures work quality or business impact. Data sources, update rules and recovery limits are described in the [living portfolio guide](docs/living-portfolio.md).
 
 ## Toolkit and contact
 

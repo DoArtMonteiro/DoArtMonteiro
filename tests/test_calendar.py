@@ -164,6 +164,23 @@ class CalendarRendererTests(unittest.TestCase):
         svg = result["calendar-accessible"].read_text(encoding="utf-8")
         self.assertIn("Source scope: Distinct commits linked to DoArtMonteiro", svg)
 
+    def test_github_graphql_scope_is_not_labelled_as_commits(self) -> None:
+        public_source = self.root / "github-public-contributions.csv"
+        public_source.write_text(
+            "date,contributions\n2026-10-29,2\n2026-10-30,1\n", encoding="utf-8"
+        )
+        result = render_calendar(public_source, self.root / "github-calendar",
+                                 source_scope="github_public_contributions")
+        manifest = json.loads(result["calendar-manifest"].read_text(encoding="utf-8"))
+
+        self.assertEqual(manifest["source_scope"], "github_public_contributions")
+        self.assertEqual(manifest["contribution_activity"]["total_contributions"], 3)
+        self.assertNotIn("commit_activity", manifest)
+        self.assertIn("public", manifest["source_scope_description"].casefold())
+        self.assertIn("GitHub public contributions", result["calendar-isometric"].read_text(encoding="utf-8"))
+        self.assertIn("GitHub public contributions, daily values",
+                      result["calendar-accessible"].read_text(encoding="utf-8"))
+
     def test_snapshot_date_is_derived_from_the_latest_validated_csv_date(self) -> None:
         with self.source.open(newline="", encoding="utf-8") as handle:
             rows = list(csv.DictReader(handle))

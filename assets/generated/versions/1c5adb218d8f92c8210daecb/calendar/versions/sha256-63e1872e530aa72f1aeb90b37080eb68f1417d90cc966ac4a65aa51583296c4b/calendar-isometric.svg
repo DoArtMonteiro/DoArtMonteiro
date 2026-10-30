@@ -1,0 +1,1190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830" role="img" aria-labelledby="title desc">
+  <title id="title">Selected public-repository commits</title>
+  <desc id="desc">Isometric public commit calendar from 31 Oct 2025 to 30 Oct 2026. 365 dated cells include zero-count days; 195 commits across 29 active days. Cell height is linear within this snapshot, at 3 SVG units per commit, with a maximum bar height of 75 units. Source scope: Distinct commits linked to DoArtMonteiro on selected public repositories&#x27; default branches; dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph. Aggregate counts do not measure work quality or intensity.</desc>
+  <style>text{font-family:Arial,sans-serif}.muted{font-size:13px}.grid-line{stroke:#2c4053}.accent{fill:#55d6d0}</style>
+  <rect width="1200" height="830" fill="#08111f"/>
+  <text x="34" y="42" fill="#edf4f7" font-size="27" font-weight="700">Selected public-repository commits</text>
+  <text x="34" y="69" fill="#a9bdc9" font-size="12">Data through 30 Oct 2026 · 195 commits across 29 active days; 365 dated days.</text>
+
+<text x="34" y="101" fill="#a9bdc9" font-size="13">Source scope: Distinct commits linked to DoArtMonteiro on selected public repositories&#x27; default branches; dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph. All 365 dated cells are shown, including zeros; totals do not measure work quality or intensity.</text>
+<g class="day level-0" data-date="2025-10-31" data-count="0" data-level="0" data-height="0"><title>2025-10-31: 0 commits</title>
+<polygon class="top level-0" points="50,260 68,268 50,276 32,268" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="45" y="247.0" fill="#a9bdc9" font-size="11">Oct 2025</text>
+<g class="day level-0" data-date="2025-11-01" data-count="0" data-level="0" data-height="0"><title>2025-11-01: 0 commits</title>
+<polygon class="top level-0" points="32,268 50,276 32,284 14,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="27" y="255.0" fill="#a9bdc9" font-size="11">Nov 2025</text>
+<g class="day level-0" data-date="2025-11-02" data-count="0" data-level="0" data-height="0"><title>2025-11-02: 0 commits</title>
+<polygon class="top level-0" points="158,228 176,236 158,244 140,236" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-03" data-count="0" data-level="0" data-height="0"><title>2025-11-03: 0 commits</title>
+<polygon class="top level-0" points="140,236 158,244 140,252 122,244" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-04" data-count="0" data-level="0" data-height="0"><title>2025-11-04: 0 commits</title>
+<polygon class="top level-0" points="122,244 140,252 122,260 104,252" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-05" data-count="0" data-level="0" data-height="0"><title>2025-11-05: 0 commits</title>
+<polygon class="top level-0" points="104,252 122,260 104,268 86,260" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-06" data-count="0" data-level="0" data-height="0"><title>2025-11-06: 0 commits</title>
+<polygon class="top level-0" points="86,260 104,268 86,276 68,268" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-07" data-count="0" data-level="0" data-height="0"><title>2025-11-07: 0 commits</title>
+<polygon class="top level-0" points="68,268 86,276 68,284 50,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-08" data-count="0" data-level="0" data-height="0"><title>2025-11-08: 0 commits</title>
+<polygon class="top level-0" points="50,276 68,284 50,292 32,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-09" data-count="0" data-level="0" data-height="0"><title>2025-11-09: 0 commits</title>
+<polygon class="top level-0" points="176,236 194,244 176,252 158,244" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-10" data-count="0" data-level="0" data-height="0"><title>2025-11-10: 0 commits</title>
+<polygon class="top level-0" points="158,244 176,252 158,260 140,252" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-11" data-count="0" data-level="0" data-height="0"><title>2025-11-11: 0 commits</title>
+<polygon class="top level-0" points="140,252 158,260 140,268 122,260" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-12" data-count="0" data-level="0" data-height="0"><title>2025-11-12: 0 commits</title>
+<polygon class="top level-0" points="122,260 140,268 122,276 104,268" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-13" data-count="0" data-level="0" data-height="0"><title>2025-11-13: 0 commits</title>
+<polygon class="top level-0" points="104,268 122,276 104,284 86,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-14" data-count="0" data-level="0" data-height="0"><title>2025-11-14: 0 commits</title>
+<polygon class="top level-0" points="86,276 104,284 86,292 68,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-15" data-count="0" data-level="0" data-height="0"><title>2025-11-15: 0 commits</title>
+<polygon class="top level-0" points="68,284 86,292 68,300 50,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-16" data-count="0" data-level="0" data-height="0"><title>2025-11-16: 0 commits</title>
+<polygon class="top level-0" points="194,244 212,252 194,260 176,252" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-17" data-count="0" data-level="0" data-height="0"><title>2025-11-17: 0 commits</title>
+<polygon class="top level-0" points="176,252 194,260 176,268 158,260" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-18" data-count="0" data-level="0" data-height="0"><title>2025-11-18: 0 commits</title>
+<polygon class="top level-0" points="158,260 176,268 158,276 140,268" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-19" data-count="0" data-level="0" data-height="0"><title>2025-11-19: 0 commits</title>
+<polygon class="top level-0" points="140,268 158,276 140,284 122,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-20" data-count="0" data-level="0" data-height="0"><title>2025-11-20: 0 commits</title>
+<polygon class="top level-0" points="122,276 140,284 122,292 104,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-21" data-count="0" data-level="0" data-height="0"><title>2025-11-21: 0 commits</title>
+<polygon class="top level-0" points="104,284 122,292 104,300 86,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-22" data-count="0" data-level="0" data-height="0"><title>2025-11-22: 0 commits</title>
+<polygon class="top level-0" points="86,292 104,300 86,308 68,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-23" data-count="0" data-level="0" data-height="0"><title>2025-11-23: 0 commits</title>
+<polygon class="top level-0" points="212,252 230,260 212,268 194,260" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-24" data-count="0" data-level="0" data-height="0"><title>2025-11-24: 0 commits</title>
+<polygon class="top level-0" points="194,260 212,268 194,276 176,268" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-25" data-count="0" data-level="0" data-height="0"><title>2025-11-25: 0 commits</title>
+<polygon class="top level-0" points="176,268 194,276 176,284 158,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-26" data-count="0" data-level="0" data-height="0"><title>2025-11-26: 0 commits</title>
+<polygon class="top level-0" points="158,276 176,284 158,292 140,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-27" data-count="0" data-level="0" data-height="0"><title>2025-11-27: 0 commits</title>
+<polygon class="top level-0" points="140,284 158,292 140,300 122,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-28" data-count="0" data-level="0" data-height="0"><title>2025-11-28: 0 commits</title>
+<polygon class="top level-0" points="122,292 140,300 122,308 104,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-29" data-count="0" data-level="0" data-height="0"><title>2025-11-29: 0 commits</title>
+<polygon class="top level-0" points="104,300 122,308 104,316 86,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-11-30" data-count="0" data-level="0" data-height="0"><title>2025-11-30: 0 commits</title>
+<polygon class="top level-0" points="230,260 248,268 230,276 212,268" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-01" data-count="0" data-level="0" data-height="0"><title>2025-12-01: 0 commits</title>
+<polygon class="top level-0" points="212,268 230,276 212,284 194,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="207" y="255.0" fill="#a9bdc9" font-size="11">Dec 2025</text>
+<g class="day level-0" data-date="2025-12-02" data-count="0" data-level="0" data-height="0"><title>2025-12-02: 0 commits</title>
+<polygon class="top level-0" points="194,276 212,284 194,292 176,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-03" data-count="0" data-level="0" data-height="0"><title>2025-12-03: 0 commits</title>
+<polygon class="top level-0" points="176,284 194,292 176,300 158,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-04" data-count="0" data-level="0" data-height="0"><title>2025-12-04: 0 commits</title>
+<polygon class="top level-0" points="158,292 176,300 158,308 140,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-05" data-count="0" data-level="0" data-height="0"><title>2025-12-05: 0 commits</title>
+<polygon class="top level-0" points="140,300 158,308 140,316 122,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-06" data-count="0" data-level="0" data-height="0"><title>2025-12-06: 0 commits</title>
+<polygon class="top level-0" points="122,308 140,316 122,324 104,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-07" data-count="0" data-level="0" data-height="0"><title>2025-12-07: 0 commits</title>
+<polygon class="top level-0" points="248,268 266,276 248,284 230,276" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-08" data-count="0" data-level="0" data-height="0"><title>2025-12-08: 0 commits</title>
+<polygon class="top level-0" points="230,276 248,284 230,292 212,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-09" data-count="0" data-level="0" data-height="0"><title>2025-12-09: 0 commits</title>
+<polygon class="top level-0" points="212,284 230,292 212,300 194,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-10" data-count="0" data-level="0" data-height="0"><title>2025-12-10: 0 commits</title>
+<polygon class="top level-0" points="194,292 212,300 194,308 176,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-11" data-count="0" data-level="0" data-height="0"><title>2025-12-11: 0 commits</title>
+<polygon class="top level-0" points="176,300 194,308 176,316 158,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-12" data-count="0" data-level="0" data-height="0"><title>2025-12-12: 0 commits</title>
+<polygon class="top level-0" points="158,308 176,316 158,324 140,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-13" data-count="0" data-level="0" data-height="0"><title>2025-12-13: 0 commits</title>
+<polygon class="top level-0" points="140,316 158,324 140,332 122,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-14" data-count="0" data-level="0" data-height="0"><title>2025-12-14: 0 commits</title>
+<polygon class="top level-0" points="266,276 284,284 266,292 248,284" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-15" data-count="0" data-level="0" data-height="0"><title>2025-12-15: 0 commits</title>
+<polygon class="top level-0" points="248,284 266,292 248,300 230,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-16" data-count="0" data-level="0" data-height="0"><title>2025-12-16: 0 commits</title>
+<polygon class="top level-0" points="230,292 248,300 230,308 212,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-17" data-count="0" data-level="0" data-height="0"><title>2025-12-17: 0 commits</title>
+<polygon class="top level-0" points="212,300 230,308 212,316 194,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-18" data-count="0" data-level="0" data-height="0"><title>2025-12-18: 0 commits</title>
+<polygon class="top level-0" points="194,308 212,316 194,324 176,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-19" data-count="0" data-level="0" data-height="0"><title>2025-12-19: 0 commits</title>
+<polygon class="top level-0" points="176,316 194,324 176,332 158,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-20" data-count="0" data-level="0" data-height="0"><title>2025-12-20: 0 commits</title>
+<polygon class="top level-0" points="158,324 176,332 158,340 140,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-21" data-count="0" data-level="0" data-height="0"><title>2025-12-21: 0 commits</title>
+<polygon class="top level-0" points="284,284 302,292 284,300 266,292" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-22" data-count="0" data-level="0" data-height="0"><title>2025-12-22: 0 commits</title>
+<polygon class="top level-0" points="266,292 284,300 266,308 248,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-23" data-count="0" data-level="0" data-height="0"><title>2025-12-23: 0 commits</title>
+<polygon class="top level-0" points="248,300 266,308 248,316 230,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-24" data-count="0" data-level="0" data-height="0"><title>2025-12-24: 0 commits</title>
+<polygon class="top level-0" points="230,308 248,316 230,324 212,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-25" data-count="0" data-level="0" data-height="0"><title>2025-12-25: 0 commits</title>
+<polygon class="top level-0" points="212,316 230,324 212,332 194,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-26" data-count="0" data-level="0" data-height="0"><title>2025-12-26: 0 commits</title>
+<polygon class="top level-0" points="194,324 212,332 194,340 176,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-27" data-count="0" data-level="0" data-height="0"><title>2025-12-27: 0 commits</title>
+<polygon class="top level-0" points="176,332 194,340 176,348 158,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-28" data-count="0" data-level="0" data-height="0"><title>2025-12-28: 0 commits</title>
+<polygon class="top level-0" points="302,292 320,300 302,308 284,300" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-29" data-count="0" data-level="0" data-height="0"><title>2025-12-29: 0 commits</title>
+<polygon class="top level-0" points="284,300 302,308 284,316 266,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-30" data-count="0" data-level="0" data-height="0"><title>2025-12-30: 0 commits</title>
+<polygon class="top level-0" points="266,308 284,316 266,324 248,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2025-12-31" data-count="0" data-level="0" data-height="0"><title>2025-12-31: 0 commits</title>
+<polygon class="top level-0" points="248,316 266,324 248,332 230,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-01" data-count="0" data-level="0" data-height="0"><title>2026-01-01: 0 commits</title>
+<polygon class="top level-0" points="230,324 248,332 230,340 212,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="225" y="311.0" fill="#a9bdc9" font-size="11">Jan 2026</text>
+<g class="day level-0" data-date="2026-01-02" data-count="0" data-level="0" data-height="0"><title>2026-01-02: 0 commits</title>
+<polygon class="top level-0" points="212,332 230,340 212,348 194,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-03" data-count="0" data-level="0" data-height="0"><title>2026-01-03: 0 commits</title>
+<polygon class="top level-0" points="194,340 212,348 194,356 176,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-04" data-count="0" data-level="0" data-height="0"><title>2026-01-04: 0 commits</title>
+<polygon class="top level-0" points="320,300 338,308 320,316 302,308" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-05" data-count="0" data-level="0" data-height="0"><title>2026-01-05: 0 commits</title>
+<polygon class="top level-0" points="302,308 320,316 302,324 284,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-06" data-count="0" data-level="0" data-height="0"><title>2026-01-06: 0 commits</title>
+<polygon class="top level-0" points="284,316 302,324 284,332 266,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-07" data-count="0" data-level="0" data-height="0"><title>2026-01-07: 0 commits</title>
+<polygon class="top level-0" points="266,324 284,332 266,340 248,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-08" data-count="0" data-level="0" data-height="0"><title>2026-01-08: 0 commits</title>
+<polygon class="top level-0" points="248,332 266,340 248,348 230,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-09" data-count="0" data-level="0" data-height="0"><title>2026-01-09: 0 commits</title>
+<polygon class="top level-0" points="230,340 248,348 230,356 212,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-10" data-count="0" data-level="0" data-height="0"><title>2026-01-10: 0 commits</title>
+<polygon class="top level-0" points="212,348 230,356 212,364 194,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-11" data-count="0" data-level="0" data-height="0"><title>2026-01-11: 0 commits</title>
+<polygon class="top level-0" points="338,308 356,316 338,324 320,316" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-12" data-count="0" data-level="0" data-height="0"><title>2026-01-12: 0 commits</title>
+<polygon class="top level-0" points="320,316 338,324 320,332 302,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-13" data-count="0" data-level="0" data-height="0"><title>2026-01-13: 0 commits</title>
+<polygon class="top level-0" points="302,324 320,332 302,340 284,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-14" data-count="0" data-level="0" data-height="0"><title>2026-01-14: 0 commits</title>
+<polygon class="top level-0" points="284,332 302,340 284,348 266,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-15" data-count="0" data-level="0" data-height="0"><title>2026-01-15: 0 commits</title>
+<polygon class="top level-0" points="266,340 284,348 266,356 248,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-16" data-count="0" data-level="0" data-height="0"><title>2026-01-16: 0 commits</title>
+<polygon class="top level-0" points="248,348 266,356 248,364 230,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-17" data-count="0" data-level="0" data-height="0"><title>2026-01-17: 0 commits</title>
+<polygon class="top level-0" points="230,356 248,364 230,372 212,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-18" data-count="0" data-level="0" data-height="0"><title>2026-01-18: 0 commits</title>
+<polygon class="top level-0" points="356,316 374,324 356,332 338,324" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-19" data-count="0" data-level="0" data-height="0"><title>2026-01-19: 0 commits</title>
+<polygon class="top level-0" points="338,324 356,332 338,340 320,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-20" data-count="0" data-level="0" data-height="0"><title>2026-01-20: 0 commits</title>
+<polygon class="top level-0" points="320,332 338,340 320,348 302,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-21" data-count="0" data-level="0" data-height="0"><title>2026-01-21: 0 commits</title>
+<polygon class="top level-0" points="302,340 320,348 302,356 284,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-22" data-count="0" data-level="0" data-height="0"><title>2026-01-22: 0 commits</title>
+<polygon class="top level-0" points="284,348 302,356 284,364 266,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-23" data-count="0" data-level="0" data-height="0"><title>2026-01-23: 0 commits</title>
+<polygon class="top level-0" points="266,356 284,364 266,372 248,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-24" data-count="0" data-level="0" data-height="0"><title>2026-01-24: 0 commits</title>
+<polygon class="top level-0" points="248,364 266,372 248,380 230,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-25" data-count="0" data-level="0" data-height="0"><title>2026-01-25: 0 commits</title>
+<polygon class="top level-0" points="374,324 392,332 374,340 356,332" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-26" data-count="0" data-level="0" data-height="0"><title>2026-01-26: 0 commits</title>
+<polygon class="top level-0" points="356,332 374,340 356,348 338,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-27" data-count="0" data-level="0" data-height="0"><title>2026-01-27: 0 commits</title>
+<polygon class="top level-0" points="338,340 356,348 338,356 320,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-28" data-count="0" data-level="0" data-height="0"><title>2026-01-28: 0 commits</title>
+<polygon class="top level-0" points="320,348 338,356 320,364 302,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-29" data-count="0" data-level="0" data-height="0"><title>2026-01-29: 0 commits</title>
+<polygon class="top level-0" points="302,356 320,364 302,372 284,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-30" data-count="0" data-level="0" data-height="0"><title>2026-01-30: 0 commits</title>
+<polygon class="top level-0" points="284,364 302,372 284,380 266,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-01-31" data-count="0" data-level="0" data-height="0"><title>2026-01-31: 0 commits</title>
+<polygon class="top level-0" points="266,372 284,380 266,388 248,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-01" data-count="0" data-level="0" data-height="0"><title>2026-02-01: 0 commits</title>
+<polygon class="top level-0" points="392,332 410,340 392,348 374,340" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="387" y="319.0" fill="#a9bdc9" font-size="11">Feb 2026</text>
+<g class="day level-0" data-date="2026-02-02" data-count="0" data-level="0" data-height="0"><title>2026-02-02: 0 commits</title>
+<polygon class="top level-0" points="374,340 392,348 374,356 356,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-03" data-count="0" data-level="0" data-height="0"><title>2026-02-03: 0 commits</title>
+<polygon class="top level-0" points="356,348 374,356 356,364 338,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-04" data-count="0" data-level="0" data-height="0"><title>2026-02-04: 0 commits</title>
+<polygon class="top level-0" points="338,356 356,364 338,372 320,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-05" data-count="0" data-level="0" data-height="0"><title>2026-02-05: 0 commits</title>
+<polygon class="top level-0" points="320,364 338,372 320,380 302,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-06" data-count="0" data-level="0" data-height="0"><title>2026-02-06: 0 commits</title>
+<polygon class="top level-0" points="302,372 320,380 302,388 284,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-07" data-count="0" data-level="0" data-height="0"><title>2026-02-07: 0 commits</title>
+<polygon class="top level-0" points="284,380 302,388 284,396 266,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-08" data-count="0" data-level="0" data-height="0"><title>2026-02-08: 0 commits</title>
+<polygon class="top level-0" points="410,340 428,348 410,356 392,348" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-09" data-count="0" data-level="0" data-height="0"><title>2026-02-09: 0 commits</title>
+<polygon class="top level-0" points="392,348 410,356 392,364 374,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-10" data-count="0" data-level="0" data-height="0"><title>2026-02-10: 0 commits</title>
+<polygon class="top level-0" points="374,356 392,364 374,372 356,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-11" data-count="0" data-level="0" data-height="0"><title>2026-02-11: 0 commits</title>
+<polygon class="top level-0" points="356,364 374,372 356,380 338,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-12" data-count="0" data-level="0" data-height="0"><title>2026-02-12: 0 commits</title>
+<polygon class="top level-0" points="338,372 356,380 338,388 320,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-13" data-count="0" data-level="0" data-height="0"><title>2026-02-13: 0 commits</title>
+<polygon class="top level-0" points="320,380 338,388 320,396 302,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-14" data-count="0" data-level="0" data-height="0"><title>2026-02-14: 0 commits</title>
+<polygon class="top level-0" points="302,388 320,396 302,404 284,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-15" data-count="0" data-level="0" data-height="0"><title>2026-02-15: 0 commits</title>
+<polygon class="top level-0" points="428,348 446,356 428,364 410,356" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-16" data-count="0" data-level="0" data-height="0"><title>2026-02-16: 0 commits</title>
+<polygon class="top level-0" points="410,356 428,364 410,372 392,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-17" data-count="0" data-level="0" data-height="0"><title>2026-02-17: 0 commits</title>
+<polygon class="top level-0" points="392,364 410,372 392,380 374,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-18" data-count="0" data-level="0" data-height="0"><title>2026-02-18: 0 commits</title>
+<polygon class="top level-0" points="374,372 392,380 374,388 356,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-19" data-count="0" data-level="0" data-height="0"><title>2026-02-19: 0 commits</title>
+<polygon class="top level-0" points="356,380 374,388 356,396 338,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-20" data-count="0" data-level="0" data-height="0"><title>2026-02-20: 0 commits</title>
+<polygon class="top level-0" points="338,388 356,396 338,404 320,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-21" data-count="0" data-level="0" data-height="0"><title>2026-02-21: 0 commits</title>
+<polygon class="top level-0" points="320,396 338,404 320,412 302,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-22" data-count="0" data-level="0" data-height="0"><title>2026-02-22: 0 commits</title>
+<polygon class="top level-0" points="446,356 464,364 446,372 428,364" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-23" data-count="0" data-level="0" data-height="0"><title>2026-02-23: 0 commits</title>
+<polygon class="top level-0" points="428,364 446,372 428,380 410,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-24" data-count="0" data-level="0" data-height="0"><title>2026-02-24: 0 commits</title>
+<polygon class="top level-0" points="410,372 428,380 410,388 392,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-25" data-count="0" data-level="0" data-height="0"><title>2026-02-25: 0 commits</title>
+<polygon class="top level-0" points="392,380 410,388 392,396 374,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-26" data-count="0" data-level="0" data-height="0"><title>2026-02-26: 0 commits</title>
+<polygon class="top level-0" points="374,388 392,396 374,404 356,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-27" data-count="0" data-level="0" data-height="0"><title>2026-02-27: 0 commits</title>
+<polygon class="top level-0" points="356,396 374,404 356,412 338,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-02-28" data-count="0" data-level="0" data-height="0"><title>2026-02-28: 0 commits</title>
+<polygon class="top level-0" points="338,404 356,412 338,420 320,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-01" data-count="0" data-level="0" data-height="0"><title>2026-03-01: 0 commits</title>
+<polygon class="top level-0" points="464,364 482,372 464,380 446,372" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="459" y="351.0" fill="#a9bdc9" font-size="11">Mar 2026</text>
+<g class="day level-0" data-date="2026-03-02" data-count="0" data-level="0" data-height="0"><title>2026-03-02: 0 commits</title>
+<polygon class="top level-0" points="446,372 464,380 446,388 428,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-03" data-count="0" data-level="0" data-height="0"><title>2026-03-03: 0 commits</title>
+<polygon class="top level-0" points="428,380 446,388 428,396 410,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-04" data-count="0" data-level="0" data-height="0"><title>2026-03-04: 0 commits</title>
+<polygon class="top level-0" points="410,388 428,396 410,404 392,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-05" data-count="0" data-level="0" data-height="0"><title>2026-03-05: 0 commits</title>
+<polygon class="top level-0" points="392,396 410,404 392,412 374,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-06" data-count="0" data-level="0" data-height="0"><title>2026-03-06: 0 commits</title>
+<polygon class="top level-0" points="374,404 392,412 374,420 356,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-07" data-count="0" data-level="0" data-height="0"><title>2026-03-07: 0 commits</title>
+<polygon class="top level-0" points="356,412 374,420 356,428 338,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-08" data-count="0" data-level="0" data-height="0"><title>2026-03-08: 0 commits</title>
+<polygon class="top level-0" points="482,372 500,380 482,388 464,380" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-09" data-count="0" data-level="0" data-height="0"><title>2026-03-09: 0 commits</title>
+<polygon class="top level-0" points="464,380 482,388 464,396 446,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-10" data-count="0" data-level="0" data-height="0"><title>2026-03-10: 0 commits</title>
+<polygon class="top level-0" points="446,388 464,396 446,404 428,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-11" data-count="0" data-level="0" data-height="0"><title>2026-03-11: 0 commits</title>
+<polygon class="top level-0" points="428,396 446,404 428,412 410,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-12" data-count="0" data-level="0" data-height="0"><title>2026-03-12: 0 commits</title>
+<polygon class="top level-0" points="410,404 428,412 410,420 392,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-13" data-count="0" data-level="0" data-height="0"><title>2026-03-13: 0 commits</title>
+<polygon class="top level-0" points="392,412 410,420 392,428 374,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-14" data-count="0" data-level="0" data-height="0"><title>2026-03-14: 0 commits</title>
+<polygon class="top level-0" points="374,420 392,428 374,436 356,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-15" data-count="0" data-level="0" data-height="0"><title>2026-03-15: 0 commits</title>
+<polygon class="top level-0" points="500,380 518,388 500,396 482,388" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-16" data-count="0" data-level="0" data-height="0"><title>2026-03-16: 0 commits</title>
+<polygon class="top level-0" points="482,388 500,396 482,404 464,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-17" data-count="0" data-level="0" data-height="0"><title>2026-03-17: 0 commits</title>
+<polygon class="top level-0" points="464,396 482,404 464,412 446,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-18" data-count="0" data-level="0" data-height="0"><title>2026-03-18: 0 commits</title>
+<polygon class="top level-0" points="446,404 464,412 446,420 428,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-19" data-count="0" data-level="0" data-height="0"><title>2026-03-19: 0 commits</title>
+<polygon class="top level-0" points="428,412 446,420 428,428 410,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-20" data-count="0" data-level="0" data-height="0"><title>2026-03-20: 0 commits</title>
+<polygon class="top level-0" points="410,420 428,428 410,436 392,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-21" data-count="0" data-level="0" data-height="0"><title>2026-03-21: 0 commits</title>
+<polygon class="top level-0" points="392,428 410,436 392,444 374,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-22" data-count="0" data-level="0" data-height="0"><title>2026-03-22: 0 commits</title>
+<polygon class="top level-0" points="518,388 536,396 518,404 500,396" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-23" data-count="0" data-level="0" data-height="0"><title>2026-03-23: 0 commits</title>
+<polygon class="top level-0" points="500,396 518,404 500,412 482,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-24" data-count="0" data-level="0" data-height="0"><title>2026-03-24: 0 commits</title>
+<polygon class="top level-0" points="482,404 500,412 482,420 464,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-25" data-count="0" data-level="0" data-height="0"><title>2026-03-25: 0 commits</title>
+<polygon class="top level-0" points="464,412 482,420 464,428 446,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-26" data-count="0" data-level="0" data-height="0"><title>2026-03-26: 0 commits</title>
+<polygon class="top level-0" points="446,420 464,428 446,436 428,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-27" data-count="0" data-level="0" data-height="0"><title>2026-03-27: 0 commits</title>
+<polygon class="top level-0" points="428,428 446,436 428,444 410,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-28" data-count="0" data-level="0" data-height="0"><title>2026-03-28: 0 commits</title>
+<polygon class="top level-0" points="410,436 428,444 410,452 392,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-29" data-count="0" data-level="0" data-height="0"><title>2026-03-29: 0 commits</title>
+<polygon class="top level-0" points="536,396 554,404 536,412 518,404" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-30" data-count="0" data-level="0" data-height="0"><title>2026-03-30: 0 commits</title>
+<polygon class="top level-0" points="518,404 536,412 518,420 500,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-03-31" data-count="0" data-level="0" data-height="0"><title>2026-03-31: 0 commits</title>
+<polygon class="top level-0" points="500,412 518,420 500,428 482,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-01" data-count="0" data-level="0" data-height="0"><title>2026-04-01: 0 commits</title>
+<polygon class="top level-0" points="482,420 500,428 482,436 464,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="477" y="407.0" fill="#a9bdc9" font-size="11">Apr 2026</text>
+<g class="day level-0" data-date="2026-04-02" data-count="0" data-level="0" data-height="0"><title>2026-04-02: 0 commits</title>
+<polygon class="top level-0" points="464,428 482,436 464,444 446,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-03" data-count="0" data-level="0" data-height="0"><title>2026-04-03: 0 commits</title>
+<polygon class="top level-0" points="446,436 464,444 446,452 428,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-04" data-count="0" data-level="0" data-height="0"><title>2026-04-04: 0 commits</title>
+<polygon class="top level-0" points="428,444 446,452 428,460 410,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-05" data-count="0" data-level="0" data-height="0"><title>2026-04-05: 0 commits</title>
+<polygon class="top level-0" points="554,404 572,412 554,420 536,412" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-06" data-count="0" data-level="0" data-height="0"><title>2026-04-06: 0 commits</title>
+<polygon class="top level-0" points="536,412 554,420 536,428 518,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-07" data-count="0" data-level="0" data-height="0"><title>2026-04-07: 0 commits</title>
+<polygon class="top level-0" points="518,420 536,428 518,436 500,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-08" data-count="0" data-level="0" data-height="0"><title>2026-04-08: 0 commits</title>
+<polygon class="top level-0" points="500,428 518,436 500,444 482,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-09" data-count="0" data-level="0" data-height="0"><title>2026-04-09: 0 commits</title>
+<polygon class="top level-0" points="482,436 500,444 482,452 464,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-10" data-count="0" data-level="0" data-height="0"><title>2026-04-10: 0 commits</title>
+<polygon class="top level-0" points="464,444 482,452 464,460 446,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-11" data-count="0" data-level="0" data-height="0"><title>2026-04-11: 0 commits</title>
+<polygon class="top level-0" points="446,452 464,460 446,468 428,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-12" data-count="0" data-level="0" data-height="0"><title>2026-04-12: 0 commits</title>
+<polygon class="top level-0" points="572,412 590,420 572,428 554,420" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-13" data-count="0" data-level="0" data-height="0"><title>2026-04-13: 0 commits</title>
+<polygon class="top level-0" points="554,420 572,428 554,436 536,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-14" data-count="0" data-level="0" data-height="0"><title>2026-04-14: 0 commits</title>
+<polygon class="top level-0" points="536,428 554,436 536,444 518,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-15" data-count="0" data-level="0" data-height="0"><title>2026-04-15: 0 commits</title>
+<polygon class="top level-0" points="518,436 536,444 518,452 500,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-16" data-count="0" data-level="0" data-height="0"><title>2026-04-16: 0 commits</title>
+<polygon class="top level-0" points="500,444 518,452 500,460 482,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-17" data-count="0" data-level="0" data-height="0"><title>2026-04-17: 0 commits</title>
+<polygon class="top level-0" points="482,452 500,460 482,468 464,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-18" data-count="0" data-level="0" data-height="0"><title>2026-04-18: 0 commits</title>
+<polygon class="top level-0" points="464,460 482,468 464,476 446,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-19" data-count="0" data-level="0" data-height="0"><title>2026-04-19: 0 commits</title>
+<polygon class="top level-0" points="590,420 608,428 590,436 572,428" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-20" data-count="0" data-level="0" data-height="0"><title>2026-04-20: 0 commits</title>
+<polygon class="top level-0" points="572,428 590,436 572,444 554,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-21" data-count="0" data-level="0" data-height="0"><title>2026-04-21: 0 commits</title>
+<polygon class="top level-0" points="554,436 572,444 554,452 536,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-22" data-count="0" data-level="0" data-height="0"><title>2026-04-22: 0 commits</title>
+<polygon class="top level-0" points="536,444 554,452 536,460 518,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-23" data-count="0" data-level="0" data-height="0"><title>2026-04-23: 0 commits</title>
+<polygon class="top level-0" points="518,452 536,460 518,468 500,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-24" data-count="0" data-level="0" data-height="0"><title>2026-04-24: 0 commits</title>
+<polygon class="top level-0" points="500,460 518,468 500,476 482,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-25" data-count="0" data-level="0" data-height="0"><title>2026-04-25: 0 commits</title>
+<polygon class="top level-0" points="482,468 500,476 482,484 464,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-26" data-count="0" data-level="0" data-height="0"><title>2026-04-26: 0 commits</title>
+<polygon class="top level-0" points="608,428 626,436 608,444 590,436" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-27" data-count="0" data-level="0" data-height="0"><title>2026-04-27: 0 commits</title>
+<polygon class="top level-0" points="590,436 608,444 590,452 572,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-28" data-count="0" data-level="0" data-height="0"><title>2026-04-28: 0 commits</title>
+<polygon class="top level-0" points="572,444 590,452 572,460 554,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-29" data-count="0" data-level="0" data-height="0"><title>2026-04-29: 0 commits</title>
+<polygon class="top level-0" points="554,452 572,460 554,468 536,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-04-30" data-count="0" data-level="0" data-height="0"><title>2026-04-30: 0 commits</title>
+<polygon class="top level-0" points="536,460 554,468 536,476 518,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-01" data-count="0" data-level="0" data-height="0"><title>2026-05-01: 0 commits</title>
+<polygon class="top level-0" points="518,468 536,476 518,484 500,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="513" y="455.0" fill="#a9bdc9" font-size="11">May 2026</text>
+<g class="day level-0" data-date="2026-05-02" data-count="0" data-level="0" data-height="0"><title>2026-05-02: 0 commits</title>
+<polygon class="top level-0" points="500,476 518,484 500,492 482,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-03" data-count="0" data-level="0" data-height="0"><title>2026-05-03: 0 commits</title>
+<polygon class="top level-0" points="626,436 644,444 626,452 608,444" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-04" data-count="0" data-level="0" data-height="0"><title>2026-05-04: 0 commits</title>
+<polygon class="top level-0" points="608,444 626,452 608,460 590,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-05" data-count="0" data-level="0" data-height="0"><title>2026-05-05: 0 commits</title>
+<polygon class="top level-0" points="590,452 608,460 590,468 572,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-06" data-count="0" data-level="0" data-height="0"><title>2026-05-06: 0 commits</title>
+<polygon class="top level-0" points="572,460 590,468 572,476 554,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-07" data-count="0" data-level="0" data-height="0"><title>2026-05-07: 0 commits</title>
+<polygon class="top level-0" points="554,468 572,476 554,484 536,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-08" data-count="0" data-level="0" data-height="0"><title>2026-05-08: 0 commits</title>
+<polygon class="top level-0" points="536,476 554,484 536,492 518,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-09" data-count="0" data-level="0" data-height="0"><title>2026-05-09: 0 commits</title>
+<polygon class="top level-0" points="518,484 536,492 518,500 500,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-10" data-count="0" data-level="0" data-height="0"><title>2026-05-10: 0 commits</title>
+<polygon class="top level-0" points="644,444 662,452 644,460 626,452" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-11" data-count="0" data-level="0" data-height="0"><title>2026-05-11: 0 commits</title>
+<polygon class="top level-0" points="626,452 644,460 626,468 608,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-12" data-count="0" data-level="0" data-height="0"><title>2026-05-12: 0 commits</title>
+<polygon class="top level-0" points="608,460 626,468 608,476 590,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-13" data-count="0" data-level="0" data-height="0"><title>2026-05-13: 0 commits</title>
+<polygon class="top level-0" points="590,468 608,476 590,484 572,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-14" data-count="0" data-level="0" data-height="0"><title>2026-05-14: 0 commits</title>
+<polygon class="top level-0" points="572,476 590,484 572,492 554,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-15" data-count="0" data-level="0" data-height="0"><title>2026-05-15: 0 commits</title>
+<polygon class="top level-0" points="554,484 572,492 554,500 536,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-16" data-count="0" data-level="0" data-height="0"><title>2026-05-16: 0 commits</title>
+<polygon class="top level-0" points="536,492 554,500 536,508 518,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-17" data-count="0" data-level="0" data-height="0"><title>2026-05-17: 0 commits</title>
+<polygon class="top level-0" points="662,452 680,460 662,468 644,460" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-18" data-count="0" data-level="0" data-height="0"><title>2026-05-18: 0 commits</title>
+<polygon class="top level-0" points="644,460 662,468 644,476 626,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-19" data-count="0" data-level="0" data-height="0"><title>2026-05-19: 0 commits</title>
+<polygon class="top level-0" points="626,468 644,476 626,484 608,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-20" data-count="0" data-level="0" data-height="0"><title>2026-05-20: 0 commits</title>
+<polygon class="top level-0" points="608,476 626,484 608,492 590,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-21" data-count="0" data-level="0" data-height="0"><title>2026-05-21: 0 commits</title>
+<polygon class="top level-0" points="590,484 608,492 590,500 572,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-22" data-count="0" data-level="0" data-height="0"><title>2026-05-22: 0 commits</title>
+<polygon class="top level-0" points="572,492 590,500 572,508 554,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-23" data-count="0" data-level="0" data-height="0"><title>2026-05-23: 0 commits</title>
+<polygon class="top level-0" points="554,500 572,508 554,516 536,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-24" data-count="0" data-level="0" data-height="0"><title>2026-05-24: 0 commits</title>
+<polygon class="top level-0" points="680,460 698,468 680,476 662,468" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-25" data-count="0" data-level="0" data-height="0"><title>2026-05-25: 0 commits</title>
+<polygon class="top level-0" points="662,468 680,476 662,484 644,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-26" data-count="0" data-level="0" data-height="0"><title>2026-05-26: 0 commits</title>
+<polygon class="top level-0" points="644,476 662,484 644,492 626,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-27" data-count="0" data-level="0" data-height="0"><title>2026-05-27: 0 commits</title>
+<polygon class="top level-0" points="626,484 644,492 626,500 608,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-28" data-count="0" data-level="0" data-height="0"><title>2026-05-28: 0 commits</title>
+<polygon class="top level-0" points="608,492 626,500 608,508 590,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-29" data-count="0" data-level="0" data-height="0"><title>2026-05-29: 0 commits</title>
+<polygon class="top level-0" points="590,500 608,508 590,516 572,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-30" data-count="0" data-level="0" data-height="0"><title>2026-05-30: 0 commits</title>
+<polygon class="top level-0" points="572,508 590,516 572,524 554,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-05-31" data-count="0" data-level="0" data-height="0"><title>2026-05-31: 0 commits</title>
+<polygon class="top level-0" points="698,468 716,476 698,484 680,476" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-01" data-count="0" data-level="0" data-height="0"><title>2026-06-01: 0 commits</title>
+<polygon class="top level-0" points="680,476 698,484 680,492 662,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="675" y="463.0" fill="#a9bdc9" font-size="11">Jun 2026</text>
+<g class="day level-0" data-date="2026-06-02" data-count="0" data-level="0" data-height="0"><title>2026-06-02: 0 commits</title>
+<polygon class="top level-0" points="662,484 680,492 662,500 644,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-03" data-count="0" data-level="0" data-height="0"><title>2026-06-03: 0 commits</title>
+<polygon class="top level-0" points="644,492 662,500 644,508 626,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-04" data-count="0" data-level="0" data-height="0"><title>2026-06-04: 0 commits</title>
+<polygon class="top level-0" points="626,500 644,508 626,516 608,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-05" data-count="0" data-level="0" data-height="0"><title>2026-06-05: 0 commits</title>
+<polygon class="top level-0" points="608,508 626,516 608,524 590,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-06" data-count="0" data-level="0" data-height="0"><title>2026-06-06: 0 commits</title>
+<polygon class="top level-0" points="590,516 608,524 590,532 572,524" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-07" data-count="0" data-level="0" data-height="0"><title>2026-06-07: 0 commits</title>
+<polygon class="top level-0" points="716,476 734,484 716,492 698,484" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-08" data-count="0" data-level="0" data-height="0"><title>2026-06-08: 0 commits</title>
+<polygon class="top level-0" points="698,484 716,492 698,500 680,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-09" data-count="0" data-level="0" data-height="0"><title>2026-06-09: 0 commits</title>
+<polygon class="top level-0" points="680,492 698,500 680,508 662,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-10" data-count="0" data-level="0" data-height="0"><title>2026-06-10: 0 commits</title>
+<polygon class="top level-0" points="662,500 680,508 662,516 644,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-11" data-count="0" data-level="0" data-height="0"><title>2026-06-11: 0 commits</title>
+<polygon class="top level-0" points="644,508 662,516 644,524 626,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-12" data-count="0" data-level="0" data-height="0"><title>2026-06-12: 0 commits</title>
+<polygon class="top level-0" points="626,516 644,524 626,532 608,524" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-13" data-count="0" data-level="0" data-height="0"><title>2026-06-13: 0 commits</title>
+<polygon class="top level-0" points="608,524 626,532 608,540 590,532" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-14" data-count="0" data-level="0" data-height="0"><title>2026-06-14: 0 commits</title>
+<polygon class="top level-0" points="734,484 752,492 734,500 716,492" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-15" data-count="0" data-level="0" data-height="0"><title>2026-06-15: 0 commits</title>
+<polygon class="top level-0" points="716,492 734,500 716,508 698,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-16" data-count="0" data-level="0" data-height="0"><title>2026-06-16: 0 commits</title>
+<polygon class="top level-0" points="698,500 716,508 698,516 680,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-17" data-count="0" data-level="0" data-height="0"><title>2026-06-17: 0 commits</title>
+<polygon class="top level-0" points="680,508 698,516 680,524 662,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-18" data-count="0" data-level="0" data-height="0"><title>2026-06-18: 0 commits</title>
+<polygon class="top level-0" points="662,516 680,524 662,532 644,524" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-19" data-count="0" data-level="0" data-height="0"><title>2026-06-19: 0 commits</title>
+<polygon class="top level-0" points="644,524 662,532 644,540 626,532" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-20" data-count="0" data-level="0" data-height="0"><title>2026-06-20: 0 commits</title>
+<polygon class="top level-0" points="626,532 644,540 626,548 608,540" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-21" data-count="0" data-level="0" data-height="0"><title>2026-06-21: 0 commits</title>
+<polygon class="top level-0" points="752,492 770,500 752,508 734,500" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-22" data-count="0" data-level="0" data-height="0"><title>2026-06-22: 0 commits</title>
+<polygon class="top level-0" points="734,500 752,508 734,516 716,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-23" data-count="0" data-level="0" data-height="0"><title>2026-06-23: 0 commits</title>
+<polygon class="top level-0" points="716,508 734,516 716,524 698,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-24" data-count="0" data-level="0" data-height="0"><title>2026-06-24: 0 commits</title>
+<polygon class="top level-0" points="698,516 716,524 698,532 680,524" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-25" data-count="0" data-level="0" data-height="0"><title>2026-06-25: 0 commits</title>
+<polygon class="top level-0" points="680,524 698,532 680,540 662,532" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-26" data-count="0" data-level="0" data-height="0"><title>2026-06-26: 0 commits</title>
+<polygon class="top level-0" points="662,532 680,540 662,548 644,540" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-27" data-count="0" data-level="0" data-height="0"><title>2026-06-27: 0 commits</title>
+<polygon class="top level-0" points="644,540 662,548 644,556 626,548" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-28" data-count="0" data-level="0" data-height="0"><title>2026-06-28: 0 commits</title>
+<polygon class="top level-0" points="770,500 788,508 770,516 752,508" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-29" data-count="0" data-level="0" data-height="0"><title>2026-06-29: 0 commits</title>
+<polygon class="top level-0" points="752,508 770,516 752,524 734,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-06-30" data-count="0" data-level="0" data-height="0"><title>2026-06-30: 0 commits</title>
+<polygon class="top level-0" points="734,516 752,524 734,532 716,524" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-01" data-count="0" data-level="0" data-height="0"><title>2026-07-01: 0 commits</title>
+<polygon class="top level-0" points="716,524 734,532 716,540 698,532" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="711" y="511.0" fill="#a9bdc9" font-size="11">Jul 2026</text>
+<g class="day level-0" data-date="2026-07-02" data-count="0" data-level="0" data-height="0"><title>2026-07-02: 0 commits</title>
+<polygon class="top level-0" points="698,532 716,540 698,548 680,540" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-03" data-count="0" data-level="0" data-height="0"><title>2026-07-03: 0 commits</title>
+<polygon class="top level-0" points="680,540 698,548 680,556 662,548" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-04" data-count="0" data-level="0" data-height="0"><title>2026-07-04: 0 commits</title>
+<polygon class="top level-0" points="662,548 680,556 662,564 644,556" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-05" data-count="0" data-level="0" data-height="0"><title>2026-07-05: 0 commits</title>
+<polygon class="top level-0" points="788,508 806,516 788,524 770,516" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-06" data-count="0" data-level="0" data-height="0"><title>2026-07-06: 0 commits</title>
+<polygon class="top level-0" points="770,516 788,524 770,532 752,524" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-07" data-count="0" data-level="0" data-height="0"><title>2026-07-07: 0 commits</title>
+<polygon class="top level-0" points="752,524 770,532 752,540 734,532" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-08" data-count="0" data-level="0" data-height="0"><title>2026-07-08: 0 commits</title>
+<polygon class="top level-0" points="734,532 752,540 734,548 716,540" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-09" data-count="0" data-level="0" data-height="0"><title>2026-07-09: 0 commits</title>
+<polygon class="top level-0" points="716,540 734,548 716,556 698,548" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-10" data-count="0" data-level="0" data-height="0"><title>2026-07-10: 0 commits</title>
+<polygon class="top level-0" points="698,548 716,556 698,564 680,556" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-11" data-count="0" data-level="0" data-height="0"><title>2026-07-11: 0 commits</title>
+<polygon class="top level-0" points="680,556 698,564 680,572 662,564" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-07-12" data-count="3" data-level="1" data-height="9"><title>2026-07-12: 3 commits</title>
+<polygon points="806,507 788,515 788,524 806,516" fill="#195a55"/>
+<polygon points="824,515 806,523 806,532 824,524" fill="#1d635b"/>
+<polygon class="top level-1" points="806,507 824,515 806,523 788,515" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-07-13" data-count="11" data-level="2" data-height="33"><title>2026-07-13: 11 commits</title>
+<polygon points="788,491 770,499 770,532 788,524" fill="#288d84"/>
+<polygon points="806,499 788,507 788,540 806,532" fill="#2f9b8f"/>
+<polygon class="top level-2" points="788,491 806,499 788,507 770,499" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-07-14" data-count="2" data-level="1" data-height="6"><title>2026-07-14: 2 commits</title>
+<polygon points="770,526 752,534 752,540 770,532" fill="#195a55"/>
+<polygon points="788,534 770,542 770,548 788,540" fill="#1d635b"/>
+<polygon class="top level-1" points="770,526 788,534 770,542 752,534" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-15" data-count="0" data-level="0" data-height="0"><title>2026-07-15: 0 commits</title>
+<polygon class="top level-0" points="752,540 770,548 752,556 734,548" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-07-16" data-count="6" data-level="2" data-height="18"><title>2026-07-16: 6 commits</title>
+<polygon points="734,530 716,538 716,556 734,548" fill="#288d84"/>
+<polygon points="752,538 734,546 734,564 752,556" fill="#2f9b8f"/>
+<polygon class="top level-2" points="734,530 752,538 734,546 716,538" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-07-17" data-count="5" data-level="1" data-height="15"><title>2026-07-17: 5 commits</title>
+<polygon points="716,541 698,549 698,564 716,556" fill="#195a55"/>
+<polygon points="734,549 716,557 716,572 734,564" fill="#1d635b"/>
+<polygon class="top level-1" points="716,541 734,549 716,557 698,549" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-3" data-date="2026-07-18" data-count="16" data-level="3" data-height="48"><title>2026-07-18: 16 commits</title>
+<polygon points="698,516 680,524 680,572 698,564" fill="#4bb69f"/>
+<polygon points="716,524 698,532 698,580 716,572" fill="#5bc5aa"/>
+<polygon class="top level-3" points="698,516 716,524 698,532 680,524" fill="#71d5bd" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-07-19" data-count="8" data-level="2" data-height="24"><title>2026-07-19: 8 commits</title>
+<polygon points="824,500 806,508 806,532 824,524" fill="#288d84"/>
+<polygon points="842,508 824,516 824,540 842,532" fill="#2f9b8f"/>
+<polygon class="top level-2" points="824,500 842,508 824,516 806,508" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-07-20" data-count="3" data-level="1" data-height="9"><title>2026-07-20: 3 commits</title>
+<polygon points="806,523 788,531 788,540 806,532" fill="#195a55"/>
+<polygon points="824,531 806,539 806,548 824,540" fill="#1d635b"/>
+<polygon class="top level-1" points="806,523 824,531 806,539 788,531" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-07-21" data-count="11" data-level="2" data-height="33"><title>2026-07-21: 11 commits</title>
+<polygon points="788,507 770,515 770,548 788,540" fill="#288d84"/>
+<polygon points="806,515 788,523 788,556 806,548" fill="#2f9b8f"/>
+<polygon class="top level-2" points="788,507 806,515 788,523 770,515" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-22" data-count="0" data-level="0" data-height="0"><title>2026-07-22: 0 commits</title>
+<polygon class="top level-0" points="770,548 788,556 770,564 752,556" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-23" data-count="0" data-level="0" data-height="0"><title>2026-07-23: 0 commits</title>
+<polygon class="top level-0" points="752,556 770,564 752,572 734,564" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-24" data-count="0" data-level="0" data-height="0"><title>2026-07-24: 0 commits</title>
+<polygon class="top level-0" points="734,564 752,572 734,580 716,572" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-25" data-count="0" data-level="0" data-height="0"><title>2026-07-25: 0 commits</title>
+<polygon class="top level-0" points="716,572 734,580 716,588 698,580" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-3" data-date="2026-07-26" data-count="21" data-level="3" data-height="63"><title>2026-07-26: 21 commits</title>
+<polygon points="842,469 824,477 824,540 842,532" fill="#4bb69f"/>
+<polygon points="860,477 842,485 842,548 860,540" fill="#5bc5aa"/>
+<polygon class="top level-3" points="842,469 860,477 842,485 824,477" fill="#71d5bd" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-07-27" data-count="10" data-level="2" data-height="30"><title>2026-07-27: 10 commits</title>
+<polygon points="824,510 806,518 806,548 824,540" fill="#288d84"/>
+<polygon points="842,518 824,526 824,556 842,548" fill="#2f9b8f"/>
+<polygon class="top level-2" points="824,510 842,518 824,526 806,518" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-07-28" data-count="11" data-level="2" data-height="33"><title>2026-07-28: 11 commits</title>
+<polygon points="806,515 788,523 788,556 806,548" fill="#288d84"/>
+<polygon points="824,523 806,531 806,564 824,556" fill="#2f9b8f"/>
+<polygon class="top level-2" points="806,515 824,523 806,531 788,523" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-07-29" data-count="0" data-level="0" data-height="0"><title>2026-07-29: 0 commits</title>
+<polygon class="top level-0" points="788,556 806,564 788,572 770,564" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-07-30" data-count="2" data-level="1" data-height="6"><title>2026-07-30: 2 commits</title>
+<polygon points="770,558 752,566 752,572 770,564" fill="#195a55"/>
+<polygon points="788,566 770,574 770,580 788,572" fill="#1d635b"/>
+<polygon class="top level-1" points="770,558 788,566 770,574 752,566" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-3" data-date="2026-07-31" data-count="16" data-level="3" data-height="48"><title>2026-07-31: 16 commits</title>
+<polygon points="752,524 734,532 734,580 752,572" fill="#4bb69f"/>
+<polygon points="770,532 752,540 752,588 770,580" fill="#5bc5aa"/>
+<polygon class="top level-3" points="752,524 770,532 752,540 734,532" fill="#71d5bd" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-08-01" data-count="7" data-level="2" data-height="21"><title>2026-08-01: 7 commits</title>
+<polygon points="734,559 716,567 716,588 734,580" fill="#288d84"/>
+<polygon points="752,567 734,575 734,596 752,588" fill="#2f9b8f"/>
+<polygon class="top level-2" points="734,559 752,567 734,575 716,567" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="729" y="546.0" fill="#a9bdc9" font-size="11">Aug 2026</text>
+<g class="day level-1" data-date="2026-08-02" data-count="1" data-level="1" data-height="3"><title>2026-08-02: 1 commits</title>
+<polygon points="860,537 842,545 842,548 860,540" fill="#195a55"/>
+<polygon points="878,545 860,553 860,556 878,548" fill="#1d635b"/>
+<polygon class="top level-1" points="860,537 878,545 860,553 842,545" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-08-03" data-count="6" data-level="2" data-height="18"><title>2026-08-03: 6 commits</title>
+<polygon points="842,530 824,538 824,556 842,548" fill="#288d84"/>
+<polygon points="860,538 842,546 842,564 860,556" fill="#2f9b8f"/>
+<polygon class="top level-2" points="842,530 860,538 842,546 824,538" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-04" data-count="0" data-level="0" data-height="0"><title>2026-08-04: 0 commits</title>
+<polygon class="top level-0" points="824,556 842,564 824,572 806,564" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-05" data-count="5" data-level="1" data-height="15"><title>2026-08-05: 5 commits</title>
+<polygon points="806,549 788,557 788,572 806,564" fill="#195a55"/>
+<polygon points="824,557 806,565 806,580 824,572" fill="#1d635b"/>
+<polygon class="top level-1" points="806,549 824,557 806,565 788,557" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-06" data-count="4" data-level="1" data-height="12"><title>2026-08-06: 4 commits</title>
+<polygon points="788,560 770,568 770,580 788,572" fill="#195a55"/>
+<polygon points="806,568 788,576 788,588 806,580" fill="#1d635b"/>
+<polygon class="top level-1" points="788,560 806,568 788,576 770,568" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-07" data-count="1" data-level="1" data-height="3"><title>2026-08-07: 1 commits</title>
+<polygon points="770,577 752,585 752,588 770,580" fill="#195a55"/>
+<polygon points="788,585 770,593 770,596 788,588" fill="#1d635b"/>
+<polygon class="top level-1" points="770,577 788,585 770,593 752,585" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-08" data-count="4" data-level="1" data-height="12"><title>2026-08-08: 4 commits</title>
+<polygon points="752,576 734,584 734,596 752,588" fill="#195a55"/>
+<polygon points="770,584 752,592 752,604 770,596" fill="#1d635b"/>
+<polygon class="top level-1" points="752,576 770,584 752,592 734,584" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-09" data-count="2" data-level="1" data-height="6"><title>2026-08-09: 2 commits</title>
+<polygon points="878,542 860,550 860,556 878,548" fill="#195a55"/>
+<polygon points="896,550 878,558 878,564 896,556" fill="#1d635b"/>
+<polygon class="top level-1" points="878,542 896,550 878,558 860,550" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-10" data-count="0" data-level="0" data-height="0"><title>2026-08-10: 0 commits</title>
+<polygon class="top level-0" points="860,556 878,564 860,572 842,564" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-11" data-count="1" data-level="1" data-height="3"><title>2026-08-11: 1 commits</title>
+<polygon points="842,561 824,569 824,572 842,564" fill="#195a55"/>
+<polygon points="860,569 842,577 842,580 860,572" fill="#1d635b"/>
+<polygon class="top level-1" points="842,561 860,569 842,577 824,569" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-12" data-count="5" data-level="1" data-height="15"><title>2026-08-12: 5 commits</title>
+<polygon points="824,557 806,565 806,580 824,572" fill="#195a55"/>
+<polygon points="842,565 824,573 824,588 842,580" fill="#1d635b"/>
+<polygon class="top level-1" points="824,557 842,565 824,573 806,565" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-08-13" data-count="6" data-level="2" data-height="18"><title>2026-08-13: 6 commits</title>
+<polygon points="806,562 788,570 788,588 806,580" fill="#288d84"/>
+<polygon points="824,570 806,578 806,596 824,588" fill="#2f9b8f"/>
+<polygon class="top level-2" points="806,562 824,570 806,578 788,570" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-08-14" data-count="10" data-level="2" data-height="30"><title>2026-08-14: 10 commits</title>
+<polygon points="788,558 770,566 770,596 788,588" fill="#288d84"/>
+<polygon points="806,566 788,574 788,604 806,596" fill="#2f9b8f"/>
+<polygon class="top level-2" points="788,558 806,566 788,574 770,566" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-08-15" data-count="6" data-level="2" data-height="18"><title>2026-08-15: 6 commits</title>
+<polygon points="770,578 752,586 752,604 770,596" fill="#288d84"/>
+<polygon points="788,586 770,594 770,612 788,604" fill="#2f9b8f"/>
+<polygon class="top level-2" points="770,578 788,586 770,594 752,586" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-2" data-date="2026-08-16" data-count="10" data-level="2" data-height="30"><title>2026-08-16: 10 commits</title>
+<polygon points="896,526 878,534 878,564 896,556" fill="#288d84"/>
+<polygon points="914,534 896,542 896,572 914,564" fill="#2f9b8f"/>
+<polygon class="top level-2" points="896,526 914,534 896,542 878,534" fill="#36a99b" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-1" data-date="2026-08-17" data-count="2" data-level="1" data-height="6"><title>2026-08-17: 2 commits</title>
+<polygon points="878,558 860,566 860,572 878,564" fill="#195a55"/>
+<polygon points="896,566 878,574 878,580 896,572" fill="#1d635b"/>
+<polygon class="top level-1" points="878,558 896,566 878,574 860,566" fill="#226b63" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-18" data-count="0" data-level="0" data-height="0"><title>2026-08-18: 0 commits</title>
+<polygon class="top level-0" points="860,572 878,580 860,588 842,580" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-19" data-count="0" data-level="0" data-height="0"><title>2026-08-19: 0 commits</title>
+<polygon class="top level-0" points="842,580 860,588 842,596 824,588" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-20" data-count="0" data-level="0" data-height="0"><title>2026-08-20: 0 commits</title>
+<polygon class="top level-0" points="824,588 842,596 824,604 806,596" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-21" data-count="0" data-level="0" data-height="0"><title>2026-08-21: 0 commits</title>
+<polygon class="top level-0" points="806,596 824,604 806,612 788,604" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-22" data-count="0" data-level="0" data-height="0"><title>2026-08-22: 0 commits</title>
+<polygon class="top level-0" points="788,604 806,612 788,620 770,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-23" data-count="0" data-level="0" data-height="0"><title>2026-08-23: 0 commits</title>
+<polygon class="top level-0" points="914,564 932,572 914,580 896,572" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-24" data-count="0" data-level="0" data-height="0"><title>2026-08-24: 0 commits</title>
+<polygon class="top level-0" points="896,572 914,580 896,588 878,580" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-25" data-count="0" data-level="0" data-height="0"><title>2026-08-25: 0 commits</title>
+<polygon class="top level-0" points="878,580 896,588 878,596 860,588" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-26" data-count="0" data-level="0" data-height="0"><title>2026-08-26: 0 commits</title>
+<polygon class="top level-0" points="860,588 878,596 860,604 842,596" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-27" data-count="0" data-level="0" data-height="0"><title>2026-08-27: 0 commits</title>
+<polygon class="top level-0" points="842,596 860,604 842,612 824,604" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-28" data-count="0" data-level="0" data-height="0"><title>2026-08-28: 0 commits</title>
+<polygon class="top level-0" points="824,604 842,612 824,620 806,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-29" data-count="0" data-level="0" data-height="0"><title>2026-08-29: 0 commits</title>
+<polygon class="top level-0" points="806,612 824,620 806,628 788,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-30" data-count="0" data-level="0" data-height="0"><title>2026-08-30: 0 commits</title>
+<polygon class="top level-0" points="932,572 950,580 932,588 914,580" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-08-31" data-count="0" data-level="0" data-height="0"><title>2026-08-31: 0 commits</title>
+<polygon class="top level-0" points="914,580 932,588 914,596 896,588" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-01" data-count="0" data-level="0" data-height="0"><title>2026-09-01: 0 commits</title>
+<polygon class="top level-0" points="896,588 914,596 896,604 878,596" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="891" y="575.0" fill="#a9bdc9" font-size="11">Sep 2026</text>
+<g class="day level-0" data-date="2026-09-02" data-count="0" data-level="0" data-height="0"><title>2026-09-02: 0 commits</title>
+<polygon class="top level-0" points="878,596 896,604 878,612 860,604" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-03" data-count="0" data-level="0" data-height="0"><title>2026-09-03: 0 commits</title>
+<polygon class="top level-0" points="860,604 878,612 860,620 842,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-04" data-count="0" data-level="0" data-height="0"><title>2026-09-04: 0 commits</title>
+<polygon class="top level-0" points="842,612 860,620 842,628 824,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-05" data-count="0" data-level="0" data-height="0"><title>2026-09-05: 0 commits</title>
+<polygon class="top level-0" points="824,620 842,628 824,636 806,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-06" data-count="0" data-level="0" data-height="0"><title>2026-09-06: 0 commits</title>
+<polygon class="top level-0" points="950,580 968,588 950,596 932,588" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-07" data-count="0" data-level="0" data-height="0"><title>2026-09-07: 0 commits</title>
+<polygon class="top level-0" points="932,588 950,596 932,604 914,596" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-08" data-count="0" data-level="0" data-height="0"><title>2026-09-08: 0 commits</title>
+<polygon class="top level-0" points="914,596 932,604 914,612 896,604" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-09" data-count="0" data-level="0" data-height="0"><title>2026-09-09: 0 commits</title>
+<polygon class="top level-0" points="896,604 914,612 896,620 878,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-10" data-count="0" data-level="0" data-height="0"><title>2026-09-10: 0 commits</title>
+<polygon class="top level-0" points="878,612 896,620 878,628 860,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-11" data-count="0" data-level="0" data-height="0"><title>2026-09-11: 0 commits</title>
+<polygon class="top level-0" points="860,620 878,628 860,636 842,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-12" data-count="0" data-level="0" data-height="0"><title>2026-09-12: 0 commits</title>
+<polygon class="top level-0" points="842,628 860,636 842,644 824,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-13" data-count="0" data-level="0" data-height="0"><title>2026-09-13: 0 commits</title>
+<polygon class="top level-0" points="968,588 986,596 968,604 950,596" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-14" data-count="0" data-level="0" data-height="0"><title>2026-09-14: 0 commits</title>
+<polygon class="top level-0" points="950,596 968,604 950,612 932,604" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-15" data-count="0" data-level="0" data-height="0"><title>2026-09-15: 0 commits</title>
+<polygon class="top level-0" points="932,604 950,612 932,620 914,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-16" data-count="0" data-level="0" data-height="0"><title>2026-09-16: 0 commits</title>
+<polygon class="top level-0" points="914,612 932,620 914,628 896,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-17" data-count="0" data-level="0" data-height="0"><title>2026-09-17: 0 commits</title>
+<polygon class="top level-0" points="896,620 914,628 896,636 878,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-18" data-count="0" data-level="0" data-height="0"><title>2026-09-18: 0 commits</title>
+<polygon class="top level-0" points="878,628 896,636 878,644 860,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-19" data-count="0" data-level="0" data-height="0"><title>2026-09-19: 0 commits</title>
+<polygon class="top level-0" points="860,636 878,644 860,652 842,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-20" data-count="0" data-level="0" data-height="0"><title>2026-09-20: 0 commits</title>
+<polygon class="top level-0" points="986,596 1004,604 986,612 968,604" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-21" data-count="0" data-level="0" data-height="0"><title>2026-09-21: 0 commits</title>
+<polygon class="top level-0" points="968,604 986,612 968,620 950,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-22" data-count="0" data-level="0" data-height="0"><title>2026-09-22: 0 commits</title>
+<polygon class="top level-0" points="950,612 968,620 950,628 932,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-23" data-count="0" data-level="0" data-height="0"><title>2026-09-23: 0 commits</title>
+<polygon class="top level-0" points="932,620 950,628 932,636 914,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-24" data-count="0" data-level="0" data-height="0"><title>2026-09-24: 0 commits</title>
+<polygon class="top level-0" points="914,628 932,636 914,644 896,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-25" data-count="0" data-level="0" data-height="0"><title>2026-09-25: 0 commits</title>
+<polygon class="top level-0" points="896,636 914,644 896,652 878,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-26" data-count="0" data-level="0" data-height="0"><title>2026-09-26: 0 commits</title>
+<polygon class="top level-0" points="878,644 896,652 878,660 860,652" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-27" data-count="0" data-level="0" data-height="0"><title>2026-09-27: 0 commits</title>
+<polygon class="top level-0" points="1004,604 1022,612 1004,620 986,612" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-28" data-count="0" data-level="0" data-height="0"><title>2026-09-28: 0 commits</title>
+<polygon class="top level-0" points="986,612 1004,620 986,628 968,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-29" data-count="0" data-level="0" data-height="0"><title>2026-09-29: 0 commits</title>
+<polygon class="top level-0" points="968,620 986,628 968,636 950,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-09-30" data-count="0" data-level="0" data-height="0"><title>2026-09-30: 0 commits</title>
+<polygon class="top level-0" points="950,628 968,636 950,644 932,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-01" data-count="0" data-level="0" data-height="0"><title>2026-10-01: 0 commits</title>
+<polygon class="top level-0" points="932,636 950,644 932,652 914,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="927" y="623.0" fill="#a9bdc9" font-size="11">Oct 2026</text>
+<g class="day level-0" data-date="2026-10-02" data-count="0" data-level="0" data-height="0"><title>2026-10-02: 0 commits</title>
+<polygon class="top level-0" points="914,644 932,652 914,660 896,652" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-03" data-count="0" data-level="0" data-height="0"><title>2026-10-03: 0 commits</title>
+<polygon class="top level-0" points="896,652 914,660 896,668 878,660" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-04" data-count="0" data-level="0" data-height="0"><title>2026-10-04: 0 commits</title>
+<polygon class="top level-0" points="1022,612 1040,620 1022,628 1004,620" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-05" data-count="0" data-level="0" data-height="0"><title>2026-10-05: 0 commits</title>
+<polygon class="top level-0" points="1004,620 1022,628 1004,636 986,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-06" data-count="0" data-level="0" data-height="0"><title>2026-10-06: 0 commits</title>
+<polygon class="top level-0" points="986,628 1004,636 986,644 968,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-07" data-count="0" data-level="0" data-height="0"><title>2026-10-07: 0 commits</title>
+<polygon class="top level-0" points="968,636 986,644 968,652 950,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-08" data-count="0" data-level="0" data-height="0"><title>2026-10-08: 0 commits</title>
+<polygon class="top level-0" points="950,644 968,652 950,660 932,652" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-09" data-count="0" data-level="0" data-height="0"><title>2026-10-09: 0 commits</title>
+<polygon class="top level-0" points="932,652 950,660 932,668 914,660" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-10" data-count="0" data-level="0" data-height="0"><title>2026-10-10: 0 commits</title>
+<polygon class="top level-0" points="914,660 932,668 914,676 896,668" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-11" data-count="0" data-level="0" data-height="0"><title>2026-10-11: 0 commits</title>
+<polygon class="top level-0" points="1040,620 1058,628 1040,636 1022,628" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-12" data-count="0" data-level="0" data-height="0"><title>2026-10-12: 0 commits</title>
+<polygon class="top level-0" points="1022,628 1040,636 1022,644 1004,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-13" data-count="0" data-level="0" data-height="0"><title>2026-10-13: 0 commits</title>
+<polygon class="top level-0" points="1004,636 1022,644 1004,652 986,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-14" data-count="0" data-level="0" data-height="0"><title>2026-10-14: 0 commits</title>
+<polygon class="top level-0" points="986,644 1004,652 986,660 968,652" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-15" data-count="0" data-level="0" data-height="0"><title>2026-10-15: 0 commits</title>
+<polygon class="top level-0" points="968,652 986,660 968,668 950,660" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-16" data-count="0" data-level="0" data-height="0"><title>2026-10-16: 0 commits</title>
+<polygon class="top level-0" points="950,660 968,668 950,676 932,668" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-17" data-count="0" data-level="0" data-height="0"><title>2026-10-17: 0 commits</title>
+<polygon class="top level-0" points="932,668 950,676 932,684 914,676" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-18" data-count="0" data-level="0" data-height="0"><title>2026-10-18: 0 commits</title>
+<polygon class="top level-0" points="1058,628 1076,636 1058,644 1040,636" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-19" data-count="0" data-level="0" data-height="0"><title>2026-10-19: 0 commits</title>
+<polygon class="top level-0" points="1040,636 1058,644 1040,652 1022,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-20" data-count="0" data-level="0" data-height="0"><title>2026-10-20: 0 commits</title>
+<polygon class="top level-0" points="1022,644 1040,652 1022,660 1004,652" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-21" data-count="0" data-level="0" data-height="0"><title>2026-10-21: 0 commits</title>
+<polygon class="top level-0" points="1004,652 1022,660 1004,668 986,660" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-22" data-count="0" data-level="0" data-height="0"><title>2026-10-22: 0 commits</title>
+<polygon class="top level-0" points="986,660 1004,668 986,676 968,668" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-23" data-count="0" data-level="0" data-height="0"><title>2026-10-23: 0 commits</title>
+<polygon class="top level-0" points="968,668 986,676 968,684 950,676" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-24" data-count="0" data-level="0" data-height="0"><title>2026-10-24: 0 commits</title>
+<polygon class="top level-0" points="950,676 968,684 950,692 932,684" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-25" data-count="0" data-level="0" data-height="0"><title>2026-10-25: 0 commits</title>
+<polygon class="top level-0" points="1076,636 1094,644 1076,652 1058,644" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-26" data-count="0" data-level="0" data-height="0"><title>2026-10-26: 0 commits</title>
+<polygon class="top level-0" points="1058,644 1076,652 1058,660 1040,652" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-27" data-count="0" data-level="0" data-height="0"><title>2026-10-27: 0 commits</title>
+<polygon class="top level-0" points="1040,652 1058,660 1040,668 1022,660" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-28" data-count="0" data-level="0" data-height="0"><title>2026-10-28: 0 commits</title>
+<polygon class="top level-0" points="1022,660 1040,668 1022,676 1004,668" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-29" data-count="0" data-level="0" data-height="0"><title>2026-10-29: 0 commits</title>
+<polygon class="top level-0" points="1004,668 1022,676 1004,684 986,676" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<g class="day level-0" data-date="2026-10-30" data-count="0" data-level="0" data-height="0"><title>2026-10-30: 0 commits</title>
+<polygon class="top level-0" points="986,676 1004,684 986,692 968,684" fill="#1b2836" stroke="#08111f" stroke-width="0.7"/>
+</g>
+<text x="34" y="730" fill="#edf4f7" font-size="14" font-weight="700">Start: 31 Oct 2025</text>
+<text x="870" y="730" fill="#edf4f7" font-size="14" font-weight="700">End: 30 Oct 2026</text>
+<text x="34" y="770" fill="#edf4f7" font-size="13" font-weight="700">Daily count:</text>
+<rect x="122" y="757" width="13" height="13" rx="2" fill="#1b2836"/>
+<text x="140" y="770" fill="#a9bdc9" font-size="13">0</text>
+<rect x="234" y="757" width="13" height="13" rx="2" fill="#226b63"/>
+<text x="252" y="770" fill="#a9bdc9" font-size="13">1 to 5</text>
+<rect x="346" y="757" width="13" height="13" rx="2" fill="#36a99b"/>
+<text x="364" y="770" fill="#a9bdc9" font-size="13">6 to 12</text>
+<rect x="472" y="757" width="13" height="13" rx="2" fill="#71d5bd"/>
+<text x="490" y="770" fill="#a9bdc9" font-size="13">13 to 24</text>
+<rect x="598" y="757" width="13" height="13" rx="2" fill="#ffc46b"/>
+<text x="616" y="770" fill="#a9bdc9" font-size="13">25+</text>
+<text x="34" y="808" fill="#a9bdc9" font-size="12">Linear within this snapshot: 3 SVG units per commit; maximum bar 75 units. Exact counts appear in each cell description.</text>
+</svg>
