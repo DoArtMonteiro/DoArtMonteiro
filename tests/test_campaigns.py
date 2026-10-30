@@ -70,7 +70,7 @@ class CampaignRegistryTests(unittest.TestCase):
         append_run(self.root, first)
         first_chart = render_metric_chart(self.root, "rocket-landing", "landing_rate")
         self.assertIsNotNone(first_chart)
-        self.assertIn(Path(self.temp.name), first_chart.resolve().parents)
+        self.assertIn(Path(self.temp.name).resolve(), first_chart.resolve().parents)
         first_svg = first_chart.read_bytes()
 
         self.assertEqual(append_run(self.root, copy.deepcopy(first)), first)
@@ -86,7 +86,7 @@ class CampaignRegistryTests(unittest.TestCase):
         )
         append_run(self.root, corrected)
         chart = render_metric_chart(self.root, "rocket-landing", "landing_rate")
-        self.assertIn(Path(self.temp.name), chart.resolve().parents)
+        self.assertIn(Path(self.temp.name).resolve(), chart.resolve().parents)
         second_svg = chart.read_bytes()
         self.assertNotEqual(first_svg, second_svg)
         self.assertEqual(second_svg, render_metric_chart(

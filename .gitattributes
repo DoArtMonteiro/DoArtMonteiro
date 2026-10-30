@@ -1,0 +1,4 @@
+/assets/generated/**/*.svg text eol=lf
+/assets/generated/**/*.csv text eol=lf
+/assets/generated/**/*.json text eol=lf
+/assets/generated/**/*.md text eol=lf
