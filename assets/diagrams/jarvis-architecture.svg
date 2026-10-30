@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="470" viewBox="0 0 1600 470" role="img" aria-labelledby="title desc">
+  <title id="title">Donna / JARVIS architecture</title>
+  <desc id="desc">A local prototype flow from person and client through local RPC, Rust Core, typed capability policy, tool gateway and bounded first-party tools, with a separate approval client when needed.</desc>
+  <style>
+    .background{fill:#f2eee4}.panel{fill:#fffdf7;stroke:#3e665b;stroke-width:2}.state{fill:#f7f0e4;stroke:#a5322c;stroke-width:2}.ink{fill:#202522;font-family:Arial,sans-serif}.muted{fill:#575f5a;font-family:Arial,sans-serif}.flow{fill:none;stroke:#3e665b;stroke-width:3}.truth{fill:none;stroke:#a5322c;stroke-width:3}.barbg{fill:#e9e2d5}.bar{fill:#3e665b}.negative{fill:#a5322c}
+    @media(prefers-color-scheme:dark){.background{fill:#08111f}.panel{fill:#14263b;stroke:#55d6d0}.state{fill:#1d2937;stroke:#ffc46b}.ink{fill:#edf4f7}.muted{fill:#a9bdc9}.flow{stroke:#55d6d0}.truth{stroke:#ffc46b}.barbg{fill:#2c4053}.bar{fill:#55d6d0}.negative{fill:#ff8278}}
+  </style>
+  <defs><marker id="arrow-flow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path class="flow" d="M1 1 10 6 1 11" fill="none" stroke-width="2"/></marker><marker id="arrow-truth" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path class="truth" d="M1 1 10 6 1 11" fill="none" stroke-width="2"/></marker></defs>
+  <rect class="background" width="1600" height="470" rx="24"/>
+  <text class="ink" x="40" y="48" font-size="32" font-weight="700">Donna / JARVIS architecture</text>
+  <text class="muted" x="40" y="80" font-size="19">Simplified project architecture based on the public README.</text>
+  <rect class="panel" x="28" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="130" y="178">Person</tspan></text>
+<path class="flow" d="M235 171L252 171" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="255" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="357" y="178">CLI / Donna client</tspan></text>
+<path class="flow" d="M462 171L479 171" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="482" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="584" y="178">Local RPC</tspan></text>
+<path class="flow" d="M689 171L706 171" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="709" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="811" y="178">Rust Core</tspan></text>
+<path class="flow" d="M916 171L933 171" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="936" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="1038" y="169">Typed request /</tspan><tspan x="1038" y="192">capability policy</tspan></text>
+<path class="flow" d="M1143 171L1160 171" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="1163" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="1265" y="178">Tool gateway</tspan></text>
+<path class="flow" d="M1370 171L1387 171" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="1390" y="130" width="205" height="82" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="1492" y="169">Bounded first-party</tspan><tspan x="1492" y="192">tools</tspan></text>
+<rect class="state" x="28" y="292" width="285" height="86" rx="13"/><text class="ink" text-anchor="middle" font-size="17" font-weight="600"><tspan x="170" y="334">Approval client</tspan><tspan x="170" y="356">if needed</tspan></text>
+<rect class="state" x="329" y="292" width="300" height="86" rx="13"/><text class="ink" text-anchor="middle" font-size="17" font-weight="600"><tspan x="479" y="334">SQLite: jobs, approvals,</tspan><tspan x="479" y="356">audit log</tspan></text>
+<rect class="state" x="645" y="292" width="270" height="86" rx="13"/><text class="ink" text-anchor="middle" font-size="17" font-weight="600"><tspan x="780" y="334">Python worker</tspan><tspan x="780" y="356">OS isolation</tspan></text>
+<rect class="state" x="931" y="292" width="285" height="86" rx="13"/><text class="ink" text-anchor="middle" font-size="17" font-weight="600"><tspan x="1073" y="334">Local model optional</tspan><tspan x="1073" y="356">no tool interface</tspan></text>
+<rect class="state" x="1232" y="292" width="340" height="86" rx="13"/><text class="ink" text-anchor="middle" font-size="17" font-weight="600"><tspan x="1402" y="334">Windows Session Agent</tspan><tspan x="1402" y="356">approved clipboard path</tspan></text>
+<path class="truth" d="M170 290L1038 214" marker-end="url(#arrow-truth)"/>
+<path class="truth" d="M811 214L479 290" marker-end="url(#arrow-truth)"/>
+<text class="muted" x="1241" y="122" font-size="16">allowed</text>
+<text class="muted" x="28" y="425" font-size="19">The Windows Session Agent is outside the worker sandbox. Simplified architecture for a local prototype, not a security guarantee.</text>
+</svg>

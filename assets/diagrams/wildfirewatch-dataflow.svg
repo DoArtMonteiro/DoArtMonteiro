@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="365" viewBox="0 0 1420 365" role="img" aria-labelledby="title desc">
+  <title id="title">WildfireWatch data flow</title>
+  <desc id="desc">FIRMS thermal observations from the last 72 hours pass through an hourly Cloudflare Worker, sampling, a last-known-good KV snapshot and feed health, then a map and panel.</desc>
+  <style>
+    .background{fill:#f2eee4}.panel{fill:#fffdf7;stroke:#3e665b;stroke-width:2}.state{fill:#f7f0e4;stroke:#a5322c;stroke-width:2}.ink{fill:#202522;font-family:Arial,sans-serif}.muted{fill:#575f5a;font-family:Arial,sans-serif}.flow{fill:none;stroke:#3e665b;stroke-width:3}.truth{fill:none;stroke:#a5322c;stroke-width:3}.barbg{fill:#e9e2d5}.bar{fill:#3e665b}.negative{fill:#a5322c}
+    @media(prefers-color-scheme:dark){.background{fill:#08111f}.panel{fill:#14263b;stroke:#55d6d0}.state{fill:#1d2937;stroke:#ffc46b}.ink{fill:#edf4f7}.muted{fill:#a9bdc9}.flow{stroke:#55d6d0}.truth{stroke:#ffc46b}.barbg{fill:#2c4053}.bar{fill:#55d6d0}.negative{fill:#ff8278}}
+  </style>
+  <defs><marker id="arrow-flow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path class="flow" d="M1 1 10 6 1 11" fill="none" stroke-width="2"/></marker><marker id="arrow-truth" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path class="truth" d="M1 1 10 6 1 11" fill="none" stroke-width="2"/></marker></defs>
+  <rect class="background" width="1420" height="365" rx="24"/>
+  <text class="ink" x="40" y="48" font-size="32" font-weight="700">WildfireWatch data flow</text>
+  <text class="muted" x="40" y="80" font-size="19">Simplified project architecture based on the public README.</text>
+  <rect class="panel" x="32" y="146" width="250" height="104" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="157" y="196">NASA FIRMS</tspan><tspan x="157" y="219">last 72 hours</tspan></text>
+<path class="flow" d="M284 198L303 198" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="306" y="146" width="250" height="104" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="431" y="196">Hourly Cloudflare</tspan><tspan x="431" y="219">Worker ingest</tspan></text>
+<path class="flow" d="M558 198L577 198" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="580" y="146" width="250" height="104" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="705" y="187">Sample up to 15,000</tspan><tspan x="705" y="210">all Portugal detections</tspan><tspan x="705" y="233">FRP + 2-degree grid allocation</tspan></text>
+<path class="flow" d="M832 198L851 198" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="854" y="146" width="250" height="104" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="979" y="196">KV: last-known-good snapshot</tspan><tspan x="979" y="219">+ feed health</tspan></text>
+<path class="flow" d="M1106 198L1125 198" marker-end="url(#arrow-flow)"/>
+<rect class="panel" x="1128" y="146" width="250" height="104" rx="13"/><text class="ink" text-anchor="middle" font-size="18" font-weight="600"><tspan x="1253" y="196">Map / panel</tspan><tspan x="1253" y="219">Live map</tspan></text>
+<text class="muted" x="32" y="318" font-size="21">Sampled thermal detections, not confirmed fires. Deployed from main.</text>
+</svg>

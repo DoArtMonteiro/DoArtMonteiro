@@ -1,0 +1,30 @@
+{
+  "asset_sha256": {
+    "calendar-accessible.svg": "763435a4404118b91d8cce6ac4780c33368e7b30b4e11ac064a3f9bdcb8c54f7",
+    "calendar-dark-animated.gif": "d677f1ea11e8fd0cfdaf5e4746c95ca6d6c81d3b9c9fa9594c74fc696592f42f",
+    "calendar-dark.svg": "ce3ada208ce714e6c2fd0f8b26d3f6b8715766cb76f93836f35f35a53a16d443",
+    "calendar-isometric.svg": "720e0e7b9fd5e1d500debe53b8e49450e65136b7f24f49cae38e6d6596104288",
+    "calendar-light-animated.gif": "9bb9135393a413e91b9d363f4b4fb0f5fe6a6921ea7b15341e2fe1c4d7b1ab88",
+    "calendar-light.svg": "808f1e22d4a3f9f81bdb6424175c887396733b8fea6df89da5c4ef935f26b808",
+    "calendar-manifest.json": "17f8df3023204f26f7c95a2f33319d8c4cc0fb52b95ce06e388e38599548e497",
+    "calendar-normalized.csv": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72",
+    "preview-manifest.json": "bd7a2171f2e0e07afe5d4a3d715e1f21c5db3b75ca796e7d5892855a1ef68586",
+    "projects-activity.json": "15a26dba6597403dbb1328e8665fe2a3b749c2c4727c7f556ff639a0ba561641",
+    "projects-activity.md": "70322afef4ab663b6d4c8f6c4652be37b9d36da71ef3f35b3745b58d83d45e4b",
+    "projects-dashboard-dark.svg": "d7f9369eb2c99c87f9eec57ce60ad9b8843853e5b4fa3a457cb08d74d8cec0f6",
+    "projects-dashboard-light.svg": "e69fced9df7ee84f88b5c8c50ae783d19d28adb5c652f293fd6f6a8cf8960209",
+    "projects-dashboard-mobile-dark.svg": "9ba50af117e465899bd153b7ec9b97a336769cd98b3889708a78d548c841da06",
+    "projects-dashboard-mobile-light.svg": "ba3852f7ccdda5d189d22b0c7c9568cf89b910096b2d875713590353606ac900",
+    "provenance.json": "f689a6a41dd6f97c0bff53a8bc1ddb4f679f251398089bdd026b6aa34acc28ed"
+  },
+  "data_through": "2026-10-30",
+  "failure_behaviour": "Keep the last valid version. Mark it stale after the threshold and do not describe it as current.",
+  "last_successful_refresh_utc": "2026-10-30T18:27:28Z",
+  "manifest": "versions/1c5adb218d8f92c8210daecb/manifest.json",
+  "refresh_mode": "manual preview; recurring refresh and automatic asset publication are disabled",
+  "schema_version": 1,
+  "stale_after_hours": 36,
+  "stale_after_utc": "2026-11-01T06:27:28Z",
+  "status": "draft_review_snapshot",
+  "version": "1c5adb218d8f92c8210daecb5791f19ced4b783501a97635bcdb2ed3aba5c0fc"
+}

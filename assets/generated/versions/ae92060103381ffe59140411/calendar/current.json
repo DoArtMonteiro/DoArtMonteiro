@@ -1,0 +1,13 @@
+{
+  "bundle": "versions/sha256-f1c72fee3cbd93c0cd70dec6681c77c05df9271e8f04fcb1958d9fe8239523d8",
+  "files": [
+    "calendar-light.svg",
+    "calendar-dark.svg",
+    "calendar-accessible.svg",
+    "calendar-isometric.svg",
+    "calendar-normalized.csv",
+    "calendar-manifest.json"
+  ],
+  "manifest": "versions/sha256-f1c72fee3cbd93c0cd70dec6681c77c05df9271e8f04fcb1958d9fe8239523d8/calendar-manifest.json",
+  "source_sha256": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72"
+}

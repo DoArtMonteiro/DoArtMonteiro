@@ -1,0 +1,80 @@
+{
+  "artifact_sha256": {
+    "calendar-accessible.svg": "763435a4404118b91d8cce6ac4780c33368e7b30b4e11ac064a3f9bdcb8c54f7",
+    "calendar-dark.svg": "ce3ada208ce714e6c2fd0f8b26d3f6b8715766cb76f93836f35f35a53a16d443",
+    "calendar-isometric.svg": "720e0e7b9fd5e1d500debe53b8e49450e65136b7f24f49cae38e6d6596104288",
+    "calendar-light.svg": "808f1e22d4a3f9f81bdb6424175c887396733b8fea6df89da5c4ef935f26b808",
+    "calendar-normalized.csv": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72"
+  },
+  "commit_activity": {
+    "active_days": 29,
+    "first_active_day": "2026-07-12",
+    "last_active_day": "2026-08-17",
+    "maximum_daily_commits": 21,
+    "total_commits": 195,
+    "zero_days": 336
+  },
+  "files": [
+    "calendar-light.svg",
+    "calendar-dark.svg",
+    "calendar-accessible.svg",
+    "calendar-isometric.svg",
+    "calendar-normalized.csv",
+    "calendar-manifest.json"
+  ],
+  "isometric_projection": {
+    "calendar_weeks": 53,
+    "dated_cells_only": true,
+    "maximum_cell_height": 75,
+    "vertical_height_per_contribution": 3.0,
+    "week_vector": [
+      18,
+      8
+    ],
+    "weekday_vector": [
+      -18,
+      8
+    ]
+  },
+  "level_intervals": [
+    {
+      "level": 0,
+      "maximum": 0,
+      "minimum": 0
+    },
+    {
+      "level": 1,
+      "maximum": 5,
+      "minimum": 1
+    },
+    {
+      "level": 2,
+      "maximum": 12,
+      "minimum": 6
+    },
+    {
+      "level": 3,
+      "maximum": 24,
+      "minimum": 13
+    },
+    {
+      "level": 4,
+      "maximum": null,
+      "minimum": 25
+    }
+  ],
+  "observed_interval": {
+    "dated_days": 365,
+    "end": "2026-10-30",
+    "start": "2025-10-31"
+  },
+  "quality_caveat": "Aggregate counts do not measure work quality or intensity.",
+  "renderer": "living-portfolio-calendar",
+  "renderer_version": 2,
+  "source_file": "contributions.csv",
+  "source_scope": "selected_public_repo_commits",
+  "source_scope_description": "Distinct commits linked to DoArtMonteiro on selected public repositories' default branches; dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph.",
+  "source_sha256": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72",
+  "source_snapshot_date": "2026-10-30",
+  "source_snapshot_date_basis": "Latest dated row in the validated CSV."
+}

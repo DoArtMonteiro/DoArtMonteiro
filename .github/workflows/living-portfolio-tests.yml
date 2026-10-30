@@ -1,0 +1,43 @@
+name: Living portfolio tests
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - "DESIGN.md"
+      - ".github/workflows/**"
+      - "assets/**"
+      - "docs/**"
+      - "scripts/living_portfolio/**"
+      - "tests/**"
+      - ".impeccable/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: living-portfolio-tests-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Check out the proposed revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Run standard-library test suite
+        run: python -m unittest discover -s tests -v

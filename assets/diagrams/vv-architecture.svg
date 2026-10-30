@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <metadata>DoArtMonteiro</metadata>
+  <title id="title">V&amp;V Lab simplified architecture</title>
+  <desc id="desc">Main loop: scenario and seed, simulator true state, sensors, communication and fault models, observed state, controller, actuator model, then back to the simulator. Separate evidence paths take true state and events to one shared verifier, and the event log through deterministic replay to that same verifier. This is a simplified diagram based on the public README.</desc>
+  <style>
+    .background{fill:#f2eee4}.panel{fill:#fffdf7;stroke:#3e665b}.state{fill:#f7f0e4;stroke:#a5322c}.ink{fill:#202522}.muted{fill:#575f5a}.flow{stroke:#3e665b}.truth{stroke:#a5322c}
+    @media(prefers-color-scheme:dark){.background{fill:#08111f}.panel{fill:#14263b;stroke:#55d6d0}.state{fill:#1d2937;stroke:#ffc46b}.ink{fill:#edf4f7}.muted{fill:#a9bdc9}.flow{stroke:#55d6d0}.truth{stroke:#ffc46b}}
+  </style>
+  <defs><marker id="arrow-flow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path class="flow" d="M1 1 10 6 1 11" fill="none" stroke-width="2"/></marker><marker id="arrow-truth" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path class="truth" d="M1 1 10 6 1 11" fill="none" stroke-width="2"/></marker></defs>
+  <rect class="background" width="1440" height="760" rx="24"/>
+  <text class="ink" x="64" y="58" font-family="Arial,sans-serif" font-size="36" font-weight="700">V&amp;V Lab: simplified architecture</text>
+  <text class="muted" x="64" y="96" font-family="Arial,sans-serif" font-size="22">Main simulation loop and separate verification evidence paths, based on the public README.</text>
+  <g font-family="Arial,sans-serif" font-size="19" font-weight="600" text-anchor="middle">
+    <rect class="panel" x="64" y="150" width="170" height="104" rx="14" stroke-width="3"/><text class="ink" x="149" y="208">Scenario + seed</text>
+    <rect class="panel" x="276" y="150" width="170" height="104" rx="14" stroke-width="3"/><text class="ink" x="361" y="190"><tspan x="361">Simulator</tspan><tspan x="361" dy="24">true state</tspan></text>
+    <rect class="panel" x="488" y="150" width="170" height="104" rx="14" stroke-width="3"/><text class="ink" x="573" y="180"><tspan x="573">Sensors /</tspan><tspan x="573" dy="23">communication /</tspan><tspan x="573" dy="23">fault models</tspan></text>
+    <rect class="panel" x="700" y="150" width="170" height="104" rx="14" stroke-width="3"/><text class="ink" x="785" y="190"><tspan x="785">Observed</tspan><tspan x="785" dy="24">state</tspan></text>
+    <rect class="panel" x="912" y="150" width="170" height="104" rx="14" stroke-width="3"/><text class="ink" x="997" y="208">Controller</text>
+    <rect class="panel" x="1124" y="150" width="170" height="104" rx="14" stroke-width="3"/><text class="ink" x="1209" y="190"><tspan x="1209">Actuator</tspan><tspan x="1209" dy="24">model</tspan></text>
+  </g>
+  <g fill="none" stroke-width="4">
+    <path class="flow" d="M234 202h34" marker-end="url(#arrow-flow)"/><path class="flow" d="M446 202h34" marker-end="url(#arrow-flow)"/><path class="flow" d="M658 202h34" marker-end="url(#arrow-flow)"/><path class="flow" d="M870 202h34" marker-end="url(#arrow-flow)"/><path class="flow" d="M1082 202h34" marker-end="url(#arrow-flow)"/>
+    <path class="flow" d="M1209 150V130H361V150" marker-end="url(#arrow-flow)"/>
+  </g>
+  <text class="muted" x="1128" y="286" font-family="Arial,sans-serif" font-size="18">actuator output returns to simulator</text>
+  <g font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle">
+    <rect class="state" x="64" y="354" width="380" height="72" rx="13" stroke-width="3"/><text class="ink" x="254" y="398">True state + events</text>
+    <rect class="state" x="500" y="354" width="290" height="72" rx="13" stroke-width="3"/><text class="ink" x="645" y="398">Simulation event log</text>
+    <rect class="state" x="500" y="472" width="390" height="72" rx="13" stroke-width="3"/><text class="ink" x="695" y="516">Deterministic replay</text>
+  </g>
+  <rect class="state" x="960" y="354" width="340" height="190" rx="14" stroke-width="3"/>
+  <text class="ink" x="1130" y="433" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700">Verifier</text>
+  <text class="muted" x="1130" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="19">shared software component</text>
+  <path class="truth" d="M361 254v66" fill="none" stroke-width="4"/>
+  <path class="truth" d="M361 320H254v24" fill="none" stroke-width="4" marker-end="url(#arrow-truth)"/>
+  <path class="truth" d="M361 320H645v24" fill="none" stroke-width="4" marker-end="url(#arrow-truth)"/>
+  <path class="truth" d="M645 426v36" fill="none" stroke-width="4" marker-end="url(#arrow-truth)"/>
+  <path class="truth" d="M444 390h506" fill="none" stroke-width="4" marker-end="url(#arrow-truth)"/>
+  <path class="truth" d="M890 508h60" fill="none" stroke-width="4" marker-end="url(#arrow-truth)"/>
+  <text class="muted" x="64" y="614" font-family="Arial,sans-serif" font-size="21">The software verifier is a separate system component. Campaign totals, where cited, come from project reports.</text>
+  <text class="muted" x="64" y="657" font-family="Arial,sans-serif" font-size="20">M9/M9.1 integrated. M10.0 architecture/design under review.</text>
+</svg>
