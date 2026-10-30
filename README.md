@@ -1,40 +1,16 @@
 # Duarte Monteiro
 
-**Industrial Engineering & Management → R&D and innovation consulting → software, automation and AI systems.**
+I bring an Industrial Engineering & Management background and consulting experience to software and AI implementation. My projects focus on practical systems, business and operational constraints, and evidence that makes the trade-offs visible.
 
-I build practical tools where reproducibility, clear evidence and reliable data matter. My work spans deterministic simulation, local-first agent infrastructure, geospatial data and interactive products.
+## Selected work
 
-## Featured engineering
+- **[Autonomous Systems V&V Lab](https://github.com/WhiteBlindness/autonomous-systems-vv-lab):** mission simulation, fault injection and failure replay for autonomous-system safety. Core simulation and landing work are integrated; the next resilience design remains under review. Rocket work is simulation-only. [Results](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/blob/main/docs/m9-powered-landing.md) · [Resilience design](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/pull/13)
+- **[JARVIS / Donna](https://github.com/WhiteBlindness/jarvis):** local assistant runtime with a Rust policy core, scoped approvals and an OS-isolated worker. A separate Session Agent handles approved clipboard writes. Donna V1 is merged; Windows privacy limitations are documented. [Architecture](https://github.com/WhiteBlindness/jarvis/blob/main/docs/architecture.md) · [Threat model](https://github.com/WhiteBlindness/jarvis/blob/main/docs/threat-model.md)
+- **[WildfireWatch](https://github.com/WhiteBlindness/wildfire-watch):** [demo map](https://wildfire-watch.duartemonteiro.workers.dev) of sampled NASA FIRMS thermal detections, with provenance and feed-health reporting. A detection is not a confirmed fire.
+- **[CallBrief](https://github.com/WhiteBlindness/callbrief):** local prototype for funding-opportunity research and evidence-linked eligibility checks. Its small manual evaluation does not establish production accuracy; the planned desktop-first application is not implemented. [Evaluation](https://github.com/WhiteBlindness/callbrief/blob/main/README.md)
 
-### [Autonomous Systems V&V Lab](https://github.com/WhiteBlindness/autonomous-systems-vv-lab)
-A Rust verification laboratory for autonomous ground-vehicle missions. It combines seeded sensor, communication and actuator faults, temporal safety contracts, deterministic replay, bounded campaigns and counterexample minimization. The repository includes a local Mission Control interface backed by a versioned simulation adapter. M9/M9.1 are merged with independently reviewed, reproducible closed-loop landing campaigns on an idealised 6-DOF rocket model; M10.0 navigation-resilience architecture is under review in [PR #13](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/pull/13). The original ground-vehicle model remains 2D, and no hardware or flight-data validation is claimed.
+## More work
 
-**Stack:** Rust, Python, SQLite-compatible artifacts, GitHub Actions. **Evidence:** canonical replay and Linux/Windows verification.
+[**Murdoku / Alibi**](https://github.com/WhiteBlindness/murdoku) · [**OmniQuiz**](https://github.com/WhiteBlindness/omniquiz)
 
-### [WildfireWatch](https://github.com/WhiteBlindness/wildfire-watch)
-A [published satellite-observation map](https://wildfire-watch.duartemonteiro.workers.dev) using NASA FIRMS thermal detections. Observations are not presented as confirmed fires. The data pipeline tracks provenance and freshness, retains last-known-good snapshots and separates measured values from estimates and operational claims.
-
-**Stack:** TypeScript, Cloudflare Workers, MapLibre.
-
-### [JARVIS / Donna](https://github.com/WhiteBlindness/jarvis)
-A local-first assistant runtime built around a Rust policy and execution core, typed capabilities, audited approvals and OS-isolated workers. The merged desktop milestone includes a Windows Session Agent, Tauri client and local language-model inference without direct tool authority. Daily-driver privacy and lifecycle work remains under review.
-
-**Stack:** Rust, Python, TypeScript, Tauri, SQLite, Windows AppContainer, Linux Landlock/seccomp.
-
-## Published products and other work
-
-- **[Atlas Arcade](https://github.com/WhiteBlindness/atlas-arcade):** [Geography mini-games](https://atlasarcade.app) with deterministic daily challenges, real-world data and a shared game engine.
-- **[Murdoku / Alibi](https://github.com/WhiteBlindness/murdoku):** [Logic puzzle demo](https://murdoku-seven.vercel.app) with a TypeScript unique-solution solver, deterministic case generation and a 60-case catalogue. Further gameplay refinements are in development.
-- **[OmniQuiz](https://github.com/WhiteBlindness/omniquiz):** [Browser trivia demo](https://omniquiz-nine.vercel.app) with server-side answer data, deterministic scoring and themed game worlds.
-- **[Roundcraft](https://github.com/WhiteBlindness/roundcraft):** Counter-Strike 2 tactical decision training with server-side scoring and demo-based case preparation. Human content review precedes a public beta.
-- **[CallBrief](https://github.com/WhiteBlindness/callbrief):** Local funding-opportunity research with official-source adapters, provenance and evidence-backed eligibility evaluation. External distribution and commercial reuse are not implied.
-
-## Building now
-
-**Donna/JARVIS:** safer local assistant workflows, supervised desktop operation and privacy-preserving context.
-
-**Autonomous Systems V&V Lab:** evidence-led fault-tolerant navigation research (M10.0 design review), building on the merged M9/M9.1 landing-verification campaigns.
-
-## Technologies
-
-Rust · Python · TypeScript · React · Tauri · Next.js · Cloudflare Workers / D1 / KV · SQLite · MapLibre · Playwright · GitHub Actions
+**Core tools:** Rust · Python · TypeScript
