@@ -305,7 +305,7 @@ def build_preview(
             },
             "accessibility": {
                 "calendar": "Theme-specific 3D SVGs, a 2D SVG alternative, normalized CSV and textual summary",
-                "projects": "Theme-specific SVGs, linked Markdown text alternative and JSON source snapshot",
+                "projects": "Theme-specific desktop and mobile SVGs, linked Markdown text alternative and JSON source snapshot",
                 "interactive_visuals": "GitHub README embeds are static; genuinely interactive views use external links",
             },
         }

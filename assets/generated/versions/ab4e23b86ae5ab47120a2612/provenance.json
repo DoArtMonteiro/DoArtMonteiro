@@ -1,0 +1,65 @@
+{
+  "accessibility": {
+    "calendar": "Theme-specific 3D SVGs, a 2D SVG alternative, normalized CSV and textual summary",
+    "interactive_visuals": "GitHub README embeds are static; genuinely interactive views use external links",
+    "projects": "Theme-specific desktop and mobile SVGs, linked Markdown text alternative and JSON source snapshot"
+  },
+  "profile": "DoArtMonteiro",
+  "refresh": {
+    "failure_behaviour": "The workflow writes only to ephemeral runner storage and publishes nothing. A failed run creates no current asset. Any separately published older asset remains unchanged, and its data-through date continues to age. Local reruns in the same output directory preserve the last valid bundle and pointer.",
+    "last_successful_refresh": "For an Actions run, use that run's timestamp. Execution time is kept outside the deterministic bundle.",
+    "proposed_cadence": "daily after owner approval",
+    "recovery": "Inspect the failed run, correct the source or validator, then dispatch a new preview. Publish only after a complete successful review and separate owner approval.",
+    "stale_after_hours": 36,
+    "workflow_mode": "manual workflow_dispatch until schedule and publication are separately approved"
+  },
+  "schema_version": 1,
+  "sources": {
+    "campaigns": {
+      "cadence": "per approved run",
+      "charts": [],
+      "runs": 0,
+      "state": "no approved campaign data",
+      "text_alternatives": []
+    },
+    "product_screenshots": {
+      "cadence": "Refresh only after a material product change and review",
+      "source_policy": "Any added capture must reference a human-reviewed immutable product revision",
+      "state": "No product screenshot is included in this generated bundle"
+    },
+    "projects": {
+      "cadence": "manual preview now; proposed daily after owner approval",
+      "latest_event_date": "2026-10-30",
+      "repositories": [
+        "DoArtMonteiro/atlas-arcade",
+        "DoArtMonteiro/autonomous-systems-vv-lab",
+        "DoArtMonteiro/callbrief",
+        "DoArtMonteiro/jarvis",
+        "DoArtMonteiro/murdoku",
+        "DoArtMonteiro/omniquiz",
+        "DoArtMonteiro/roundcraft",
+        "DoArtMonteiro/wildfire-watch"
+      ],
+      "source": "GitHub public REST API"
+    },
+    "public_commits": {
+      "authentication": "No authorization token is sent to the public commit endpoint.",
+      "cadence": "manual preview now; proposed daily after owner approval",
+      "data_through": "2026-10-30",
+      "metric": "Distinct commit objects linked to the profile in selected public default branches, bucketed by author timestamp in UTC.",
+      "repositories": [
+        "DoArtMonteiro/atlas-arcade",
+        "DoArtMonteiro/autonomous-systems-vv-lab",
+        "DoArtMonteiro/callbrief",
+        "DoArtMonteiro/jarvis",
+        "DoArtMonteiro/murdoku",
+        "DoArtMonteiro/omniquiz",
+        "DoArtMonteiro/roundcraft",
+        "DoArtMonteiro/wildfire-watch"
+      ],
+      "scope": "selected_public_repo_commits",
+      "source": "GitHub REST List commits endpoint",
+      "source_sha256": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72"
+    }
+  }
+}

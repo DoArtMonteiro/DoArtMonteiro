@@ -105,12 +105,14 @@ The generated 3D calendar counts distinct commits linked to this account in the 
 [Accessible 2D calendar](assets/generated/current/calendar-accessible.svg) · [Daily counts CSV](assets/generated/current/calendar-normalized.csv) · [Snapshot freshness](assets/generated/current.json) · [Data provenance](assets/generated/current/provenance.json)
 
 <picture>
+  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/generated/current/projects-dashboard-mobile-dark.svg">
+  <source media="(max-width: 480px) and (prefers-color-scheme: light)" srcset="assets/generated/current/projects-dashboard-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/generated/current/projects-dashboard-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/generated/current/projects-dashboard-light.svg">
-  <img alt="Public repository activity dashboard for eight selected projects, including default-branch commits, releases, issues, milestones, pull-request states and workflow runs" src="assets/generated/current/projects-dashboard-light.svg">
+  <img alt="Activity dashboard for eight selected public repositories; the linked report below provides repository links and the full timeline" src="assets/generated/current/projects-dashboard-mobile-light.svg">
 </picture>
 
-[Project activity report](assets/generated/current/projects-activity.md) · [Project activity data](assets/generated/current/projects-activity.json)
+[Full project activity report](assets/generated/current/projects-activity.md) · [Project activity data](assets/generated/current/projects-activity.json)
 
 These are dated snapshots for draft review. Refresh automation and asset publication are not active. Treat the visuals as stale after the 36-hour limit in the [snapshot metadata](assets/generated/current.json). The native [GitHub contribution graph](https://github.com/DoArtMonteiro) follows GitHub's own visibility settings; neither view measures work quality or business impact. Data sources, update rules and recovery limits are described in the [living portfolio guide](docs/living-portfolio.md).
 

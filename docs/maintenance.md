@@ -11,6 +11,8 @@
 
 The workflow has no recurring schedule. Adding or enabling one requires separate owner approval. It writes only to ephemeral Actions storage and does not update the profile. The snapshot in this branch is a one-time review artifact, not evidence that the refresh workflow is active.
 
+The activity dashboard generates desktop and narrow-screen SVGs from the same validated project snapshot, with matching light and dark variants. Its README selects the narrow version at widths up to 480 pixels. Keep all four assets in the same content-addressed bundle; the linked Markdown report remains the detailed, mobile-accessible alternative.
+
 ## Safe refresh procedure
 
 1. Review the exact repository allowlist and verify each repository remains public and relevant.

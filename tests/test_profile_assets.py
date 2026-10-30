@@ -41,6 +41,24 @@ class ProfileAssetTests(unittest.TestCase):
         self.assertIsNotNone(html_image)
         self.assertTrue(html_image.group(1).strip())
 
+    def test_mobile_dashboard_sources_precede_desktop_theme_fallbacks(self) -> None:
+        source = README.read_text(encoding="utf-8")
+        activity = source.split("## Activity", 1)[1]
+        pictures = re.findall(r"<picture>[\s\S]*?</picture>", activity)
+        self.assertEqual(len(pictures), 2)
+        project_dashboard = pictures[1]
+        self.assertLess(
+            project_dashboard.index('media="(max-width: 480px) and (prefers-color-scheme: dark)"'),
+            project_dashboard.index('media="(prefers-color-scheme: dark)"'),
+        )
+        self.assertIn("projects-dashboard-mobile-dark.svg", project_dashboard)
+        self.assertIn("projects-dashboard-mobile-light.svg", project_dashboard)
+        dashboard_alt = re.search(r"<img\b[^>]*\balt=\"([^\"]*)\"", project_dashboard)
+        self.assertIsNotNone(dashboard_alt)
+        self.assertIn("dashboard", dashboard_alt.group(1).casefold())
+        self.assertNotIn("mobile", dashboard_alt.group(1).casefold())
+        self.assertIn("full timeline", dashboard_alt.group(1).casefold())
+
     def test_primary_navigation_anchors_have_headings(self) -> None:
         source = README.read_text(encoding="utf-8")
         headings = {

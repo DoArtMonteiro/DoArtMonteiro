@@ -71,7 +71,7 @@
   "quality_caveat": "Aggregate counts do not measure work quality or intensity.",
   "renderer": "living-portfolio-calendar",
   "renderer_version": 2,
-  "source_file": "contributions.csv",
+  "source_file": "calendar-normalized.csv",
   "source_scope": "selected_public_repo_commits",
   "source_scope_description": "Distinct commits linked to DoArtMonteiro on selected public repositories' default branches; dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph.",
   "source_sha256": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72",

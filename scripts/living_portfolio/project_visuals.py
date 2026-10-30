@@ -237,6 +237,68 @@ def render_dashboard(snapshot: Any, theme: str) -> str:
     return "\n".join(output) + "\n"
 
 
+def render_mobile_dashboard(snapshot: Any, theme: str) -> str:
+    """Return a narrow, readable summary for the profile's mobile layout."""
+    if theme not in THEMES:
+        raise ProjectVisualError("Theme must be light or dark")
+    projects = _validate_snapshot(snapshot)
+    colors = THEMES[theme]
+    width = 360
+    card_x = 12
+    card_width = 336
+    card_height = 132
+    card_gap = 10
+    cards_top = 68
+    height = cards_top + len(projects) * (card_height + card_gap) + 12
+    output = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 {width} {height}">',
+        '<title id="title">Public project activity, mobile summary</title>',
+        '<desc id="desc">A narrow summary of latest default-branch commits, releases, open issues, closed milestones, pull request states and workflow results for the selected public repositories. A linked Markdown report provides the full timeline and repository links.</desc>',
+        f'<rect width="{width}" height="{height}" fill="{colors["background"]}"/>',
+        f'<text x="12" y="30" fill="{colors["text"]}" font-family="Arial,sans-serif" font-size="19" font-weight="700">Public project activity</text>',
+        f'<text x="12" y="51" fill="{colors["muted"]}" font-family="Arial,sans-serif" font-size="11">Selected repositories · public GitHub data</text>',
+    ]
+    for index, project in enumerate(projects):
+        y = cards_top + index * (card_height + card_gap)
+        output.append(f'<rect x="{card_x}" y="{y}" width="{card_width}" height="{card_height}" rx="10" fill="{colors["panel"]}" stroke="{colors["line"]}"/>')
+        repository_name = project["repository"].split("/", 1)[1]
+        output.append(f'<text x="24" y="{y + 21}" fill="{colors["text"]}" font-family="Arial,sans-serif" font-size="14" font-weight="700">{_escape(repository_name)}</text>')
+        commit = project.get("latest_default_branch_commit")
+        if commit:
+            commit_text = f"Commit · {commit['sha'][:8]} · {_date_label(commit['committed_at'])}"
+        else:
+            commit_text = "Commit · no data"
+        output.append(f'<text x="24" y="{y + 42}" fill="{colors["muted"]}" font-family="Arial,sans-serif" font-size="12">{_escape(commit_text)}</text>')
+        release = project.get("latest_release")
+        if release:
+            release_tag = release["tag"]
+            if len(release_tag) > 24:
+                release_tag = release_tag[:21] + "…"
+            release_date = _date_label(release["published_at"])
+            release_text = f"Release · {release_tag} · {release_date}"
+        else:
+            release_text = "Release · none recorded"
+        output.append(f'<text x="24" y="{y + 63}" fill="{colors["muted"]}" font-family="Arial,sans-serif" font-size="12">{_escape(release_text)}</text>')
+        issue_text = f"Open issues · {project['open_issue_count']} · Closed milestones · {len(project['closed_milestones'])}"
+        output.append(f'<text x="24" y="{y + 84}" fill="{colors["text"]}" font-family="Arial,sans-serif" font-size="12">{issue_text}</text>')
+        status_counts = {status: sum(pull["status"] == status for pull in project["pull_requests"]) for status in ("draft", "open", "merged", "closed")}
+        pull_text = (
+            f"PRs · {status_counts['draft']} draft / {status_counts['open']} open / "
+            f"{status_counts['merged']} merged / {status_counts['closed']} closed"
+        )
+        output.append(f'<text x="24" y="{y + 105}" fill="{colors["text"]}" font-family="Arial,sans-serif" font-size="12">{pull_text}</text>')
+        workflow = project["latest_default_branch_workflow_run"]
+        if workflow:
+            result = workflow["conclusion"] or workflow["status"]
+            workflow_date = _date_label(workflow["created_at"])
+            workflow_text = f"Latest workflow · {result} · {workflow_date}"
+        else:
+            workflow_text = "Latest workflow · none recorded"
+        output.append(f'<text x="24" y="{y + 126}" fill="{colors["accent"]}" font-family="Arial,sans-serif" font-size="12">{_escape(workflow_text)}</text>')
+    output.append("</svg>")
+    return "\n".join(output) + "\n"
+
+
 def accessible_markdown(snapshot: Any) -> str:
     """Return a linked text alternative for screen readers and narrow screens."""
     projects = _validate_snapshot(snapshot)
@@ -323,11 +385,15 @@ def write_dashboard(snapshot_path: str | Path, output_dir: str | Path) -> dict[s
     paths = {
         "light": output / "projects-dashboard-light.svg",
         "dark": output / "projects-dashboard-dark.svg",
+        "mobile_light": output / "projects-dashboard-mobile-light.svg",
+        "mobile_dark": output / "projects-dashboard-mobile-dark.svg",
         "accessible": output / "projects-activity.md",
     }
     values = {
         "light": render_dashboard(snapshot, "light"),
         "dark": render_dashboard(snapshot, "dark"),
+        "mobile_light": render_mobile_dashboard(snapshot, "light"),
+        "mobile_dark": render_mobile_dashboard(snapshot, "dark"),
         "accessible": accessible_markdown(snapshot),
     }
     values["json"] = json.dumps(snapshot, ensure_ascii=False, sort_keys=True, indent=2) + "\n"

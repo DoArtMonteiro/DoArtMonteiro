@@ -52,7 +52,7 @@ For a future persistent publisher, keep generation and publication separately re
 
 - Dark and light SVGs share the same validated source rows.
 - A 2D calendar, textual summary and CSV accompany the 3D view.
-- Project activity graphics have light/dark variants, Markdown text and a JSON snapshot.
+- Project activity graphics have desktop and narrow-screen layouts in light and dark themes, plus a linked Markdown report and JSON snapshot.
 - Campaign result charts have light/dark SVGs and a Markdown data table generated from the same approved observations.
 - Product and architecture visuals have descriptive alternative text and adjacent explanations.
 - Interactive experiences link to the application; GitHub embeds remain static.

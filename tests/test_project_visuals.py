@@ -12,6 +12,7 @@ from scripts.living_portfolio.project_visuals import (
     ProjectVisualError,
     accessible_markdown,
     render_dashboard,
+    render_mobile_dashboard,
     write_dashboard,
 )
 
@@ -88,8 +89,31 @@ class ProjectVisualTests(unittest.TestCase):
             self.assertIn("Open issues · 2", svg)
             self.assertIn("Latest workflow · CI · success", svg)
 
+    def test_mobile_renderings_are_narrow_readable_and_theme_consistent(self) -> None:
+        snapshot = sample_snapshot()
+        light = render_mobile_dashboard(snapshot, "light")
+        dark = render_mobile_dashboard(snapshot, "dark")
+        self.assertEqual(text_content(light), text_content(dark))
+        root = ET.fromstring(light)
+        self.assertEqual(root.attrib.get("role"), "img")
+        self.assertEqual(root.attrib.get("viewBox", "").split()[2], "360")
+        self.assertEqual(sum(item.text == "alpha" for item in root.iter() if item.tag.endswith("text")), 1)
+        self.assertIn("Open issues · 2 · Closed milestones · 1", light)
+        self.assertIn("PRs · 1 draft / 1 open / 1 merged / 1 closed", light)
+        self.assertIn("Latest workflow · success", light)
+        self.assertIn("linked Markdown report provides the full timeline", "".join(root.itertext()))
+        self.assertIn('font-size="12"', light)
+
     def test_untrusted_release_text_is_escaped(self) -> None:
         svg = render_dashboard(sample_snapshot(hostile=True), "light")
+        ET.fromstring(svg)
+        self.assertIn("&lt;script&gt;", svg)
+        self.assertNotIn("<script>", svg)
+
+    def test_mobile_dashboard_escapes_release_tags(self) -> None:
+        snapshot = sample_snapshot()
+        snapshot["projects"][0]["latest_release"]["tag"] = "<script>"
+        svg = render_mobile_dashboard(snapshot, "dark")
         ET.fromstring(svg)
         self.assertIn("&lt;script&gt;", svg)
         self.assertNotIn("<script>", svg)
@@ -156,6 +180,8 @@ class ProjectVisualTests(unittest.TestCase):
             write_dashboard(snapshot, root / "out")
             changed = (root / "out" / "projects-dashboard-light.svg").read_bytes()
             self.assertNotEqual(first["projects-dashboard-light.svg"], changed)
+            changed_mobile = (root / "out" / "projects-dashboard-mobile-light.svg").read_bytes()
+            self.assertNotEqual(first["projects-dashboard-mobile-light.svg"], changed_mobile)
 
     def test_invalid_update_preserves_last_valid_outputs(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:

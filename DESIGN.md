@@ -21,7 +21,7 @@ The supporting line is **“Systems for work. Space for play.”** The professio
 3. Creative projects and demonstrations, including their relevant limitations.
 4. GitHub-native activity and a link to the data-provenance guide.
 
-The README uses semantic headings and a theme-aware `<picture>` for the banner. GitHub documents this pattern for light and dark profile images. It does not rely on custom CSS, JavaScript, remote widget services or a fixed-width card grid.
+The README uses semantic headings and theme-aware `<picture>` elements for its banner and generated activity figures. Narrow-screen dashboard sources precede the desktop variants. The page does not rely on custom CSS, JavaScript, remote widget services or layout-dependent HTML cards.
 
 ## Asset rules
 
@@ -29,8 +29,9 @@ The README uses semantic headings and a theme-aware `<picture>` for the banner. 
 - A product screenshot must come from the real application, include a source revision, and be refreshed only after a material UI change.
 - Generated activity graphics must carry a source-through date and provenance. No custom activity graphic is shown as current until a complete public-only refresh has passed review.
 - The same source values generate light, dark, 2D and 3D calendar variants. The accessible summary and CSV remain available independently of the images.
+- The project activity dashboard has desktop and narrow-screen layouts. Both use the same validated snapshot and provide light and dark versions; the linked report contains repository links and the full timeline.
 - Screenshots and diagrams have meaningful alternative text and a text explanation in the README.
 
 ## Current scope
 
-The draft branch includes a dated, public-only calendar and activity dashboard alongside the banner, simplified engineering diagrams and one genuine OmniQuiz screenshot linked to an immutable source commit. The snapshot is embedded in the README on `portfolio/v2.2-living`; it is not yet integrated into profile `main`, refreshed automatically or presented as live data. Alibi and Atlas Arcade remain linked to their live demonstrations; no invented UI captures are used.
+The draft branch includes a dated, public-only calendar and desktop/mobile activity dashboards alongside the banner, simplified engineering diagrams and one genuine OmniQuiz screenshot linked to an immutable source commit. The snapshot is embedded in the README on `portfolio/v2.2-living`; it is not yet integrated into profile `main`, refreshed automatically or presented as live data. Alibi and Atlas Arcade remain linked to their live demonstrations; no invented UI captures are used.
