@@ -33,4 +33,4 @@ The README uses semantic headings and a theme-aware `<picture>` for the banner. 
 
 ## Current scope
 
-The visual assets in this branch are a banner, simplified engineering diagrams and one genuine OmniQuiz screenshot linked to an immutable source commit. Alibi and Atlas Arcade remain linked to their live demonstrations; no invented UI captures are used. The custom live calendar and activity dashboard are not yet published.
+The draft branch includes a dated, public-only calendar and activity dashboard alongside the banner, simplified engineering diagrams and one genuine OmniQuiz screenshot linked to an immutable source commit. The snapshot is embedded in the README on `portfolio/v2.2-living`; it is not yet integrated into profile `main`, refreshed automatically or presented as live data. Alibi and Atlas Arcade remain linked to their live demonstrations; no invented UI captures are used.

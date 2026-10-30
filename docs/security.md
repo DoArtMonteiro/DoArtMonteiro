@@ -19,4 +19,4 @@ The separate pull-request workflow does execute the proposed revision's Python t
 
 The campaign index is empty, so no benchmark or simulation result chart is generated. The diagrams are self-contained SVG with no script, embedded HTML, external image or remote font. The only application screenshot points to the OmniQuiz repository at an immutable commit.
 
-Pattern scans are useful checks, not proof that a file is safe. Review source provenance and the exact staged diff before publication. The pull-request workflow is configured for Ubuntu and Windows; confirm the Linux symlink test result there before accepting that safeguard.
+Pattern scans are useful checks, not proof that a file is safe. Review source provenance and the exact staged diff before publication. The pull-request workflow exercises preview path-boundary checks on Ubuntu and Windows.

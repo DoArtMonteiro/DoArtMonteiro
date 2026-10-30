@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import re
+import stat
 import sys
 import tempfile
 from datetime import datetime
@@ -69,10 +70,19 @@ def _validate_output_root(path: str | Path) -> Path:
 
 
 def _is_link_or_junction(path: Path) -> bool:
-    if path.is_symlink():
-        return True
-    checker = getattr(path, "is_junction", None)
-    return bool(checker and checker())
+    try:
+        if path.is_symlink():
+            return True
+        checker = getattr(path, "is_junction", None)
+        if checker and checker():
+            return True
+        attributes = getattr(path.lstat(), "st_file_attributes", 0)
+    except FileNotFoundError:
+        return False
+    except OSError as error:
+        raise PreviewError("Cannot inspect path for symbolic links or junctions") from error
+    reparse_point = getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0x0400)
+    return bool(attributes & reparse_point)
 
 
 def load_allowlist(path: str | Path) -> list[str]:
@@ -135,8 +145,8 @@ def _write_if_changed(path: Path, payload: bytes) -> bool:
 def _asset_hashes(directory: Path) -> dict[str, str]:
     result: dict[str, str] = {}
     for path in sorted(directory.rglob("*")):
-        if path.is_symlink():
-            raise PreviewError("Generated asset bundle cannot contain symlinks")
+        if _is_link_or_junction(path):
+            raise PreviewError("Generated asset bundle cannot contain symbolic links or junctions")
         if path.is_file():
             relative = path.relative_to(directory).as_posix()
             result[relative] = hashlib.sha256(path.read_bytes()).hexdigest()

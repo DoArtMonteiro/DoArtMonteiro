@@ -9,9 +9,18 @@ import unittest
 import uuid
 from datetime import date, timedelta
 from pathlib import Path
+from types import SimpleNamespace
 from typing import Any
+from unittest.mock import patch
 
-from scripts.living_portfolio.preview import DEFAULT_REGISTRY, PreviewError, build_preview, load_allowlist
+from scripts.living_portfolio.preview import (
+    DEFAULT_REGISTRY,
+    PreviewError,
+    _asset_hashes,
+    _is_link_or_junction,
+    build_preview,
+    load_allowlist,
+)
 from scripts.living_portfolio.campaigns import CampaignDataError, append_run, initialize_registry, verify_registry
 
 
@@ -123,6 +132,36 @@ class PreviewTests(unittest.TestCase):
             with self.assertRaises(PreviewError):
                 build_preview(source, project_snapshot(), outside, source_scope="selected_public_repo_commits")
             self.assertFalse(outside.exists())
+
+    def test_windows_reparse_point_is_detected_without_is_junction_support(self) -> None:
+        path = Path("junction-candidate")
+        path_type = type(path)
+        reparse_point = SimpleNamespace(st_file_attributes=0x0400)
+        with patch.object(path_type, "is_symlink", return_value=False):
+            with patch.object(path_type, "is_junction", None, create=True):
+                with patch.object(path_type, "lstat", return_value=reparse_point):
+                    self.assertTrue(_is_link_or_junction(path))
+
+    def test_path_inspection_errors_fail_closed(self) -> None:
+        path = Path("inaccessible-candidate")
+        path_type = type(path)
+        with patch.object(path_type, "is_symlink", return_value=False):
+            with patch.object(path_type, "is_junction", None, create=True):
+                with patch.object(path_type, "lstat", side_effect=PermissionError("access denied")):
+                    with self.assertRaises(PreviewError):
+                        _is_link_or_junction(path)
+
+    def test_asset_hashes_rejects_windows_reparse_points(self) -> None:
+        directory = Path("bundle-candidate")
+        junction = directory / "nested-junction"
+        path_type = type(directory)
+        reparse_point = SimpleNamespace(st_file_attributes=0x0400)
+        with patch.object(path_type, "rglob", return_value=[junction]):
+            with patch.object(path_type, "is_symlink", return_value=False):
+                with patch.object(path_type, "is_junction", None, create=True):
+                    with patch.object(path_type, "lstat", return_value=reparse_point):
+                        with self.assertRaises(PreviewError):
+                            _asset_hashes(directory)
 
     def _create_directory_symlink_or_skip(self, link: Path, target: Path) -> None:
         try:
