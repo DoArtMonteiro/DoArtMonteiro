@@ -1,0 +1,66 @@
+name: Living portfolio preview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: living-portfolio-preview-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Check out the reviewed default-branch revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - name: Verify Python runtime
+        run: python3 --version
+
+      - name: Run deterministic generator tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Generate an unpublished preview from public GitHub data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          python3 -m scripts.living_portfolio.preview
+          --output-dir "$RUNNER_TEMP/living-portfolio-preview"
+
+      - name: Record preview outcome and stale-data guidance
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ "$JOB_STATUS" = "success" ]; then
+            {
+              echo "## Living portfolio preview"
+              echo
+              echo "The data-backed preview completed on the runner and will be discarded when the job ends. No assets were uploaded, committed, published or deployed."
+              echo
+              echo "The asset manifest links each visual to its source and records the 36-hour stale-data rule. This run's timestamp is the operational refresh record."
+              echo
+              echo "[Open this workflow run]($RUN_URL)"
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            {
+              echo "## Living portfolio preview failed"
+              echo
+              echo "This workflow writes only to temporary runner storage and publishes nothing. The public profile is unchanged. Do not treat a separately published older asset as current; its data-through date continues to age and becomes stale after 36 hours."
+              echo
+              echo "Inspect the failed step, repair the source or validator, then dispatch a new preview."
+              echo
+              echo "[Open this workflow run]($RUN_URL)"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi

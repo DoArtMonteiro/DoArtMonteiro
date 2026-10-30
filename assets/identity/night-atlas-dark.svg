@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" role="img" aria-labelledby="title desc">
+  <title id="title">Technology, business and operations</title>
+  <desc id="desc">A dark technical field with four connected nodes representing problems, systems, evidence and outcomes.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#8ba0b9" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="field" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101c2d"/>
+      <stop offset="1" stop-color="#09131f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="300" rx="18" fill="url(#field)"/>
+  <rect width="1440" height="300" rx="18" fill="url(#grid)"/>
+  <path d="M0 268H1440" stroke="#5ad9d0" stroke-opacity=".38"/>
+  <text x="64" y="74" fill="#79ded8" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3">DUARTE MONTEIRO</text>
+  <text x="64" y="145" fill="#f2f5f8" font-family="Arial,sans-serif" font-size="43" font-weight="700">Technology × Business × Operations</text>
+  <text x="66" y="196" fill="#c2cbd5" font-family="Arial,sans-serif" font-size="24">Systems for work. Space for play.</text>
+  <text x="66" y="239" fill="#f1bb64" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">ENGINEERING  /  PRODUCTS  /  VERIFICATION</text>
+  <path d="M926 112C1000 38 1084 38 1158 112S1316 186 1386 112" fill="none" stroke="#56d5cd" stroke-width="2" stroke-opacity=".8"/>
+  <path d="M926 168C1000 242 1084 242 1158 168S1316 94 1386 168" fill="none" stroke="#e5a953" stroke-width="2" stroke-opacity=".75"/>
+  <path d="M960 140H1352" fill="none" stroke="#a7b8c8" stroke-opacity=".35" stroke-dasharray="4 8"/>
+  <g fill="#0c1927" stroke-width="2">
+    <circle cx="960" cy="140" r="12" stroke="#f1bb64"/>
+    <circle cx="1088" cy="84" r="12" stroke="#56d5cd"/>
+    <circle cx="1216" cy="196" r="12" stroke="#56d5cd"/>
+    <circle cx="1352" cy="140" r="12" stroke="#f1bb64"/>
+  </g>
+  <g fill="#d8e0e8" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.2" text-anchor="middle">
+    <text x="960" y="174">PROBLEM</text>
+    <text x="1088" y="55">SYSTEM</text>
+    <text x="1216" y="231">EVIDENCE</text>
+    <text x="1352" y="174">OUTCOME</text>
+  </g>
+</svg>

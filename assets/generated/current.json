@@ -1,0 +1,26 @@
+{
+  "asset_sha256": {
+    "calendar-accessible.svg": "763435a4404118b91d8cce6ac4780c33368e7b30b4e11ac064a3f9bdcb8c54f7",
+    "calendar-dark.svg": "ce3ada208ce714e6c2fd0f8b26d3f6b8715766cb76f93836f35f35a53a16d443",
+    "calendar-isometric.svg": "720e0e7b9fd5e1d500debe53b8e49450e65136b7f24f49cae38e6d6596104288",
+    "calendar-light.svg": "808f1e22d4a3f9f81bdb6424175c887396733b8fea6df89da5c4ef935f26b808",
+    "calendar-manifest.json": "c1ed96836deb8b7bfc1f5364bc5f1ffcfb866accd60cd1281758ab02bbab3313",
+    "calendar-normalized.csv": "549b8f50708dc24dd64ca730581cab029ce4ee77c2ecf0e2da9e9495ac992f72",
+    "preview-manifest.json": "1f069ead2ca3ef3462b7667eef06c283fa5437e4441ff5fb9ec9843c1894c79c",
+    "projects-activity.json": "15a26dba6597403dbb1328e8665fe2a3b749c2c4727c7f556ff639a0ba561641",
+    "projects-activity.md": "70322afef4ab663b6d4c8f6c4652be37b9d36da71ef3f35b3745b58d83d45e4b",
+    "projects-dashboard-dark.svg": "d7f9369eb2c99c87f9eec57ce60ad9b8843853e5b4fa3a457cb08d74d8cec0f6",
+    "projects-dashboard-light.svg": "e69fced9df7ee84f88b5c8c50ae783d19d28adb5c652f293fd6f6a8cf8960209",
+    "provenance.json": "ff5b1fe1d3840f811ab66d005c5d69618cbdc88b8f527105e66cf69380828e31"
+  },
+  "data_through": "2026-10-30",
+  "failure_behaviour": "Keep the last valid version. Mark it stale after the threshold and do not describe it as current.",
+  "last_successful_refresh_utc": "2026-10-30T18:27:28Z",
+  "manifest": "versions/ae92060103381ffe59140411/manifest.json",
+  "refresh_mode": "manual preview; recurring refresh and automatic asset publication are disabled",
+  "schema_version": 1,
+  "stale_after_hours": 36,
+  "stale_after_utc": "2026-11-01T06:27:28Z",
+  "status": "draft_review_snapshot",
+  "version": "ae92060103381ffe59140411159e40a325ad76ad75ca31acfd3e6553e8edb4a1"
+}

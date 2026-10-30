@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    "DoArtMonteiro/autonomous-systems-vv-lab",
+    "DoArtMonteiro/atlas-arcade",
+    "DoArtMonteiro/callbrief",
+    "DoArtMonteiro/jarvis",
+    "DoArtMonteiro/murdoku",
+    "DoArtMonteiro/omniquiz",
+    "DoArtMonteiro/roundcraft",
+    "DoArtMonteiro/wildfire-watch"
+  ]
+}
