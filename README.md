@@ -1,16 +1,67 @@
-# Duarte Monteiro
+# Systems for work. Space for play.
 
-I bring an Industrial Engineering & Management background and consulting experience to software and AI implementation. My projects focus on practical systems, business and operational constraints, and evidence that makes the trade-offs visible.
+I bring an Industrial Engineering & Management background and consulting experience to software and AI implementation. My projects connect operational problems with practical systems, clear trade-offs and evidence.
 
-## Selected work
+**[Engineering work](#engineering) · [Games and experiments](#made-for-play) · [Project index](#more-to-explore)**
 
-- **[Autonomous Systems V&V Lab](https://github.com/WhiteBlindness/autonomous-systems-vv-lab):** mission simulation, fault injection and failure replay for autonomous-system safety. Core simulation and landing work are integrated; the next resilience design remains under review. Rocket work is simulation-only. [Results](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/blob/main/docs/m9-powered-landing.md) · [Resilience design](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/pull/13)
-- **[JARVIS / Donna](https://github.com/WhiteBlindness/jarvis):** local assistant runtime with a Rust policy core, scoped approvals and an OS-isolated worker. A separate Session Agent handles approved clipboard writes. Donna V1 is merged; Windows privacy limitations are documented. [Architecture](https://github.com/WhiteBlindness/jarvis/blob/main/docs/architecture.md) · [Threat model](https://github.com/WhiteBlindness/jarvis/blob/main/docs/threat-model.md)
-- **[WildfireWatch](https://github.com/WhiteBlindness/wildfire-watch):** [demo map](https://wildfire-watch.duartemonteiro.workers.dev) of sampled NASA FIRMS thermal detections, with provenance and feed-health reporting. A detection is not a confirmed fire.
-- **[CallBrief](https://github.com/WhiteBlindness/callbrief):** local prototype for funding-opportunity research and evidence-linked eligibility checks. Its small manual evaluation does not establish production accuracy; the planned desktop-first application is not implemented. [Evaluation](https://github.com/WhiteBlindness/callbrief/blob/main/README.md)
+## Engineering
 
-## More work
+### Autonomous Systems V&amp;V Lab
 
-[**Murdoku / Alibi**](https://github.com/WhiteBlindness/murdoku) · [**OmniQuiz**](https://github.com/WhiteBlindness/omniquiz)
+A deterministic simulation lab for autonomous mission scenarios, seeded fault injection and failure replay against a separate safety verifier.
+
+```mermaid
+flowchart TD
+    A[Scenario and seed] --> B[Deterministic simulation]
+    B --> C[Observed state to controller]
+    B --> D[Simulation state to safety verifier]
+    C --> E[Ordered event trace]
+    D --> E
+    E --> F[Failure replay and analysis]
+```
+
+Flow: scenario and seed → deterministic simulation → controller observations and verifier checks → ordered event trace → failure replay and analysis.
+
+**M9 and M9.1 are integrated.** Project documentation reports 780 M9 runs and 1,050 M9.1 runs; raw campaign outputs are not in public `main`. The rocket model is an idealised simulation, not flight validation. M10.0 remains an architecture and design proposal under review in [PR #13](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/pull/13).
+
+[Read the results and assumptions](https://github.com/WhiteBlindness/autonomous-systems-vv-lab/blob/main/docs/m9-powered-landing.md) · [Explore the repository](https://github.com/WhiteBlindness/autonomous-systems-vv-lab)
+
+### JARVIS / Donna
+
+A local assistant prototype with a Rust policy core, scoped human approvals and an OS-isolated worker. Donna V1 is merged; documented Windows privacy limitations remain.
+
+[Architecture](https://github.com/WhiteBlindness/jarvis/blob/main/docs/architecture.md) · [Threat model](https://github.com/WhiteBlindness/jarvis/blob/main/docs/threat-model.md) · [Repository](https://github.com/WhiteBlindness/jarvis)
+
+### WildfireWatch
+
+A map of sampled NASA FIRMS thermal detections, with source provenance and feed-freshness context. A detection is an observation, not a confirmed fire; feeds can be stale.
+
+[Open the map demo](https://wildfire-watch.duartemonteiro.workers.dev) · [Repository](https://github.com/WhiteBlindness/wildfire-watch)
+
+### CallBrief
+
+A local CLI prototype for funding-opportunity research and evidence-linked eligibility checks. Its small manual evaluation does not establish production accuracy.
+
+[Evaluation notes](https://github.com/WhiteBlindness/callbrief#evaluation-evidence) · [Repository](https://github.com/WhiteBlindness/callbrief)
+
+## Made for play
+
+Games and experiments have their own space here. They are a way to explore interaction, systems and feedback through working products.
+
+<p align="center">
+  <a href="https://github.com/WhiteBlindness/omniquiz">
+    <img src="https://raw.githubusercontent.com/WhiteBlindness/omniquiz/58c32098173cdd7b4f0d72e27f0d128f40e66efd/docs/screenshots/landing-desktop.jpg" alt="OmniQuiz landing page, showing the browser game's themed worlds and play options." width="760">
+  </a>
+</p>
+<p align="center"><sub>OmniQuiz · themed worlds and quiz modes in a browser game.</sub></p>
+
+- **[Murdoku / Alibi](https://github.com/WhiteBlindness/murdoku):** a clue-based logic game. [Play the demo](https://murdoku-seven.vercel.app).
+- **[OmniQuiz](https://github.com/WhiteBlindness/omniquiz):** browser trivia with different modes and content packs. [Play the demo](https://omniquiz-nine.vercel.app).
+- **[Atlas Arcade](https://github.com/WhiteBlindness/atlas-arcade):** geography mini-games. Scores and balances remain client-writable, so competitive results are not tamper-proof. [Draft PR #2](https://github.com/WhiteBlindness/atlas-arcade/pull/2) proposes a documentation disclosure; server-side integrity work remains outstanding.
+
+## More to explore
+
+- **[Roundcraft](https://github.com/WhiteBlindness/roundcraft):** Counter-Strike 2 decision-practice project in development; production cases still need human tactical review.
+- **[Full repository list](https://github.com/WhiteBlindness?tab=repositories)**
 
 **Core tools:** Rust · Python · TypeScript
