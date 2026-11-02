@@ -94,31 +94,33 @@ A free, account-free browser trivia game where uncommon recognised answers score
 
 ## Activity
 
-The refresh workflow generates GitHub's public contribution graph daily from GraphQL without requesting restricted-contribution fields. The eight-repository commit count remains a separate engineering-activity metric and is not added to GitHub's account total. Until the first successful publication, the map below remains a dated snapshot of commits in the selected repositories.
+The map below uses GitHub's public contribution calendar and refreshes daily from GraphQL. The query does not request private or restricted-contribution fields. The separate eight-repository commit calendar is a public engineering-activity metric, not GitHub's account total.
 
 [![Living portfolio refresh](https://github.com/DoArtMonteiro/DoArtMonteiro/actions/workflows/living-portfolio-refresh.yml/badge.svg?branch=main)](https://github.com/DoArtMonteiro/DoArtMonteiro/actions/workflows/living-portfolio-refresh.yml?query=branch%3Amain)
 
-The first live asset publication runs after the refresh workflow reaches `main`. Until it succeeds, the dated snapshot below remains in place and must be read using its visible source-through date.
+The map and project dashboard load from the published `portfolio-assets` branch. Each refresh records its source-through date and provenance. Treat the data as stale after 36 hours without a successful run; the workflow badge links to its status and history.
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" srcset="assets/generated/current/calendar-dark-animated.gif">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/current/calendar-dark.svg">
-  <source media="(prefers-color-scheme: light) and (prefers-reduced-motion: no-preference)" srcset="assets/generated/current/calendar-light-animated.gif">
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/current/calendar-light.svg">
-  <img alt="Isometric calendar of distinct commits in selected public repositories over the latest 365 days; exact daily counts and zero days are available in the accessible view" src="assets/generated/current/calendar-light.svg">
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-dark-animated.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-dark.svg">
+  <source media="(prefers-color-scheme: light) and (prefers-reduced-motion: no-preference)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-light-animated.gif">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-light.svg">
+  <img alt="Isometric calendar of public GitHub contributions over the latest 365 days; exact daily counts and zero days are available in the accessible view" src="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-light.svg">
 </picture>
 
-[Accessible 2D calendar](assets/generated/current/calendar-accessible.svg) · [Daily counts CSV](assets/generated/current/calendar-normalized.csv) · [Snapshot freshness](assets/generated/current.json) · [Data provenance](assets/generated/current/provenance.json)
+[Accessible 2D calendar](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-accessible.svg) · [Daily counts CSV](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/github-calendar/calendar-normalized.csv) · [Refresh metadata](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current.json) · [Data provenance](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/provenance.json)
+
+The separate [eight-repository commit calendar](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/calendar/calendar-light.svg) · [dark version](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/calendar/calendar-dark.svg) · [daily counts](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/calendar/calendar-normalized.csv) counts distinct public commits in the selected repositories.
 
 <picture>
-  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/generated/current/projects-dashboard-mobile-dark.svg">
-  <source media="(max-width: 480px) and (prefers-color-scheme: light)" srcset="assets/generated/current/projects-dashboard-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/current/projects-dashboard-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/current/projects-dashboard-light.svg">
-  <img alt="Activity dashboard for eight selected public repositories; the linked report below provides repository links and the full timeline" src="assets/generated/current/projects-dashboard-mobile-light.svg">
+  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-dashboard-mobile-dark.svg">
+  <source media="(max-width: 480px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-dashboard-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-dashboard-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-dashboard-light.svg">
+  <img alt="Activity dashboard for eight selected public repositories; the linked report below provides repository links and the full timeline" src="https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-dashboard-mobile-light.svg">
 </picture>
 
-[Full project activity report](assets/generated/current/projects-activity.md) · [Project activity data](assets/generated/current/projects-activity.json)
+[Full project activity report](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-activity.md) · [Project activity data](https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/projects/projects-activity.json)
 
 The refresh workflow publishes current contribution and project-activity visuals to a dedicated asset branch. If a refresh fails, the previous snapshot remains visible with its source-through date; treat it as stale after 36 hours. Neither view measures work quality or business impact. Data sources, permissions and recovery steps are described in the [living portfolio guide](docs/living-portfolio.md).
 

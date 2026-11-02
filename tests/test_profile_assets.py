@@ -59,6 +59,29 @@ class ProfileAssetTests(unittest.TestCase):
         self.assertNotIn("mobile", dashboard_alt.group(1).casefold())
         self.assertIn("full timeline", dashboard_alt.group(1).casefold())
 
+    def test_activity_visuals_use_the_live_published_asset_branch(self) -> None:
+        source = README.read_text(encoding="utf-8")
+        activity = source.split("## Activity", 1)[1].split("## Toolkit and contact", 1)[0]
+        self.assertNotIn("assets/generated/current", activity)
+        self.assertGreaterEqual(
+            activity.count("https://raw.githubusercontent.com/DoArtMonteiro/DoArtMonteiro/portfolio-assets/current/"),
+            15,
+        )
+        for expected in (
+            "github-calendar/calendar-light-animated.gif",
+            "github-calendar/calendar-dark-animated.gif",
+            "github-calendar/calendar-accessible.svg",
+            "github-calendar/calendar-normalized.csv",
+            "current.json",
+            "current/provenance.json",
+            "projects/projects-dashboard-mobile-light.svg",
+            "projects/projects-dashboard-mobile-dark.svg",
+            "projects/projects-dashboard-light.svg",
+            "projects/projects-dashboard-dark.svg",
+            "projects/projects-activity.md",
+        ):
+            self.assertIn(expected, activity)
+
     def test_primary_navigation_anchors_have_headings(self) -> None:
         source = README.read_text(encoding="utf-8")
         headings = {

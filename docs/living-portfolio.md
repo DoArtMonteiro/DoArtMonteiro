@@ -2,7 +2,7 @@
 
 ## Current state
 
-The live refresh workflow is configured to update public contribution and project activity visuals daily, after relevant source changes on `main`, or by manual dispatch. It generates a complete bundle, validates all listed hashes, then publishes one atomic commit to the dedicated `portfolio-assets` branch. Until its first successful run and the profile link switch, the README continues to show a dated snapshot from the source repository; that image is not a live feed. The workflow never runs for pull requests and does not deploy an application.
+The live refresh workflow updates public contribution and project activity visuals daily, after relevant source changes on `main`, or by manual dispatch. It generates a complete bundle, validates all listed hashes, then publishes one atomic commit to the dedicated `portfolio-assets` branch. The profile README loads these assets from stable raw-content URLs. The first successful refresh published the bundle with source data through 2 November 2026. The workflow never runs for pull requests and does not deploy an application.
 
 The generator runs with `contents:read`. A separate publisher job receives the validated artifact and uses `contents:write` only to update `portfolio-assets`; it does not make contribution or repository API requests. Neither job grants `read:user`. The latest workflow run is the record of the last successful refresh. The generated image and `current.json` show the source-through date. After 36 hours without a successful refresh, treat the displayed data as stale; the profile's workflow badge and linked Actions history expose failures. A failed generation, validation or publication leaves the last valid asset branch revision unchanged.
 
@@ -18,7 +18,7 @@ The collector validates the exact owner and repository allowlist, the linked aut
 
 The generator queries GitHub's GraphQL `User.contributionsCollection.contributionCalendar` for the approved account. It requests the daily count, date, weekday and contribution level for an explicit rolling 365-day interval. It does not request restricted-contribution fields. The generation job supplies its GitHub Actions token with `contents:read`; it does not use a personal access token or grant `read:user`. GitHub documents private and internal contributions as available only with the optional `read:user` scope, so this public-calendar path must never be widened to that scope for the portfolio.
 
-This metric is broader than commits in the eight selected repositories: it follows the contribution types and public visibility rules used by GitHub's account calendar. It is stored as its own calendar, manifest and normalized CSV. After the first successful publication, the profile will display this public contribution calendar as the primary map. The eight-repository REST commit count remains a separate engineering-activity view and is never added to the GraphQL total. See the [GitHub GraphQL users schema](https://docs.github.com/en/graphql/reference/users).
+This metric is broader than commits in the eight selected repositories: it follows the contribution types and public visibility rules used by GitHub's account calendar. It is stored as its own calendar, manifest and normalized CSV, and the profile displays it as the primary map. The eight-repository REST commit count remains a separate engineering-activity view and is never added to the GraphQL total. See the [GitHub GraphQL users schema](https://docs.github.com/en/graphql/reference/users).
 
 ### Repository activity
 
@@ -44,7 +44,7 @@ Product images are not refreshed on a timer. A capture is reviewed after a mater
 
 Each generated bundle includes a manifest with source descriptions, data-through dates, hashes, selected repositories, campaign records, accessibility variants and the 36-hour staleness threshold. The last successful execution time is available from the Actions run history; it is not added to generated files so identical source data does not create an unnecessary asset commit.
 
-After the link switch, the profile will link to the public `current.json` pointer and complete manifest. A failed run leaves the previous assets in place, their data-through date continues to age, and the workflow badge reports the latest run status. The refresh workflow also uploads the validated bundle as a seven-day recovery artifact. A successful run updates the pointer only after the entire bundle has passed hash and public-data checks.
+The profile links to the public `current.json` pointer and complete manifest. A failed run leaves the previous assets in place, their data-through date continues to age, and the workflow badge reports the latest run status. The refresh workflow also uploads the validated bundle as a seven-day recovery artifact. A successful run updates the pointer only after the entire bundle has passed hash and public-data checks.
 
 ## Publication boundary
 
