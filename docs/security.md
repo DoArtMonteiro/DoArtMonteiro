@@ -5,6 +5,8 @@
 - The commit-calendar collector accepts only the eight reviewed `DoArtMonteiro` repositories in the local allowlist. It calls GitHub's public REST commit endpoint without an authorization header, uses the repository's default branch, and retains only linked author dates and distinct commit counts. A private or inaccessible repository returns an error and stops generation.
 - The preview workflow requests `contents: read` and uses GitHub's run-scoped token for public repository reads. It does not request `read:user`, create a personal access token or print the token. The public workflow-runs endpoint is called without authentication.
 - Repository activity is limited to the exact public slugs in `assets/project-repositories.json`; the collector does not enumerate the account or accept another owner.
+- The contribution-map Worker resolves the public portfolio asset branch to a commit SHA, then reads the pointer, manifest and CSV from that immutable revision. It also reads the repository's public Actions workflow history. It uses no token and accepts only the two fixed calendar paths and reviewed metric scopes.
+- The Worker checks that the pointer's bundle version matches the manifest, then verifies the expected scope, 365-day interval, summary totals and CSV SHA-256 before serving the map or its download. If a check fails, it returns an error instead of serving unverified values.
 - Existing historical calendar CSVs and local campaign outputs are excluded because their public/private scope or approval cannot be established from this branch.
 
 ## File and output boundaries

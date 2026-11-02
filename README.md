@@ -71,18 +71,18 @@ A browser arcade of geography games built around quick rounds and varied ways to
 
 A deduction game where witness clues constrain suspect positions on a house map until only the suspect left with the victim can be accused.
 
-[![Alibi puzzle logic: read witness clues, place each suspect in a unique row and column, then identify who remains with the victim](assets/diagrams/alibi-puzzle-flow.svg)](https://murdoku-seven.vercel.app)
+[![Alibi puzzle logic: read witness clues, place each suspect in a unique row and column, then identify who remains with the victim](assets/diagrams/alibi-puzzle-flow.svg)](https://murdoku.duartemonteiro.workers.dev)
 
-- **Status:** Live demo. The published game is branded Alibi; the repository remains Murdoku.
-- **Explore:** [Play Alibi](https://murdoku-seven.vercel.app) · [Browse the source](https://github.com/DoArtMonteiro/murdoku)
+- **Product name:** Alibi. **Source repository:** Murdoku.
+- **Explore:** [Play Alibi](https://murdoku.duartemonteiro.workers.dev) · [Browse the source](https://github.com/DoArtMonteiro/murdoku)
 
 ### [OMNIQUIZ](https://github.com/DoArtMonteiro/omniquiz)
 
 A free, account-free browser trivia game where uncommon recognised answers score more. Four modes and themed packs share a deterministic scoring engine; the answer atlas stays server-side.
 
-[Play the live demo](https://omniquiz-nine.vercel.app)
+[Play the live demo](https://omniquiz.duartemonteiro.workers.dev)
 
-[![Real OmniQuiz desktop landing page showing the deep-sea world and game modes](https://raw.githubusercontent.com/DoArtMonteiro/omniquiz/58c32098173cdd7b4f0d72e27f0d128f40e66efd/docs/screenshots/landing-desktop.jpg)](https://omniquiz-nine.vercel.app)
+[![Real OmniQuiz desktop landing page showing the deep-sea world and game modes](https://raw.githubusercontent.com/DoArtMonteiro/omniquiz/58c32098173cdd7b4f0d72e27f0d128f40e66efd/docs/screenshots/landing-desktop.jpg)](https://omniquiz.duartemonteiro.workers.dev)
 
 ## Project index
 

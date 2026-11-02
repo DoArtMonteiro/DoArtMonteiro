@@ -52,11 +52,14 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("No README asset was committed and no application was deployed", source)
         self.assertNotIn("Any previously approved bundle remains unchanged", source)
 
-    def test_pull_request_validation_is_read_only_and_runs_without_secrets(self) -> None:
+    def test_portfolio_validation_is_read_only_and_runs_without_secrets(self) -> None:
         source = TEST_WORKFLOW.read_text(encoding="utf-8")
-        self.assertIn("on:\n  pull_request:", source)
+        self.assertIn("on:\n  push:\n", source)
+        self.assertIn("\n  pull_request:", source)
+        self.assertEqual(source.count('"workers/contribution-map/**"'), 2)
+        self.assertIn("node --test workers/contribution-map/tests/calendar-data.test.mjs workers/contribution-map/tests/worker.test.mjs", source)
+        self.assertIn("github.event.pull_request.number || github.sha", source)
         self.assertNotIn("\n  schedule:", source)
-        self.assertNotIn("\n  push:", source)
         self.assertNotIn("pull_request_target", source)
         self.assertIn("permissions:\n  contents: read", source)
         self.assertIn("permissions:\n      contents: read", source)

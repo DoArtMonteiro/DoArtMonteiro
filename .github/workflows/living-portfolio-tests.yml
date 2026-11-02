@@ -1,6 +1,19 @@
 name: Living portfolio tests
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - "DESIGN.md"
+      - ".github/workflows/**"
+      - "assets/**"
+      - "docs/**"
+      - "scripts/living_portfolio/**"
+      - "tests/**"
+      - ".impeccable/**"
+      - "workers/contribution-map/**"
   pull_request:
     branches:
       - main
@@ -13,12 +26,13 @@ on:
       - "scripts/living_portfolio/**"
       - "tests/**"
       - ".impeccable/**"
+      - "workers/contribution-map/**"
 
 permissions:
   contents: read
 
 concurrency:
-  group: living-portfolio-tests-${{ github.event.pull_request.number }}
+  group: living-portfolio-tests-${{ github.event.pull_request.number || github.sha }}
   cancel-in-progress: true
 
 jobs:
@@ -41,3 +55,6 @@ jobs:
 
       - name: Run standard-library test suite
         run: python -m unittest discover -s tests -v
+
+      - name: Run contribution map tests
+        run: node --test workers/contribution-map/tests/calendar-data.test.mjs workers/contribution-map/tests/worker.test.mjs

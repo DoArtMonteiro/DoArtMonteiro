@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Explore the public GitHub contribution calendar by year, month, week and day.">
+    <title>Contribution atlas | Duarte Monteiro</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.mjs"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="https://github.com/DoArtMonteiro" aria-label="Duarte Monteiro on GitHub">
+        <span class="wordmark-mark" aria-hidden="true">DM</span>
+        <span>Duarte Monteiro</span>
+      </a>
+      <a class="profile-link" href="https://github.com/DoArtMonteiro/DoArtMonteiro">Back to profile</a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">Contribution atlas</h1>
+          <p class="intro-copy">Explore GitHub's public contribution calendar by year, month, week or day. Select a square to inspect its exact date and count.</p>
+        </div>
+        <p class="scope-note">Activity counts show where contributions occurred. They do not measure quality, effort or business impact.</p>
+      </section>
+
+      <section class="snapshot" aria-label="Selected activity summary">
+        <div class="snapshot-line" id="snapshot-summary">Loading the latest verified public snapshot…</div>
+        <div class="refresh-status" id="refresh-status" role="status" aria-live="polite" aria-atomic="true">
+          <span class="status-mark" aria-hidden="true"></span>
+          <span id="refresh-message">Checking the source and refresh history.</span>
+        </div>
+      </section>
+
+      <section class="explorer" aria-labelledby="explorer-heading">
+        <div class="explorer-heading">
+          <div>
+            <h2 id="explorer-heading">Activity by date</h2>
+            <p id="scope-description">GitHub public contribution calendar.</p>
+          </div>
+          <button class="refresh-button" id="refresh-button" type="button">Refresh data</button>
+        </div>
+
+        <div class="controls" aria-label="Calendar controls">
+          <label class="control">
+            <span>Activity source</span>
+            <select id="scope-select" name="scope">
+              <option value="public">GitHub public contributions</option>
+              <option value="repositories">Selected-repository commits</option>
+            </select>
+          </label>
+          <fieldset class="view-control">
+            <legend>Calendar view</legend>
+            <div class="view-switch" role="group" aria-label="Calendar view">
+              <button type="button" data-view="year" aria-pressed="false">Year</button>
+              <button type="button" data-view="month" aria-pressed="true">Month</button>
+              <button type="button" data-view="week" aria-pressed="false">Week</button>
+            </div>
+          </fieldset>
+          <label class="control period-control" id="month-control">
+            <span>Month</span>
+            <select id="month-select" name="month"></select>
+          </label>
+          <label class="control period-control" id="week-control" hidden>
+            <span>Week</span>
+            <select id="week-select" name="week"></select>
+          </label>
+        </div>
+
+        <div class="view-summary" id="view-summary" aria-live="polite" aria-atomic="true"></div>
+
+        <div class="legend" aria-label="Daily activity legend">
+          <span class="legend-title">Daily count</span>
+          <span class="legend-item"><i class="swatch level-0" aria-hidden="true"></i>0</span>
+          <span class="legend-item"><i class="swatch level-1" aria-hidden="true"></i>1–5</span>
+          <span class="legend-item"><i class="swatch level-2" aria-hidden="true"></i>6–12</span>
+          <span class="legend-item"><i class="swatch level-3" aria-hidden="true"></i>13–24</span>
+          <span class="legend-item"><i class="swatch level-4" aria-hidden="true"></i>25+</span>
+        </div>
+
+        <div class="calendar-message" id="calendar-message" role="status" aria-live="polite"></div>
+        <div class="year-scroll" id="year-scroll" hidden tabindex="0" aria-label="Scrollable annual contribution calendar">
+          <div id="year-calendar"></div>
+        </div>
+        <div id="month-calendar" class="month-calendar" hidden></div>
+        <ol id="week-calendar" class="week-calendar" hidden></ol>
+
+        <section class="day-detail" aria-labelledby="day-heading" aria-live="polite" aria-atomic="true">
+          <div>
+            <h3 id="day-heading">Selected day</h3>
+            <p id="day-date">Choose a day in the calendar.</p>
+          </div>
+          <p class="day-count" id="day-count"></p>
+        </section>
+      </section>
+
+      <footer class="page-footer">
+        <p id="provenance-copy">The calendar contains public data only. Restricted-contribution fields are not requested.</p>
+        <nav aria-label="Calendar evidence and data">
+          <a id="csv-link" href="/api/calendar.csv?scope=public">Download daily CSV</a>
+          <a id="json-link" href="/api/calendar?scope=public">View source data and provenance</a>
+          <a href="https://github.com/DoArtMonteiro/DoArtMonteiro/actions/workflows/living-portfolio-refresh.yml">Open refresh history</a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
