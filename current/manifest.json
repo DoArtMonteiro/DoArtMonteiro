@@ -1,0 +1,48 @@
+{
+  "asset_sha256": {
+    "calendar/calendar-dark-animated.gif": "51bef5622b2125e3871e6eb50a09f71931692d3af19b7c1430e40c349bdf3e8f",
+    "calendar/calendar-light-animated.gif": "221bb1d2a7ec3e0593a426bfabb6aa73a2344d18abb58ff26f8c2ed5614543a0",
+    "calendar/current.json": "2a05153191ce45361ed1e26320ee8a012d60855cc207876626c27b6cf51fbfd0",
+    "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-accessible.svg": "08304db8d40be5913b5163f3ebb221032e3475d9537fd8b14574c3fa5afc693f",
+    "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-dark.svg": "04a00a49e7875839c70f3c103437ba756c0bee24410279a91a3828b8be6b66eb",
+    "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-isometric.svg": "e99c9c7b4f5200a908a0bcc64799af754de389c02fcfd5a65790f66d3667a4f7",
+    "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-light.svg": "4eddee887798e66c804c8b4e626c92f1e563f398293cf4ae161bfe936164992c",
+    "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-manifest.json": "8e65c6c3a7ff8b5599a8ed8cdb437df7b8767a3171b7a93ab067fcc467ce7748",
+    "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-normalized.csv": "638cbe3f4911e9f041c257c9cbd16fe277f1a3e1d3ba358bef2797579af3d042",
+    "github-calendar/calendar-dark-animated.gif": "8b18b5b160cec11f8aea5e320a7accf65bf91b8dac8c10931475e61727b3096e",
+    "github-calendar/calendar-light-animated.gif": "c7ce5cf59f43cfd25deac6cd19983f36bd69297a6f45bd4db90c93867f5eaeb7",
+    "github-calendar/current.json": "f7efa077be8619ff583d0839afa5bf7b3d7013aa7861cb6d784ffb8e2b054860",
+    "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-accessible.svg": "7c4335428fa3a45e3ecc3457ef961169459e8b99ca31bad19ccd5ad850df88fc",
+    "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-dark.svg": "cac8de4da824fd97edd870f12ab37ac1d8a1a5474b5fb29b41db44222df5aa8e",
+    "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-isometric.svg": "b2f4730c8fc838fe31823e9c944f65f21505d2e415518b47613d09605c4e569e",
+    "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-light.svg": "4d3dcd02dec7642c1962d05df673aa88990574313ee10aea9cee131136d3b691",
+    "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-manifest.json": "697a77d924452e70766514b42f29a7733f9a0036f3447b8104b72e97e99c3165",
+    "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-normalized.csv": "2dca79857ce757c155858f47c0b4c5b9a8f999bb58389962382300ddc1a65b5f",
+    "projects-source.json": "9f6a7ff37875e65bd98d2fa56643493d6c9f28f1f8d18b9aa1aa9f73d3758c6b",
+    "projects/projects-activity.json": "9f6a7ff37875e65bd98d2fa56643493d6c9f28f1f8d18b9aa1aa9f73d3758c6b",
+    "projects/projects-activity.md": "1fe520ada6a3119f612d8015255819cada6807cb3d168c846bd03cdce59c7dfe",
+    "projects/projects-dashboard-dark.svg": "d150b94b8f049ddbf79159ed3a97cadeb8c56762156f354c16ec3f3c3cec8e5c",
+    "projects/projects-dashboard-light.svg": "5141a1e998922043a147f89dfe59f54b47171f61cbd9075d6ecd844610b5de40",
+    "projects/projects-dashboard-mobile-dark.svg": "d572806e4467ee7eb4e886a063947e2a7ef8db5030f2cd3e287286ec909ea315",
+    "projects/projects-dashboard-mobile-light.svg": "d5f78e5b137846d2935c6bbc91227790d53fe24f80e66e1474b248623b1d8cc3",
+    "provenance.json": "4112374fe88fb58e419a5192c44b08c06f0a32c00681680324e6f74c35448786"
+  },
+  "calendar_summary": {
+    "active_days": 30,
+    "data_through": "2026-11-02",
+    "dated_days": 365,
+    "scope": "selected_public_repo_commits",
+    "total_public_commits": 196
+  },
+  "campaign_chart_count": 0,
+  "campaign_state": "no approved campaign data",
+  "github_contribution_summary": {
+    "active_days": 66,
+    "data_through": "2026-11-02",
+    "dated_days": 365,
+    "scope": "github_public_contributions",
+    "total_public_contributions": 510
+  },
+  "project_count": 8,
+  "schema_version": 1
+}
