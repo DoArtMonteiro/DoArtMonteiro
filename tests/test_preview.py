@@ -304,6 +304,41 @@ class PreviewTests(unittest.TestCase):
             self.assertEqual(result["manifest"]["campaign_chart_count"], 0)
             self.assertEqual(list((Path(result["bundle"]) / "campaigns").glob("*.svg")), [])
 
+    def test_live_refresh_provenance_describes_daily_publication(self) -> None:
+        with tempfile.TemporaryDirectory(dir=TEST_OUTPUT_ROOT) as temp_dir:
+            root = Path(temp_dir)
+            commits = root / "commits.csv"
+            contributions = root / "github-contributions.csv"
+            write_contributions(commits)
+            write_contributions(contributions, changed=True)
+            result = build_preview(
+                commits, project_snapshot(), root / "published-assets",
+                source_scope="selected_public_repo_commits",
+                github_contribution_csv=contributions,
+                refresh_mode="live",
+            )
+            provenance = json.loads(
+                (Path(result["bundle"]) / "provenance.json").read_text(encoding="utf-8")
+            )
+
+        self.assertEqual(provenance["refresh"]["cadence"], "daily")
+        self.assertIn("portfolio-assets", provenance["refresh"]["workflow_mode"])
+        self.assertIn("branch unchanged", provenance["refresh"]["failure_behaviour"])
+        self.assertIn("daily scheduled", provenance["sources"]["github_public_contributions"]["cadence"])
+        self.assertIn("contents:read", provenance["sources"]["github_public_contributions"]["authentication"])
+        self.assertIn("no read:user scope", provenance["sources"]["github_public_contributions"]["authentication"])
+
+    def test_unknown_refresh_mode_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory(dir=TEST_OUTPUT_ROOT) as temp_dir:
+            root = Path(temp_dir)
+            source = root / "contributions.csv"
+            write_contributions(source)
+            with self.assertRaisesRegex(PreviewError, "Refresh mode"):
+                build_preview(
+                    source, project_snapshot(), root / "published-assets",
+                    source_scope="selected_public_repo_commits", refresh_mode="scheduled",
+                )
+
     def test_hyphenated_campaign_and_metric_pairs_keep_both_preview_charts(self) -> None:
         with tempfile.TemporaryDirectory(dir=TEST_OUTPUT_ROOT) as temp_dir:
             root = Path(temp_dir)

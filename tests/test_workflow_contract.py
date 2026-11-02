@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / ".github" / "workflows" / "living-portfolio-preview.yml"
 TEST_WORKFLOW = ROOT / ".github" / "workflows" / "living-portfolio-tests.yml"
+REFRESH_WORKFLOW = ROOT / ".github" / "workflows" / "living-portfolio-refresh.yml"
 
 
 class WorkflowContractTests(unittest.TestCase):
@@ -66,6 +67,31 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1", source)
         self.assertIn("python -m unittest discover -s tests -v", source)
         self.assertNotIn("contents: write", source)
+        self.assertNotIn("secrets.", source)
+        self.assertNotIn("vercel", source.casefold())
+
+    def test_live_refresh_is_default_branch_only_and_uses_split_permissions(self) -> None:
+        source = REFRESH_WORKFLOW.read_text(encoding="utf-8")
+        self.assertIn("on:\n  push:", source)
+        self.assertIn("\n  schedule:\n", source)
+        self.assertIn("\n  workflow_dispatch:\n", source)
+        self.assertIn('cron: "17 5 * * *"', source)
+        self.assertIn("branches:\n      - main", source)
+        self.assertIn("github.ref == format('refs/heads/{0}', github.event.repository.default_branch)", source)
+        self.assertNotIn("pull_request:", source)
+        self.assertNotIn("pull_request_target", source)
+        self.assertIn("jobs:\n  generate:", source)
+        self.assertIn("contents: read", source)
+        self.assertIn("\n  publish:", source)
+        self.assertIn("contents: write", source)
+        self.assertIn("needs: generate", source)
+        self.assertIn("--refresh-mode live", source)
+        self.assertIn("portfolio-assets", source)
+        self.assertIn("persist-credentials: false", source)
+        self.assertIn("actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1", source)
+        self.assertIn("actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a", source)
+        self.assertIn("actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333", source)
+        self.assertNotIn("read:user", source)
         self.assertNotIn("secrets.", source)
         self.assertNotIn("vercel", source.casefold())
 

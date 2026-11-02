@@ -94,9 +94,11 @@ A free, account-free browser trivia game where uncommon recognised answers score
 
 ## Activity
 
-The 3D calendar is a focused engineering-activity view, not a replica of GitHub's native contribution graph. It counts distinct commits linked to this account in the default branches of eight selected public repositories. The snapshot through 30 October 2026 contains 195 commits across 29 active days. It excludes other repositories and contribution types.
+The refresh workflow generates GitHub's public contribution graph daily from GraphQL without requesting restricted-contribution fields. The eight-repository commit count remains a separate engineering-activity metric and is not added to GitHub's account total. Until the first successful publication, the map below remains a dated snapshot of commits in the selected repositories.
 
-GitHub's [native profile calendar](https://github.com/DoArtMonteiro?tab=overview#js-contribution-activity) remains the broader account view. The separate [GraphQL preview generator](docs/living-portfolio.md#github-contribution-calendar) uses GitHub's public contribution-calendar API; its output is not presented here as a current profile image until a complete refresh has been reviewed.
+[![Living portfolio refresh](https://github.com/DoArtMonteiro/DoArtMonteiro/actions/workflows/living-portfolio-refresh.yml/badge.svg?branch=main)](https://github.com/DoArtMonteiro/DoArtMonteiro/actions/workflows/living-portfolio-refresh.yml?query=branch%3Amain)
+
+The first live asset publication runs after the refresh workflow reaches `main`. Until it succeeds, the dated snapshot below remains in place and must be read using its visible source-through date.
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" srcset="assets/generated/current/calendar-dark-animated.gif">
@@ -118,7 +120,7 @@ GitHub's [native profile calendar](https://github.com/DoArtMonteiro?tab=overview
 
 [Full project activity report](assets/generated/current/projects-activity.md) · [Project activity data](assets/generated/current/projects-activity.json)
 
-These are dated snapshots for review. Scheduled refresh and public asset publication are not active. Treat the visuals as stale after the 36-hour limit in the [snapshot metadata](assets/generated/current.json). Neither view measures work quality or business impact. Data sources, update rules and recovery limits are described in the [living portfolio guide](docs/living-portfolio.md).
+The refresh workflow publishes current contribution and project-activity visuals to a dedicated asset branch. If a refresh fails, the previous snapshot remains visible with its source-through date; treat it as stale after 36 hours. Neither view measures work quality or business impact. Data sources, permissions and recovery steps are described in the [living portfolio guide](docs/living-portfolio.md).
 
 ## Toolkit and contact
 

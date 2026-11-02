@@ -245,6 +245,7 @@ def build_preview(
     source_scope: str,
     github_contribution_csv: str | Path | None = None,
     campaign_registry: str | Path | None = None,
+    refresh_mode: str = "diagnostic",
 ) -> dict[str, Any]:
     """Generate a content-addressed bundle; only its pointer changes on success.
 
@@ -252,6 +253,25 @@ def build_preview(
     its referenced files untouched. The caller controls whether publication
     is possible; this preview function never writes to a Git branch.
     """
+    if refresh_mode not in {"diagnostic", "live"}:
+        raise PreviewError("Refresh mode must be diagnostic or live")
+    live_refresh = refresh_mode == "live"
+    source_cadence = "daily scheduled GitHub Actions refresh" if live_refresh else "manual diagnostic preview"
+    workflow_mode = (
+        "Default-branch GitHub Actions schedule, push or dispatch; validated assets publish to portfolio-assets; no application deployment."
+        if live_refresh else
+        "PR #4 diagnostic preview and default-branch workflow_dispatch; temporary artifact only, no schedule, persistent publication or deployment."
+    )
+    failure_behaviour = (
+        "Generation or validation failure leaves the portfolio-assets branch unchanged. The last valid files remain available, their visible data-through date ages, and the workflow status reports the failure."
+        if live_refresh else
+        "The preview writes generated files to temporary runner storage and uploads a seven-day GitHub Actions diagnostic artifact. It does not update the README assets or a persistent asset store. A failed refresh leaves the committed snapshot unchanged; any previously published older asset remains unchanged, and its data-through date continues to age."
+    )
+    recovery = (
+        "Inspect the failed refresh run, correct the source or validator, then retry through workflow_dispatch. Publication follows only after complete generation and hash validation."
+        if live_refresh else
+        "Inspect the failed run, correct the source or validator, then dispatch a new preview."
+    )
     destination = _validate_output_root(output_root)
     versions = destination / "versions"
     destination.mkdir(parents=True, exist_ok=True)
@@ -303,7 +323,7 @@ def build_preview(
                     "metric": "Distinct commit objects linked to the profile in selected public default branches, bucketed by author timestamp in UTC.",
                     "authentication": "Read-only GitHub Actions GITHUB_TOKEN with contents:read, sent only to api.github.com for the reviewed owner/repository allowlist; no read:user scope or personal access token.",
                     "repositories": selected_repositories,
-                    "cadence": "manual preview now; proposed daily after owner approval",
+                    "cadence": source_cadence,
                     "data_through": calendar_manifest["observed_interval"]["end"],
                     "source_sha256": calendar_manifest["source_sha256"],
                     "animation": {
@@ -325,8 +345,8 @@ def build_preview(
                         "source": "GitHub GraphQL User.contributionsCollection.contributionCalendar",
                         "scope": "Public contribution calendar; the query requests no private or restricted-contribution fields and the workflow token has no read:user permission.",
                         "metric": "Daily contribution counts as returned by GitHub for the approved public profile.",
-                        "authentication": "Read-only GitHub Actions GITHUB_TOKEN with contents:read; no read:user scope or personal access token.",
-                        "cadence": "manual diagnostic preview; proposed daily only after owner approval",
+                        "authentication": "Job-scoped GitHub Actions GITHUB_TOKEN with contents:read; no read:user scope or personal access token.",
+                        "cadence": source_cadence,
                         "data_through": github_calendar_manifest["observed_interval"]["end"],
                         "source_sha256": github_calendar_manifest["source_sha256"],
                         "animation": {
@@ -350,7 +370,7 @@ def build_preview(
                 ),
                 "projects": {
                     "source": "GitHub public REST API",
-                    "cadence": "manual preview now; proposed daily after owner approval",
+                    "cadence": source_cadence,
                     "repositories": [project["repository"] for project in project_snapshot["projects"]],
                     "latest_event_date": _latest_event_date(project_snapshot),
                 },
@@ -362,12 +382,12 @@ def build_preview(
                 },
             },
             "refresh": {
-                "workflow_mode": "PR #4 diagnostic preview and default-branch workflow_dispatch; no schedule, persistent publication or deployment.",
-                "proposed_cadence": "daily after owner approval",
+                "workflow_mode": workflow_mode,
+                "cadence": "daily" if live_refresh else "manual diagnostic preview",
                 "stale_after_hours": 36,
                 "last_successful_refresh": "For an Actions run, use that run's timestamp. Execution time is kept outside the deterministic bundle.",
-                "failure_behaviour": "The preview writes generated files to temporary runner storage and uploads a seven-day GitHub Actions diagnostic artifact. It does not update the README assets or a persistent asset store. A failed refresh leaves the committed snapshot unchanged; any separately published older asset remains unchanged, and its data-through date continues to age. Local reruns in the same output directory preserve the last valid bundle and pointer.",
-                "recovery": "Inspect the failed run, correct the source or validator, then dispatch a new preview. Publish only after a complete successful review and separate owner approval.",
+                "failure_behaviour": failure_behaviour,
+                "recovery": recovery,
             },
             "accessibility": {
                 "calendar": "Theme-specific 3D SVGs, a 2D SVG alternative, normalized CSV and textual summary",
@@ -450,6 +470,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", required=True, type=Path)
     parser.add_argument("--token-env", default="GH_TOKEN")
+    parser.add_argument("--refresh-mode", choices=("diagnostic", "live"), default="diagnostic")
     args = parser.parse_args(argv)
     try:
         repositories = load_allowlist(DEFAULT_ALLOWLIST)
@@ -473,9 +494,13 @@ def main(argv: list[str] | None = None) -> int:
                 source_scope="selected_public_repo_commits",
                 github_contribution_csv=github_contribution_path,
                 campaign_registry=DEFAULT_REGISTRY,
+                refresh_mode=args.refresh_mode,
             )
         print(json.dumps({
-            "status": "preview generated; assets were not published",
+            "status": (
+                "live assets generated and validated; publication step pending"
+                if args.refresh_mode == "live" else "preview generated; assets were not published"
+            ),
             "version": result["version"],
             "calendar": result["manifest"]["calendar_summary"],
             "github_contributions": result["manifest"]["github_contribution_summary"],
