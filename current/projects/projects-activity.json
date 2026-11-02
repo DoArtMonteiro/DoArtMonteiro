@@ -52,11 +52,11 @@
         "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b"
       },
       "latest_default_branch_workflow_run": {
-        "conclusion": null,
+        "conclusion": "success",
         "created_at": "2026-11-02T15:22:54Z",
         "head_sha": "70e54356c81df2ce6e989545122f6d56db91539b",
         "name": "verification",
-        "status": "in_progress",
+        "status": "completed",
         "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503"
       },
       "latest_release": null,
@@ -994,13 +994,13 @@
   "schema_version": 1,
   "timeline": [
     {
-      "conclusion": null,
+      "conclusion": "success",
       "kind": "workflow_run",
       "name": "verification",
       "occurred_at": "2026-11-02T15:22:54Z",
       "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
       "sha": "70e54356c81df2ce6e989545122f6d56db91539b",
-      "status": "in_progress",
+      "status": "completed",
       "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503"
     },
     {

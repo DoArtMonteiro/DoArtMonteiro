@@ -26,14 +26,14 @@
       "animation": {
         "alt_text": "Isometric daily contribution calendar from 2025-11-03 to 2026-11-02: 510 contributions across 66 active days and 365 dated days, including zero-count days.",
         "files": [
-          "github-calendar/calendar-light-animated.gif",
-          "github-calendar/calendar-dark-animated.gif"
+          "github-calendar/live/calendar-light-animated.gif",
+          "github-calendar/live/calendar-dark-animated.gif"
         ],
         "format": "finite GIF, eight frames, no infinite-loop extension",
         "source_sha256": "2dca79857ce757c155858f47c0b4c5b9a8f999bb58389962382300ddc1a65b5f",
         "static_fallbacks": [
-          "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-light.svg",
-          "github-calendar/versions/sha256-93bde520b13da4683e83f7d7bc13418179f1d0fd159a8aefd0cb81bc776b0f03/calendar-isometric.svg"
+          "github-calendar/live/calendar-light.svg",
+          "github-calendar/live/calendar-dark.svg"
         ]
       },
       "authentication": "Job-scoped GitHub Actions GITHUB_TOKEN with contents:read; no read:user scope or personal access token.",
@@ -68,14 +68,14 @@
       "animation": {
         "alt_text": "Isometric daily commit calendar from 2025-11-03 to 2026-11-02: 196 commits across 30 active days and 365 dated days, including zero-count days.",
         "files": [
-          "calendar/calendar-light-animated.gif",
-          "calendar/calendar-dark-animated.gif"
+          "calendar/live/calendar-light-animated.gif",
+          "calendar/live/calendar-dark-animated.gif"
         ],
         "format": "finite GIF, eight frames, no infinite-loop extension",
         "source_sha256": "638cbe3f4911e9f041c257c9cbd16fe277f1a3e1d3ba358bef2797579af3d042",
         "static_fallbacks": [
-          "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-light.svg",
-          "calendar/versions/sha256-7187c5e1a3b88726d4623a2214eab26c52386ab44839d9286daec1236be0f390/calendar-isometric.svg"
+          "calendar/live/calendar-light.svg",
+          "calendar/live/calendar-dark.svg"
         ]
       },
       "authentication": "Read-only GitHub Actions GITHUB_TOKEN with contents:read, sent only to api.github.com for the reviewed owner/repository allowlist; no read:user scope or personal access token.",

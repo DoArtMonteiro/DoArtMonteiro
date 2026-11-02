@@ -18,7 +18,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 - Open issues: 0.
 - Pull requests: 0 draft, 0 open, 14 merged, 0 closed without merge.
 - Closed milestones: 0.
-- Latest default-branch workflow: [verification: in\_progress](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503) on 02 Nov 2026.
+- Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503) on 02 Nov 2026.
 
 ## [DoArtMonteiro/callbrief](https://github.com/DoArtMonteiro/callbrief)
 
@@ -76,7 +76,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## Recent repository events
 
-- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · in\_progress](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503)
+- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503)
 - [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #13 · merged · docs: M10\.0 resilient navigation design, verification plan and owner decision register](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/13)
 - [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · 70e54356](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b)
 - [30 Oct 2026 · DoArtMonteiro/callbrief · workflow · CI · success](https://github.com/DoArtMonteiro/callbrief/actions/runs/41029184804)
