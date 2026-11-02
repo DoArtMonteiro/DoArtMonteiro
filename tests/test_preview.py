@@ -144,6 +144,18 @@ class PreviewTests(unittest.TestCase):
             self.assertEqual(first["manifest"]["github_contribution_summary"]["total_public_contributions"], 0)
             self.assertTrue((profile_calendar / "calendar-light-animated.gif").is_file())
             self.assertTrue((profile_calendar / "calendar-dark-animated.gif").is_file())
+            live = profile_calendar / "live"
+            for name in (
+                "calendar-light.svg", "calendar-dark.svg", "calendar-accessible.svg",
+                "calendar-normalized.csv", "calendar-light-animated.gif",
+                "calendar-dark-animated.gif",
+            ):
+                self.assertTrue((live / name).is_file(), name)
+                self.assertIn(f"github-calendar/live/{name}", first["manifest"]["asset_sha256"])
+            current = json.loads((profile_calendar / "current.json").read_text(encoding="utf-8"))
+            versioned = profile_calendar / current["bundle"]
+            self.assertEqual((live / "calendar-light.svg").read_bytes(),
+                             (versioned / "calendar-light.svg").read_bytes())
             self.assertIn("public contribution calendar", provenance["sources"]["github_public_contributions"]["scope"].casefold())
             self.assertIn("no read:user scope", provenance["sources"]["github_public_contributions"]["authentication"])
             self.assertIn("commits across", provenance["sources"]["public_commits"]["animation"]["alt_text"])
@@ -166,6 +178,10 @@ class PreviewTests(unittest.TestCase):
             self.assertNotEqual(first["version"], changed["version"])
             self.assertEqual(changed["manifest"]["github_contribution_summary"]["total_public_contributions"], 1)
             self.assertEqual(changed["manifest"]["calendar_summary"]["total_public_commits"], 0)
+            self.assertNotEqual(
+                (live / "calendar-light.svg").read_bytes(),
+                (Path(changed["bundle"]) / "github-calendar" / "live" / "calendar-light.svg").read_bytes(),
+            )
 
             pointer = (output / "current.json").read_bytes()
             github.write_text("date,contributions\n2025-10-31,-1\n", encoding="utf-8")

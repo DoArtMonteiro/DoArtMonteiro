@@ -158,6 +158,32 @@ def _asset_hashes(directory: Path) -> dict[str, str]:
     return result
 
 
+def _write_live_calendar_aliases(
+    output_dir: Path,
+    calendar_outputs: dict[str, Path],
+    animation_outputs: dict[str, object],
+) -> dict[str, str]:
+    """Write stable latest-version URLs alongside immutable calendar versions."""
+    aliases = {
+        "calendar-light.svg": calendar_outputs["calendar-light"],
+        "calendar-dark.svg": calendar_outputs["calendar-dark"],
+        "calendar-accessible.svg": calendar_outputs["calendar-accessible"],
+        "calendar-isometric.svg": calendar_outputs["calendar-isometric"],
+        "calendar-normalized.csv": calendar_outputs["calendar-normalized"],
+        "calendar-light-animated.gif": Path(str(animation_outputs["light"])),
+        "calendar-dark-animated.gif": Path(str(animation_outputs["dark"])),
+    }
+    live_dir = output_dir / "live"
+    result: dict[str, str] = {}
+    for name, source in aliases.items():
+        if not source.is_file():
+            raise PreviewError("Cannot create a live alias for a missing calendar asset")
+        target = live_dir / name
+        _write_if_changed(target, source.read_bytes())
+        result[name] = target.relative_to(output_dir.parent).as_posix()
+    return result
+
+
 def _latest_event_date(project_snapshot: dict[str, Any]) -> str | None:
     dates = []
     for event in project_snapshot.get("timeline", []):
@@ -288,9 +314,13 @@ def build_preview(
             calendar_outputs["calendar-normalized"], stage / "calendar",
             source_scope=source_scope,
         )
+        selected_live_assets = _write_live_calendar_aliases(
+            stage / "calendar", calendar_outputs, selected_animation,
+        )
         github_calendar_outputs = None
         github_calendar_manifest: dict[str, Any] | None = None
         github_animation: dict[str, object] | None = None
+        github_live_assets: dict[str, str] | None = None
         if github_contribution_csv is not None:
             github_calendar_outputs = render_calendar(
                 Path(github_contribution_csv), stage / "github-calendar",
@@ -299,6 +329,9 @@ def build_preview(
             github_animation = render_animated_calendars(
                 github_calendar_outputs["calendar-normalized"], stage / "github-calendar",
                 source_scope="github_public_contributions",
+            )
+            github_live_assets = _write_live_calendar_aliases(
+                stage / "github-calendar", github_calendar_outputs, github_animation,
             )
             github_calendar_manifest = json.loads(
                 github_calendar_outputs["calendar-manifest"].read_text(encoding="utf-8")
@@ -329,14 +362,14 @@ def build_preview(
                     "animation": {
                         "format": "finite GIF, eight frames, no infinite-loop extension",
                         "files": [
-                            "calendar/calendar-light-animated.gif",
-                            "calendar/calendar-dark-animated.gif",
+                            selected_live_assets["calendar-light-animated.gif"],
+                            selected_live_assets["calendar-dark-animated.gif"],
                         ],
                         "source_sha256": selected_animation["source_sha256"],
                         "alt_text": selected_animation["alt_text"],
                         "static_fallbacks": [
-                            Path(calendar_outputs["calendar-light"]).relative_to(stage).as_posix(),
-                            Path(calendar_outputs["calendar-isometric"]).relative_to(stage).as_posix(),
+                            selected_live_assets["calendar-light.svg"],
+                            selected_live_assets["calendar-dark.svg"],
                         ],
                     },
                 },
@@ -352,14 +385,14 @@ def build_preview(
                         "animation": {
                             "format": "finite GIF, eight frames, no infinite-loop extension",
                             "files": [
-                                "github-calendar/calendar-light-animated.gif",
-                                "github-calendar/calendar-dark-animated.gif",
+                                github_live_assets["calendar-light-animated.gif"],
+                                github_live_assets["calendar-dark-animated.gif"],
                             ],
                             "source_sha256": github_animation["source_sha256"],
                             "alt_text": github_animation["alt_text"],
                             "static_fallbacks": [
-                                Path(github_calendar_outputs["calendar-light"]).relative_to(stage).as_posix(),
-                                Path(github_calendar_outputs["calendar-isometric"]).relative_to(stage).as_posix(),
+                                github_live_assets["calendar-light.svg"],
+                                github_live_assets["calendar-dark.svg"],
                             ],
                         },
                     }
