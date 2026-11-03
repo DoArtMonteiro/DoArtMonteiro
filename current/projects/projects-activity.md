@@ -16,7 +16,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 - Latest default-branch commit: [70e54356](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b) on 02 Nov 2026.
 - Latest public release: none recorded.
 - Open issues: 0.
-- Pull requests: 0 draft, 0 open, 14 merged, 0 closed without merge.
+- Pull requests: 3 draft, 0 open, 14 merged, 0 closed without merge.
 - Closed milestones: 0.
 - Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503) on 02 Nov 2026.
 
@@ -76,11 +76,11 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## Recent repository events
 
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #17 · draft · M12: performance audit, GPU decision and roadmap \(draft, stacked on \#16\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/17)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #16 · draft · M11: V&V Lab Studio desktop application \(draft, stacked on \#15\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/16)
+- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #15 · draft · M10: resilient navigation implementation \(draft, development seeds only\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15)
 - [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503)
 - [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #13 · merged · docs: M10\.0 resilient navigation design, verification plan and owner decision register](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/13)
 - [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · 70e54356](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b)
 - [30 Oct 2026 · DoArtMonteiro/callbrief · workflow · CI · success](https://github.com/DoArtMonteiro/callbrief/actions/runs/41029184804)
 - [30 Oct 2026 · DoArtMonteiro/callbrief · pull request #7 · merged · docs: present prototype evidence and evaluation limits](https://github.com/DoArtMonteiro/callbrief/pull/7)
-- [30 Oct 2026 · DoArtMonteiro/callbrief · default-branch commit · 3c649793](https://github.com/DoArtMonteiro/callbrief/commit/3c6497937303589124a425c85ac42f347530a267)
-- [30 Oct 2026 · DoArtMonteiro/jarvis · workflow · CI · success](https://github.com/DoArtMonteiro/jarvis/actions/runs/41029122176)
-- [30 Oct 2026 · DoArtMonteiro/jarvis · pull request #13 · merged · docs: describe runtime boundaries and Donna V1](https://github.com/DoArtMonteiro/jarvis/pull/13)

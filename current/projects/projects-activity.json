@@ -243,6 +243,45 @@
           "title_xml": "docs: clarify simulation evidence and milestone status",
           "updated_at": "2026-10-30T08:49:34Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/14"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-02T16:11:10Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 15,
+          "status": "draft",
+          "title": "M10: resilient navigation implementation (draft, development seeds only)",
+          "title_markdown": "M10: resilient navigation implementation \\(draft, development seeds only\\)",
+          "title_xml": "M10: resilient navigation implementation (draft, development seeds only)",
+          "updated_at": "2026-11-03T00:31:04Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-03T00:16:26Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 16,
+          "status": "draft",
+          "title": "M11: V&V Lab Studio desktop application (draft, stacked on #15)",
+          "title_markdown": "M11: V&V Lab Studio desktop application \\(draft, stacked on \\#15\\)",
+          "title_xml": "M11: V&amp;V Lab Studio desktop application (draft, stacked on #15)",
+          "updated_at": "2026-11-03T01:41:14Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/16"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-03T12:25:05Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 17,
+          "status": "draft",
+          "title": "M12: performance audit, GPU decision and roadmap (draft, stacked on #16)",
+          "title_markdown": "M12: performance audit, GPU decision and roadmap \\(draft, stacked on \\#16\\)",
+          "title_xml": "M12: performance audit, GPU decision and roadmap (draft, stacked on #16)",
+          "updated_at": "2026-11-03T12:25:05Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/17"
         }
       ],
       "recent_open_issues": [],
@@ -993,6 +1032,39 @@
   ],
   "schema_version": 1,
   "timeline": [
+    {
+      "kind": "pull_request",
+      "number": 17,
+      "occurred_at": "2026-11-03T12:25:05Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M12: performance audit, GPU decision and roadmap (draft, stacked on #16)",
+      "title_markdown": "M12: performance audit, GPU decision and roadmap \\(draft, stacked on \\#16\\)",
+      "title_xml": "M12: performance audit, GPU decision and roadmap (draft, stacked on #16)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/17"
+    },
+    {
+      "kind": "pull_request",
+      "number": 16,
+      "occurred_at": "2026-11-03T00:16:26Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M11: V&V Lab Studio desktop application (draft, stacked on #15)",
+      "title_markdown": "M11: V&V Lab Studio desktop application \\(draft, stacked on \\#15\\)",
+      "title_xml": "M11: V&amp;V Lab Studio desktop application (draft, stacked on #15)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/16"
+    },
+    {
+      "kind": "pull_request",
+      "number": 15,
+      "occurred_at": "2026-11-02T16:11:10Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M10: resilient navigation implementation (draft, development seeds only)",
+      "title_markdown": "M10: resilient navigation implementation \\(draft, development seeds only\\)",
+      "title_xml": "M10: resilient navigation implementation (draft, development seeds only)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
+    },
     {
       "conclusion": "success",
       "kind": "workflow_run",
