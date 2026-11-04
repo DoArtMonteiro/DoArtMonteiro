@@ -13,12 +13,12 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## [DoArtMonteiro/autonomous-systems-vv-lab](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab)
 
-- Latest default-branch commit: [70e54356](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b) on 02 Nov 2026.
+- Latest default-branch commit: [a23db642](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/a23db642ecbb1e60046a84f71c4a8a91c2b21afb) on 03 Nov 2026.
 - Latest public release: none recorded.
 - Open issues: 0.
-- Pull requests: 3 draft, 0 open, 14 merged, 0 closed without merge.
+- Pull requests: 8 draft, 0 open, 17 merged, 0 closed without merge.
 - Closed milestones: 0.
-- Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503) on 02 Nov 2026.
+- Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41734853322) on 03 Nov 2026.
 
 ## [DoArtMonteiro/callbrief](https://github.com/DoArtMonteiro/callbrief)
 
@@ -76,11 +76,11 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## Recent repository events
 
-- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #17 · draft · M12: performance audit, GPU decision and roadmap \(draft, stacked on \#16\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/17)
-- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #16 · draft · M11: V&V Lab Studio desktop application \(draft, stacked on \#15\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/16)
-- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #15 · draft · M10: resilient navigation implementation \(draft, development seeds only\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15)
-- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503)
-- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #13 · merged · docs: M10\.0 resilient navigation design, verification plan and owner decision register](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/13)
-- [02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · 70e54356](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b)
-- [30 Oct 2026 · DoArtMonteiro/callbrief · workflow · CI · success](https://github.com/DoArtMonteiro/callbrief/actions/runs/41029184804)
-- [30 Oct 2026 · DoArtMonteiro/callbrief · pull request #7 · merged · docs: present prototype evidence and evaluation limits](https://github.com/DoArtMonteiro/callbrief/pull/7)
+- [04 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #25 · draft · M16: geospatial view, Mission Control and Studio 0\.16\.0 \(draft, stacked on \#24\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/25)
+- [04 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #24 · draft · M15: mission experience, simulation library and Studio 0\.15\.0 \(draft\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/24)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41734853322)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #23 · merged · M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test \(draft, stacked\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/23)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · a23db642](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/a23db642ecbb1e60046a84f71c4a8a91c2b21afb)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #22 · merged · M14: research carried onto the base without M10 \(draft, stacked on the foundation\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/22)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #21 · merged · Foundation: Studio \(M11\) and vv\-exec \(M12\) on main without M10 \(draft\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/21)
+- [03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #20 · draft · M14: evidence robustness, ground domain in vv\-exec and preregistered falsification benchmark \(draft, stacked on \#18\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/20)

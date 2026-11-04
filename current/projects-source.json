@@ -47,17 +47,17 @@
       "closed_milestones": [],
       "default_branch": "main",
       "latest_default_branch_commit": {
-        "committed_at": "2026-11-02T15:22:50Z",
-        "sha": "70e54356c81df2ce6e989545122f6d56db91539b",
-        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b"
+        "committed_at": "2026-11-03T22:54:51Z",
+        "sha": "a23db642ecbb1e60046a84f71c4a8a91c2b21afb",
+        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/a23db642ecbb1e60046a84f71c4a8a91c2b21afb"
       },
       "latest_default_branch_workflow_run": {
         "conclusion": "success",
-        "created_at": "2026-11-02T15:22:54Z",
-        "head_sha": "70e54356c81df2ce6e989545122f6d56db91539b",
+        "created_at": "2026-11-03T22:54:54Z",
+        "head_sha": "a23db642ecbb1e60046a84f71c4a8a91c2b21afb",
         "name": "verification",
         "status": "completed",
-        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503"
+        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41734853322"
       },
       "latest_release": null,
       "open_issue_count": 0,
@@ -254,7 +254,7 @@
           "title": "M10: resilient navigation implementation (draft, development seeds only)",
           "title_markdown": "M10: resilient navigation implementation \\(draft, development seeds only\\)",
           "title_xml": "M10: resilient navigation implementation (draft, development seeds only)",
-          "updated_at": "2026-11-03T00:31:04Z",
+          "updated_at": "2026-11-03T14:40:12Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
         },
         {
@@ -267,7 +267,7 @@
           "title": "M11: V&V Lab Studio desktop application (draft, stacked on #15)",
           "title_markdown": "M11: V&V Lab Studio desktop application \\(draft, stacked on \\#15\\)",
           "title_xml": "M11: V&amp;V Lab Studio desktop application (draft, stacked on #15)",
-          "updated_at": "2026-11-03T01:41:14Z",
+          "updated_at": "2026-11-03T14:28:34Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/16"
         },
         {
@@ -282,6 +282,110 @@
           "title_xml": "M12: performance audit, GPU decision and roadmap (draft, stacked on #16)",
           "updated_at": "2026-11-03T12:25:05Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/17"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-03T13:14:26Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 18,
+          "status": "draft",
+          "title": "M12: vv-exec in-process experiment engine (draft, stacked on #17)",
+          "title_markdown": "M12: vv\\-exec in\\-process experiment engine \\(draft, stacked on \\#17\\)",
+          "title_xml": "M12: vv-exec in-process experiment engine (draft, stacked on #17)",
+          "updated_at": "2026-11-03T14:55:51Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/18"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-03T14:50:29Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 19,
+          "status": "draft",
+          "title": "docs: M10-M12 decision dashboard and M13 proposal (draft)",
+          "title_markdown": "docs: M10\\-M12 decision dashboard and M13 proposal \\(draft\\)",
+          "title_xml": "docs: M10-M12 decision dashboard and M13 proposal (draft)",
+          "updated_at": "2026-11-03T14:57:54Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/19"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-03T17:45:03Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 20,
+          "status": "draft",
+          "title": "M14: evidence robustness, ground domain in vv-exec and preregistered falsification benchmark (draft, stacked on #18)",
+          "title_markdown": "M14: evidence robustness, ground domain in vv\\-exec and preregistered falsification benchmark \\(draft, stacked on \\#18\\)",
+          "title_xml": "M14: evidence robustness, ground domain in vv-exec and preregistered falsification benchmark (draft, stacked on #18)",
+          "updated_at": "2026-11-03T17:45:03Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/20"
+        },
+        {
+          "closed_at": "2026-11-03T22:53:42Z",
+          "created_at": "2026-11-03T21:35:48Z",
+          "draft": false,
+          "merged_at": "2026-11-03T22:53:42Z",
+          "number": 21,
+          "status": "merged",
+          "title": "Foundation: Studio (M11) and vv-exec (M12) on main without M10 (draft)",
+          "title_markdown": "Foundation: Studio \\(M11\\) and vv\\-exec \\(M12\\) on main without M10 \\(draft\\)",
+          "title_xml": "Foundation: Studio (M11) and vv-exec (M12) on main without M10 (draft)",
+          "updated_at": "2026-11-03T22:53:42Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/21"
+        },
+        {
+          "closed_at": "2026-11-03T22:54:20Z",
+          "created_at": "2026-11-03T21:35:58Z",
+          "draft": false,
+          "merged_at": "2026-11-03T22:54:20Z",
+          "number": 22,
+          "status": "merged",
+          "title": "M14: research carried onto the base without M10 (draft, stacked on the foundation)",
+          "title_markdown": "M14: research carried onto the base without M10 \\(draft, stacked on the foundation\\)",
+          "title_xml": "M14: research carried onto the base without M10 (draft, stacked on the foundation)",
+          "updated_at": "2026-11-03T22:54:20Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/22"
+        },
+        {
+          "closed_at": "2026-11-03T22:54:52Z",
+          "created_at": "2026-11-03T21:36:03Z",
+          "draft": false,
+          "merged_at": "2026-11-03T22:54:52Z",
+          "number": 23,
+          "status": "merged",
+          "title": "M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test (draft, stacked)",
+          "title_markdown": "M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test \\(draft, stacked\\)",
+          "title_xml": "M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test (draft, stacked)",
+          "updated_at": "2026-11-03T22:54:52Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/23"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-04T01:15:19Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 24,
+          "status": "draft",
+          "title": "M15: mission experience, simulation library and Studio 0.15.0 (draft)",
+          "title_markdown": "M15: mission experience, simulation library and Studio 0\\.15\\.0 \\(draft\\)",
+          "title_xml": "M15: mission experience, simulation library and Studio 0.15.0 (draft)",
+          "updated_at": "2026-11-04T01:18:43Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/24"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-04T12:49:08Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 25,
+          "status": "draft",
+          "title": "M16: geospatial view, Mission Control and Studio 0.16.0 (draft, stacked on #24)",
+          "title_markdown": "M16: geospatial view, Mission Control and Studio 0\\.16\\.0 \\(draft, stacked on \\#24\\)",
+          "title_xml": "M16: geospatial view, Mission Control and Studio 0.16.0 (draft, stacked on #24)",
+          "updated_at": "2026-11-04T12:50:02Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/25"
         }
       ],
       "recent_open_issues": [],
@@ -1034,6 +1138,111 @@
   "timeline": [
     {
       "kind": "pull_request",
+      "number": 25,
+      "occurred_at": "2026-11-04T12:49:08Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M16: geospatial view, Mission Control and Studio 0.16.0 (draft, stacked on #24)",
+      "title_markdown": "M16: geospatial view, Mission Control and Studio 0\\.16\\.0 \\(draft, stacked on \\#24\\)",
+      "title_xml": "M16: geospatial view, Mission Control and Studio 0.16.0 (draft, stacked on #24)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/25"
+    },
+    {
+      "kind": "pull_request",
+      "number": 24,
+      "occurred_at": "2026-11-04T01:15:19Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M15: mission experience, simulation library and Studio 0.15.0 (draft)",
+      "title_markdown": "M15: mission experience, simulation library and Studio 0\\.15\\.0 \\(draft\\)",
+      "title_xml": "M15: mission experience, simulation library and Studio 0.15.0 (draft)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/24"
+    },
+    {
+      "conclusion": "success",
+      "kind": "workflow_run",
+      "name": "verification",
+      "occurred_at": "2026-11-03T22:54:54Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "sha": "a23db642ecbb1e60046a84f71c4a8a91c2b21afb",
+      "status": "completed",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41734853322"
+    },
+    {
+      "kind": "pull_request",
+      "number": 23,
+      "occurred_at": "2026-11-03T22:54:52Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "merged",
+      "title": "M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test (draft, stacked)",
+      "title_markdown": "M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test \\(draft, stacked\\)",
+      "title_xml": "M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test (draft, stacked)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/23"
+    },
+    {
+      "kind": "default_branch_commit",
+      "occurred_at": "2026-11-03T22:54:51Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "sha": "a23db642ecbb1e60046a84f71c4a8a91c2b21afb",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/a23db642ecbb1e60046a84f71c4a8a91c2b21afb"
+    },
+    {
+      "kind": "pull_request",
+      "number": 22,
+      "occurred_at": "2026-11-03T22:54:20Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "merged",
+      "title": "M14: research carried onto the base without M10 (draft, stacked on the foundation)",
+      "title_markdown": "M14: research carried onto the base without M10 \\(draft, stacked on the foundation\\)",
+      "title_xml": "M14: research carried onto the base without M10 (draft, stacked on the foundation)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/22"
+    },
+    {
+      "kind": "pull_request",
+      "number": 21,
+      "occurred_at": "2026-11-03T22:53:42Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "merged",
+      "title": "Foundation: Studio (M11) and vv-exec (M12) on main without M10 (draft)",
+      "title_markdown": "Foundation: Studio \\(M11\\) and vv\\-exec \\(M12\\) on main without M10 \\(draft\\)",
+      "title_xml": "Foundation: Studio (M11) and vv-exec (M12) on main without M10 (draft)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/21"
+    },
+    {
+      "kind": "pull_request",
+      "number": 20,
+      "occurred_at": "2026-11-03T17:45:03Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M14: evidence robustness, ground domain in vv-exec and preregistered falsification benchmark (draft, stacked on #18)",
+      "title_markdown": "M14: evidence robustness, ground domain in vv\\-exec and preregistered falsification benchmark \\(draft, stacked on \\#18\\)",
+      "title_xml": "M14: evidence robustness, ground domain in vv-exec and preregistered falsification benchmark (draft, stacked on #18)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/20"
+    },
+    {
+      "kind": "pull_request",
+      "number": 19,
+      "occurred_at": "2026-11-03T14:50:29Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "docs: M10-M12 decision dashboard and M13 proposal (draft)",
+      "title_markdown": "docs: M10\\-M12 decision dashboard and M13 proposal \\(draft\\)",
+      "title_xml": "docs: M10-M12 decision dashboard and M13 proposal (draft)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/19"
+    },
+    {
+      "kind": "pull_request",
+      "number": 18,
+      "occurred_at": "2026-11-03T13:14:26Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M12: vv-exec in-process experiment engine (draft, stacked on #17)",
+      "title_markdown": "M12: vv\\-exec in\\-process experiment engine \\(draft, stacked on \\#17\\)",
+      "title_xml": "M12: vv-exec in-process experiment engine (draft, stacked on #17)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/18"
+    },
+    {
+      "kind": "pull_request",
       "number": 17,
       "occurred_at": "2026-11-03T12:25:05Z",
       "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
@@ -1066,16 +1275,6 @@
       "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
     },
     {
-      "conclusion": "success",
-      "kind": "workflow_run",
-      "name": "verification",
-      "occurred_at": "2026-11-02T15:22:54Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "sha": "70e54356c81df2ce6e989545122f6d56db91539b",
-      "status": "completed",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/41471013503"
-    },
-    {
       "kind": "pull_request",
       "number": 13,
       "occurred_at": "2026-11-02T15:22:50Z",
@@ -1085,13 +1284,6 @@
       "title_markdown": "docs: M10\\.0 resilient navigation design, verification plan and owner decision register",
       "title_xml": "docs: M10.0 resilient navigation design, verification plan and owner decision register",
       "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/13"
-    },
-    {
-      "kind": "default_branch_commit",
-      "occurred_at": "2026-11-02T15:22:50Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "sha": "70e54356c81df2ce6e989545122f6d56db91539b",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/70e54356c81df2ce6e989545122f6d56db91539b"
     },
     {
       "conclusion": "success",

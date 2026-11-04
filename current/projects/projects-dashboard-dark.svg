@@ -14,12 +14,12 @@
 <text x="70" y="313" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · no default-branch run recorded</text>
 <rect x="48" y="336" width="640" height="190" rx="14" fill="#17232c" stroke="#3a4a53"/>
 <text x="70" y="368" fill="#f1eee6" font-family="Arial,sans-serif" font-size="18" font-weight="700">DoArtMonteiro/autonomous-systems-vv-lab</text>
-<text x="70" y="397" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Default branch · main · 70e54356 · 02 Nov 2026</text>
+<text x="70" y="397" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Default branch · main · a23db642 · 03 Nov 2026</text>
 <text x="70" y="422" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Latest release · none recorded</text>
 <text x="70" y="447" fill="#f1eee6" font-family="Arial,sans-serif" font-size="14">Open issues · 0</text>
-<text x="70" y="472" fill="#f1eee6" font-family="Arial,sans-serif" font-size="14">Pull requests · Draft 3 · Open 0 · Merged 14 · Closed unmerged 0</text>
+<text x="70" y="472" fill="#f1eee6" font-family="Arial,sans-serif" font-size="14">Pull requests · Draft 8 · Open 0 · Merged 17 · Closed unmerged 0</text>
 <text x="70" y="497" fill="#78c6bc" font-family="Arial,sans-serif" font-size="14">Closed milestones · 0</text>
-<text x="70" y="519" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · verification · success · 02 Nov 2026</text>
+<text x="70" y="519" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · verification · success · 03 Nov 2026</text>
 <rect x="48" y="542" width="640" height="190" rx="14" fill="#17232c" stroke="#3a4a53"/>
 <text x="70" y="574" fill="#f1eee6" font-family="Arial,sans-serif" font-size="18" font-weight="700">DoArtMonteiro/callbrief</text>
 <text x="70" y="603" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Default branch · main · 3c649793 · 30 Oct 2026</text>
@@ -69,13 +69,13 @@
 <text x="734" y="909" fill="#78c6bc" font-family="Arial,sans-serif" font-size="14">Closed milestones · 0</text>
 <text x="734" y="931" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · Deploy to Cloudflare Workers · success · 04 Oct 2026</text>
 <text x="48" y="992" fill="#f1eee6" font-family="Arial,sans-serif" font-size="22" font-weight="700">Recent repository events</text>
-<text x="48" y="1030" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #17 · draft · M12: performance audit, GPU decision and roadmap (draft, stacked on #16)</text>
-<text x="48" y="1055" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #16 · draft · M11: V&amp;V Lab Studio desktop application (draft, stacked on #15)</text>
-<text x="48" y="1080" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #15 · draft · M10: resilient navigation implementation (draft, development seeds only)</text>
-<text x="48" y="1105" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success</text>
-<text x="48" y="1130" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #13 · merged · docs: M10.0 resilient navigation design, verification plan and owner decision register</text>
-<text x="48" y="1155" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">02 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · 70e54356</text>
-<text x="48" y="1180" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">30 Oct 2026 · DoArtMonteiro/callbrief · workflow · CI · success</text>
-<text x="48" y="1205" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">30 Oct 2026 · DoArtMonteiro/callbrief · pull request #7 · merged · docs: present prototype evidence and evaluation limits</text>
+<text x="48" y="1030" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">04 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #25 · draft · M16: geospatial view, Mission Control and Studio 0.16.0 (draft, stacked on #24)</text>
+<text x="48" y="1055" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">04 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #24 · draft · M15: mission experience, simulation library and Studio 0.15.0 (draft)</text>
+<text x="48" y="1080" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success</text>
+<text x="48" y="1105" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #23 · merged · M13: Discovery Lab, challenge a safety claim in Studio, with the M14 mechanism test (draft, stacked)</text>
+<text x="48" y="1130" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · a23db642</text>
+<text x="48" y="1155" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #22 · merged · M14: research carried onto the base without M10 (draft, stacked on the foundation)</text>
+<text x="48" y="1180" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #21 · merged · Foundation: Studio (M11) and vv-exec (M12) on main without M10 (draft)</text>
+<text x="48" y="1205" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">03 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #20 · draft · M14: evidence robustness, ground domain in vv-exec and preregistered falsification benchmark (draft, stacked on #18)</text>
 <text x="48" y="1238" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Facts come from public GitHub REST endpoints. The profile repository records portfolio refresh runs separately from these project workflow results.</text>
 </svg>
