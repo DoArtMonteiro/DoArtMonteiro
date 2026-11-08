@@ -386,6 +386,71 @@
           "title_xml": "M16: geospatial view, Mission Control and Studio 0.16.0 (draft, stacked on #24)",
           "updated_at": "2026-11-05T01:26:33Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/25"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-07T16:01:37Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 26,
+          "status": "draft",
+          "title": "M17: Experiment Lab, exploratory landing case v2, vehicle presets and environment packages (draft, stacked on #25)",
+          "title_markdown": "M17: Experiment Lab, exploratory landing case v2, vehicle presets and environment packages \\(draft, stacked on \\#25\\)",
+          "title_xml": "M17: Experiment Lab, exploratory landing case v2, vehicle presets and environment packages (draft, stacked on #25)",
+          "updated_at": "2026-11-07T16:01:37Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/26"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-07T16:02:11Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 27,
+          "status": "draft",
+          "title": "M17: multi-stage launch ascent with independent booster and upper-stage entities, record v2 (draft)",
+          "title_markdown": "M17: multi\\-stage launch ascent with independent booster and upper\\-stage entities, record v2 \\(draft\\)",
+          "title_xml": "M17: multi-stage launch ascent with independent booster and upper-stage entities, record v2 (draft)",
+          "updated_at": "2026-11-07T16:02:11Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/27"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-07T16:02:14Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 28,
+          "status": "draft",
+          "title": "M17: five new environment packs as installable packages with data-quality tiers (draft)",
+          "title_markdown": "M17: five new environment packs as installable packages with data\\-quality tiers \\(draft\\)",
+          "title_xml": "M17: five new environment packs as installable packages with data-quality tiers (draft)",
+          "updated_at": "2026-11-07T16:02:14Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/28"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-07T16:02:16Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 29,
+          "status": "draft",
+          "title": "M17: optional Cinematic View module (Godot), install, verify, launch, profiles (draft prototype)",
+          "title_markdown": "M17: optional Cinematic View module \\(Godot\\), install, verify, launch, profiles \\(draft prototype\\)",
+          "title_xml": "M17: optional Cinematic View module (Godot), install, verify, launch, profiles (draft prototype)",
+          "updated_at": "2026-11-07T16:02:16Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/29"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-07T16:02:30Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 30,
+          "status": "draft",
+          "title": "M17: integration of the four streams as installed in Studio 0.17.0 (draft, stacked on #26)",
+          "title_markdown": "M17: integration of the four streams as installed in Studio 0\\.17\\.0 \\(draft, stacked on \\#26\\)",
+          "title_xml": "M17: integration of the four streams as installed in Studio 0.17.0 (draft, stacked on #26)",
+          "updated_at": "2026-11-07T16:02:30Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/30"
         }
       ],
       "recent_open_issues": [],
@@ -1136,6 +1201,61 @@
   ],
   "schema_version": 1,
   "timeline": [
+    {
+      "kind": "pull_request",
+      "number": 30,
+      "occurred_at": "2026-11-07T16:02:30Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M17: integration of the four streams as installed in Studio 0.17.0 (draft, stacked on #26)",
+      "title_markdown": "M17: integration of the four streams as installed in Studio 0\\.17\\.0 \\(draft, stacked on \\#26\\)",
+      "title_xml": "M17: integration of the four streams as installed in Studio 0.17.0 (draft, stacked on #26)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/30"
+    },
+    {
+      "kind": "pull_request",
+      "number": 29,
+      "occurred_at": "2026-11-07T16:02:16Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M17: optional Cinematic View module (Godot), install, verify, launch, profiles (draft prototype)",
+      "title_markdown": "M17: optional Cinematic View module \\(Godot\\), install, verify, launch, profiles \\(draft prototype\\)",
+      "title_xml": "M17: optional Cinematic View module (Godot), install, verify, launch, profiles (draft prototype)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/29"
+    },
+    {
+      "kind": "pull_request",
+      "number": 28,
+      "occurred_at": "2026-11-07T16:02:14Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M17: five new environment packs as installable packages with data-quality tiers (draft)",
+      "title_markdown": "M17: five new environment packs as installable packages with data\\-quality tiers \\(draft\\)",
+      "title_xml": "M17: five new environment packs as installable packages with data-quality tiers (draft)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/28"
+    },
+    {
+      "kind": "pull_request",
+      "number": 27,
+      "occurred_at": "2026-11-07T16:02:11Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M17: multi-stage launch ascent with independent booster and upper-stage entities, record v2 (draft)",
+      "title_markdown": "M17: multi\\-stage launch ascent with independent booster and upper\\-stage entities, record v2 \\(draft\\)",
+      "title_xml": "M17: multi-stage launch ascent with independent booster and upper-stage entities, record v2 (draft)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/27"
+    },
+    {
+      "kind": "pull_request",
+      "number": 26,
+      "occurred_at": "2026-11-07T16:01:37Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "M17: Experiment Lab, exploratory landing case v2, vehicle presets and environment packages (draft, stacked on #25)",
+      "title_markdown": "M17: Experiment Lab, exploratory landing case v2, vehicle presets and environment packages \\(draft, stacked on \\#25\\)",
+      "title_xml": "M17: Experiment Lab, exploratory landing case v2, vehicle presets and environment packages (draft, stacked on #25)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/26"
+    },
     {
       "kind": "pull_request",
       "number": 25,
