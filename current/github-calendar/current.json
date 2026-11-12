@@ -1,5 +1,5 @@
 {
-  "bundle": "versions/sha256-1608314466a9f5884eedee3e8800c7f79be452ed31881a38918d3680b691850a",
+  "bundle": "versions/sha256-1e475339105609dc7f33766271f93ce6181e0f18937abd45c67c48751d510d8f",
   "files": [
     "calendar-light.svg",
     "calendar-dark.svg",
@@ -8,6 +8,6 @@
     "calendar-normalized.csv",
     "calendar-manifest.json"
   ],
-  "manifest": "versions/sha256-1608314466a9f5884eedee3e8800c7f79be452ed31881a38918d3680b691850a/calendar-manifest.json",
-  "source_sha256": "b08027a762a0944ae7d1f0a9de276437783f02d20cceb7c6e366cc9949d9912e"
+  "manifest": "versions/sha256-1e475339105609dc7f33766271f93ce6181e0f18937abd45c67c48751d510d8f/calendar-manifest.json",
+  "source_sha256": "63aadeb3bdac8cc49ac33be2a4bfaf178d2ee7ad76639565689593ddf2d97dce"
 }
