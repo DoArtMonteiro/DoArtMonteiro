@@ -1,10 +1,10 @@
 {
-  "data_through": "2026-11-12",
+  "data_through": "2026-11-13",
   "failure_behaviour": "The last valid assets remain available; the refresh workflow reports failures.",
   "manifest": "current/manifest.json",
   "schema_version": 1,
   "source_scope": "github_public_contributions",
   "stale_after_hours": 36,
   "status": "live",
-  "version": "f000d118bd90008909ce897eeeaed085020d5a4e21eb2610480f8b75c26c5945"
+  "version": "71a8f9042cd322b6984d9b08c8d7ce0ad28a25fde38f79109a5e2a82d534022f"
 }

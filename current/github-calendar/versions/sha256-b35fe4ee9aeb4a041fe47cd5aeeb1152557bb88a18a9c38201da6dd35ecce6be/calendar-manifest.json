@@ -1,10 +1,10 @@
 {
   "artifact_sha256": {
-    "calendar-accessible.svg": "22c9e2afd9350fa77ec620a34fc17de3f802c1d7bc398bfcb159497a312bfa2d",
-    "calendar-dark.svg": "bfd2bfd6a7c51fe425004d5a58f87a5db724de1e8b4ba68a98802e8faf359457",
-    "calendar-isometric.svg": "0b5627ef79612828e79c37aea60e7842701629e827b6df0aa0e99b9c0c584b18",
-    "calendar-light.svg": "feb6b615039f74aa83a2bf83955c8347314eb44b88e3f388b0e87f6a5829e7eb",
-    "calendar-normalized.csv": "63aadeb3bdac8cc49ac33be2a4bfaf178d2ee7ad76639565689593ddf2d97dce"
+    "calendar-accessible.svg": "9972988fb868a089798ad553d69e7c2ca08caca17b17024c702ae3351bb37528",
+    "calendar-dark.svg": "b9388a4693b73870201c401bec045e26415d6a13bceefb9a92fbe331b44d3aac",
+    "calendar-isometric.svg": "53537c282bdd993466062e70a6882e4eacff1e40a894afc4059f8923cb9074c1",
+    "calendar-light.svg": "54ac9b400d4c77225fa352dde1f5880144e80e0dc68f7dcad236fe6b3fa3e5e7",
+    "calendar-normalized.csv": "9a7fb739b921e503c851d5ee179393c28dbb48e5c802fe3e8a4b2e1133fe4894"
   },
   "contribution_activity": {
     "active_days": 74,
@@ -65,8 +65,8 @@
   ],
   "observed_interval": {
     "dated_days": 365,
-    "end": "2026-11-12",
-    "start": "2025-11-13"
+    "end": "2026-11-13",
+    "start": "2025-11-14"
   },
   "quality_caveat": "Aggregate counts do not measure work quality or intensity.",
   "renderer": "living-portfolio-calendar",
@@ -74,7 +74,7 @@
   "source_file": "github-contributions.csv",
   "source_scope": "github_public_contributions",
   "source_scope_description": "GitHub GraphQL contribution-calendar days visible to the public; the request uses no read:user scope and does not request restricted-contribution fields.",
-  "source_sha256": "63aadeb3bdac8cc49ac33be2a4bfaf178d2ee7ad76639565689593ddf2d97dce",
-  "source_snapshot_date": "2026-11-12",
+  "source_sha256": "9a7fb739b921e503c851d5ee179393c28dbb48e5c802fe3e8a4b2e1133fe4894",
+  "source_snapshot_date": "2026-11-13",
   "source_snapshot_date_basis": "Latest dated row in the validated CSV."
 }
