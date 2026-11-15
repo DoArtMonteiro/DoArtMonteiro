@@ -1,18 +1,18 @@
 {
   "artifact_sha256": {
-    "calendar-accessible.svg": "279c91f0e878a4580b456e516bc624cf3092c633bd24a879912e3611b837f152",
-    "calendar-dark.svg": "24339db604d966e9ebeb9ed178000bf3c0ea88c3fba5c7cd117e7ef7215af97d",
-    "calendar-isometric.svg": "778a5ca1d8fd832a754626c5413486309ebc833d00ea7de1c071940077344991",
-    "calendar-light.svg": "040ab48946c1163040ac60d1987a9a373ad38f8b1d20a485b1771ef4afd59582",
-    "calendar-normalized.csv": "f646cd4588c963fb6e10912c527d7aea3ee239abfbc7650432abc27b6d707fbc"
+    "calendar-accessible.svg": "4d25a0f3762da918be6f800a3b9344183e5474d19a296f19d5cf385959829bb8",
+    "calendar-dark.svg": "61870aa684d935851e52ec08a8a7508ec4717c9cde5b36516d60f5767153883d",
+    "calendar-isometric.svg": "26c411f9c18066e3270489e19de32fd0ebe0367add728c375871a6603941d08c",
+    "calendar-light.svg": "5dfe6da67ff819f780f2e7281517267d2defbf92b7203c265899433cd10fea34",
+    "calendar-normalized.csv": "2558567e27784269a2fa232f154a3ccaa7ac619b2365053ab1ad3203d0175792"
   },
   "commit_activity": {
-    "active_days": 33,
+    "active_days": 34,
     "first_active_day": "2026-07-12",
-    "last_active_day": "2026-11-12",
+    "last_active_day": "2026-11-15",
     "maximum_daily_commits": 21,
-    "total_commits": 205,
-    "zero_days": 332
+    "total_commits": 210,
+    "zero_days": 331
   },
   "files": [
     "calendar-light.svg",
@@ -65,8 +65,8 @@
   ],
   "observed_interval": {
     "dated_days": 365,
-    "end": "2026-11-14",
-    "start": "2025-11-15"
+    "end": "2026-11-15",
+    "start": "2025-11-16"
   },
   "quality_caveat": "Aggregate counts do not measure work quality or intensity.",
   "renderer": "living-portfolio-calendar",
@@ -74,7 +74,7 @@
   "source_file": "contributions.csv",
   "source_scope": "selected_public_repo_commits",
   "source_scope_description": "Distinct commits linked to DoArtMonteiro on selected public repositories' default branches; dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph.",
-  "source_sha256": "f646cd4588c963fb6e10912c527d7aea3ee239abfbc7650432abc27b6d707fbc",
-  "source_snapshot_date": "2026-11-14",
+  "source_sha256": "2558567e27784269a2fa232f154a3ccaa7ac619b2365053ab1ad3203d0175792",
+  "source_snapshot_date": "2026-11-15",
   "source_snapshot_date_basis": "Latest dated row in the validated CSV."
 }

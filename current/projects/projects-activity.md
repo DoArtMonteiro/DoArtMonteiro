@@ -13,12 +13,12 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## [DoArtMonteiro/autonomous-systems-vv-lab](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab)
 
-- Latest default-branch commit: [66b30cad](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/66b30cad802f8bc3121ee3b1bd1c63a60d883192) on 12 Nov 2026.
+- Latest default-branch commit: [bec7b3f9](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310) on 15 Nov 2026.
 - Latest public release: none recorded.
 - Open issues: 0.
-- Pull requests: 7 draft, 1 open, 23 merged, 5 closed without merge.
+- Pull requests: 6 draft, 0 open, 25 merged, 5 closed without merge.
 - Closed milestones: 0.
-- Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43175493244) on 12 Nov 2026.
+- Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459) on 15 Nov 2026.
 
 ## [DoArtMonteiro/callbrief](https://github.com/DoArtMonteiro/callbrief)
 
@@ -76,11 +76,11 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## Recent repository events
 
+- [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459)
+- [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #36 · merged · docs: README status for M15\-M18 \(merged, acceptance pending\) and current GitHub handle](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36)
+- [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · bec7b3f9](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310)
+- [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #35 · merged · Release: Studio 0\.18\.1 installed verification](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/35)
 - [12 Nov 2026 · DoArtMonteiro/murdoku · pull request #4 · open · docs: PROVENANCE\.md placeholder for binary assets \(origin unknown, owner to fill in\)](https://github.com/DoArtMonteiro/murdoku/pull/4)
 - [12 Nov 2026 · DoArtMonteiro/atlas-arcade · pull request #3 · open · docs: CREDITS\.md for hotlinked Wikimedia images and flags](https://github.com/DoArtMonteiro/atlas-arcade/pull/3)
 - [12 Nov 2026 · DoArtMonteiro/omniquiz · pull request #7 · open · docs: use the current GitHub handle in README links](https://github.com/DoArtMonteiro/omniquiz/pull/7)
 - [12 Nov 2026 · DoArtMonteiro/murdoku · pull request #3 · open · docs: use the current GitHub handle in README links](https://github.com/DoArtMonteiro/murdoku/pull/3)
-- [12 Nov 2026 · DoArtMonteiro/callbrief · pull request #8 · open · docs: use the current GitHub handle in README links](https://github.com/DoArtMonteiro/callbrief/pull/8)
-- [12 Nov 2026 · DoArtMonteiro/jarvis · pull request #14 · open · docs: use the current GitHub handle in README links](https://github.com/DoArtMonteiro/jarvis/pull/14)
-- [12 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #36 · open · docs: README status for M15\-M18 \(merged, acceptance pending\) and current GitHub handle](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36)
-- [12 Nov 2026 · DoArtMonteiro/wildfire-watch · pull request #8 · open · fix\(ingest\): switch FIRMS feed to VIIRS\_NOAA20\_NRT \(Suomi NPP data ended 2 Nov 2026\)](https://github.com/DoArtMonteiro/wildfire-watch/pull/8)

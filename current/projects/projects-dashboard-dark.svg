@@ -14,12 +14,12 @@
 <text x="70" y="313" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · no default-branch run recorded</text>
 <rect x="48" y="336" width="640" height="190" rx="14" fill="#17232c" stroke="#3a4a53"/>
 <text x="70" y="368" fill="#f1eee6" font-family="Arial,sans-serif" font-size="18" font-weight="700">DoArtMonteiro/autonomous-systems-vv-lab</text>
-<text x="70" y="397" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Default branch · main · 66b30cad · 12 Nov 2026</text>
+<text x="70" y="397" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Default branch · main · bec7b3f9 · 15 Nov 2026</text>
 <text x="70" y="422" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Latest release · none recorded</text>
 <text x="70" y="447" fill="#f1eee6" font-family="Arial,sans-serif" font-size="14">Open issues · 0</text>
-<text x="70" y="472" fill="#f1eee6" font-family="Arial,sans-serif" font-size="14">Pull requests · Draft 7 · Open 1 · Merged 23 · Closed unmerged 5</text>
+<text x="70" y="472" fill="#f1eee6" font-family="Arial,sans-serif" font-size="14">Pull requests · Draft 6 · Open 0 · Merged 25 · Closed unmerged 5</text>
 <text x="70" y="497" fill="#78c6bc" font-family="Arial,sans-serif" font-size="14">Closed milestones · 0</text>
-<text x="70" y="519" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · verification · success · 12 Nov 2026</text>
+<text x="70" y="519" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · verification · success · 15 Nov 2026</text>
 <rect x="48" y="542" width="640" height="190" rx="14" fill="#17232c" stroke="#3a4a53"/>
 <text x="70" y="574" fill="#f1eee6" font-family="Arial,sans-serif" font-size="18" font-weight="700">DoArtMonteiro/callbrief</text>
 <text x="70" y="603" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">Default branch · main · 3c649793 · 30 Oct 2026</text>
@@ -69,13 +69,13 @@
 <text x="734" y="909" fill="#78c6bc" font-family="Arial,sans-serif" font-size="14">Closed milestones · 0</text>
 <text x="734" y="931" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Latest workflow · Deploy to Cloudflare Workers · success · 04 Oct 2026</text>
 <text x="48" y="992" fill="#f1eee6" font-family="Arial,sans-serif" font-size="22" font-weight="700">Recent repository events</text>
-<text x="48" y="1030" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/murdoku · pull request #4 · open · docs: PROVENANCE.md placeholder for binary assets (origin unknown, owner to fill in)</text>
-<text x="48" y="1055" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/atlas-arcade · pull request #3 · open · docs: CREDITS.md for hotlinked Wikimedia images and flags</text>
-<text x="48" y="1080" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/omniquiz · pull request #7 · open · docs: use the current GitHub handle in README links</text>
-<text x="48" y="1105" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/murdoku · pull request #3 · open · docs: use the current GitHub handle in README links</text>
-<text x="48" y="1130" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/callbrief · pull request #8 · open · docs: use the current GitHub handle in README links</text>
-<text x="48" y="1155" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/jarvis · pull request #14 · open · docs: use the current GitHub handle in README links</text>
-<text x="48" y="1180" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #36 · open · docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle</text>
-<text x="48" y="1205" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/wildfire-watch · pull request #8 · open · fix(ingest): switch FIRMS feed to VIIRS_NOAA20_NRT (Suomi NPP data ended 2 Nov 2026)</text>
+<text x="48" y="1030" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success</text>
+<text x="48" y="1055" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #36 · merged · docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle</text>
+<text x="48" y="1080" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · bec7b3f9</text>
+<text x="48" y="1105" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #35 · merged · Release: Studio 0.18.1 installed verification</text>
+<text x="48" y="1130" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/murdoku · pull request #4 · open · docs: PROVENANCE.md placeholder for binary assets (origin unknown, owner to fill in)</text>
+<text x="48" y="1155" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/atlas-arcade · pull request #3 · open · docs: CREDITS.md for hotlinked Wikimedia images and flags</text>
+<text x="48" y="1180" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/omniquiz · pull request #7 · open · docs: use the current GitHub handle in README links</text>
+<text x="48" y="1205" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="14">12 Nov 2026 · DoArtMonteiro/murdoku · pull request #3 · open · docs: use the current GitHub handle in README links</text>
 <text x="48" y="1238" fill="#b3c0c5" font-family="Arial,sans-serif" font-size="13">Facts come from public GitHub REST endpoints. The profile repository records portfolio refresh runs separately from these project workflow results.</text>
 </svg>

@@ -60,17 +60,17 @@
       "closed_milestones": [],
       "default_branch": "main",
       "latest_default_branch_commit": {
-        "committed_at": "2026-11-12T07:28:13Z",
-        "sha": "66b30cad802f8bc3121ee3b1bd1c63a60d883192",
-        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/66b30cad802f8bc3121ee3b1bd1c63a60d883192"
+        "committed_at": "2026-11-15T09:05:29Z",
+        "sha": "bec7b3f990291239313360b163ad999c31fb6310",
+        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310"
       },
       "latest_default_branch_workflow_run": {
         "conclusion": "success",
-        "created_at": "2026-11-12T07:28:16Z",
-        "head_sha": "66b30cad802f8bc3121ee3b1bd1c63a60d883192",
+        "created_at": "2026-11-15T09:05:33Z",
+        "head_sha": "bec7b3f990291239313360b163ad999c31fb6310",
         "name": "verification",
         "status": "completed",
-        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43175493244"
+        "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459"
       },
       "latest_release": null,
       "open_issue_count": 0,
@@ -518,29 +518,29 @@
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/34"
         },
         {
-          "closed_at": null,
+          "closed_at": "2026-11-15T08:51:34Z",
           "created_at": "2026-11-12T09:08:16Z",
-          "draft": true,
-          "merged_at": null,
+          "draft": false,
+          "merged_at": "2026-11-15T08:51:34Z",
           "number": 35,
-          "status": "draft",
+          "status": "merged",
           "title": "Release: Studio 0.18.1 installed verification",
           "title_markdown": "Release: Studio 0\\.18\\.1 installed verification",
           "title_xml": "Release: Studio 0.18.1 installed verification",
-          "updated_at": "2026-11-12T09:08:16Z",
+          "updated_at": "2026-11-15T08:51:34Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/35"
         },
         {
-          "closed_at": null,
+          "closed_at": "2026-11-15T09:05:30Z",
           "created_at": "2026-11-12T09:24:03Z",
           "draft": false,
-          "merged_at": null,
+          "merged_at": "2026-11-15T09:05:30Z",
           "number": 36,
-          "status": "open",
+          "status": "merged",
           "title": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
           "title_markdown": "docs: README status for M15\\-M18 \\(merged, acceptance pending\\) and current GitHub handle",
           "title_xml": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
-          "updated_at": "2026-11-12T09:55:31Z",
+          "updated_at": "2026-11-15T09:05:30Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36"
         }
       ],
@@ -1371,6 +1371,45 @@
   "schema_version": 1,
   "timeline": [
     {
+      "conclusion": "success",
+      "kind": "workflow_run",
+      "name": "verification",
+      "occurred_at": "2026-11-15T09:05:33Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "sha": "bec7b3f990291239313360b163ad999c31fb6310",
+      "status": "completed",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459"
+    },
+    {
+      "kind": "pull_request",
+      "number": 36,
+      "occurred_at": "2026-11-15T09:05:30Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "merged",
+      "title": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
+      "title_markdown": "docs: README status for M15\\-M18 \\(merged, acceptance pending\\) and current GitHub handle",
+      "title_xml": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36"
+    },
+    {
+      "kind": "default_branch_commit",
+      "occurred_at": "2026-11-15T09:05:29Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "sha": "bec7b3f990291239313360b163ad999c31fb6310",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310"
+    },
+    {
+      "kind": "pull_request",
+      "number": 35,
+      "occurred_at": "2026-11-15T08:51:34Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "merged",
+      "title": "Release: Studio 0.18.1 installed verification",
+      "title_markdown": "Release: Studio 0\\.18\\.1 installed verification",
+      "title_xml": "Release: Studio 0.18.1 installed verification",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/35"
+    },
+    {
       "kind": "pull_request",
       "number": 4,
       "occurred_at": "2026-11-12T09:46:36Z",
@@ -1438,17 +1477,6 @@
     },
     {
       "kind": "pull_request",
-      "number": 36,
-      "occurred_at": "2026-11-12T09:24:03Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "status": "open",
-      "title": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
-      "title_markdown": "docs: README status for M15\\-M18 \\(merged, acceptance pending\\) and current GitHub handle",
-      "title_xml": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36"
-    },
-    {
-      "kind": "pull_request",
       "number": 8,
       "occurred_at": "2026-11-12T09:18:40Z",
       "repository": "DoArtMonteiro/wildfire-watch",
@@ -1460,27 +1488,6 @@
     },
     {
       "kind": "pull_request",
-      "number": 35,
-      "occurred_at": "2026-11-12T09:08:16Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "status": "draft",
-      "title": "Release: Studio 0.18.1 installed verification",
-      "title_markdown": "Release: Studio 0\\.18\\.1 installed verification",
-      "title_xml": "Release: Studio 0.18.1 installed verification",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/35"
-    },
-    {
-      "conclusion": "success",
-      "kind": "workflow_run",
-      "name": "verification",
-      "occurred_at": "2026-11-12T07:28:16Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "sha": "66b30cad802f8bc3121ee3b1bd1c63a60d883192",
-      "status": "completed",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43175493244"
-    },
-    {
-      "kind": "pull_request",
       "number": 34,
       "occurred_at": "2026-11-12T07:28:13Z",
       "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
@@ -1489,13 +1496,6 @@
       "title_markdown": "Ascent verification: honest outcomes, independent references, verdict\\-rule table for older runs, booster recovery result",
       "title_xml": "Ascent verification: honest outcomes, independent references, verdict-rule table for older runs, booster recovery result",
       "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/34"
-    },
-    {
-      "kind": "default_branch_commit",
-      "occurred_at": "2026-11-12T07:28:13Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "sha": "66b30cad802f8bc3121ee3b1bd1c63a60d883192",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/66b30cad802f8bc3121ee3b1bd1c63a60d883192"
     },
     {
       "kind": "pull_request",
