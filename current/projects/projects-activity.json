@@ -10,7 +10,7 @@
       },
       "latest_default_branch_workflow_run": null,
       "latest_release": null,
-      "open_issue_count": 0,
+      "open_issue_count": 1,
       "pull_requests": [
         {
           "closed_at": null,
@@ -52,7 +52,17 @@
           "url": "https://github.com/DoArtMonteiro/atlas-arcade/pull/3"
         }
       ],
-      "recent_open_issues": [],
+      "recent_open_issues": [
+        {
+          "created_at": "2026-11-15T20:50:46Z",
+          "number": 4,
+          "title": "Your app is listed on Vetted",
+          "title_markdown": "Your app is listed on Vetted",
+          "title_xml": "Your app is listed on Vetted",
+          "updated_at": "2026-11-15T20:50:46Z",
+          "url": "https://github.com/DoArtMonteiro/atlas-arcade/issues/4"
+        }
+      ],
       "repository": "DoArtMonteiro/atlas-arcade",
       "url": "https://github.com/DoArtMonteiro/atlas-arcade"
     },

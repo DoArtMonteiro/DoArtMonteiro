@@ -6,7 +6,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 - Latest default-branch commit: [ead184e8](https://github.com/DoArtMonteiro/atlas-arcade/commit/ead184e81a64b812208dc2088add4dcc96a0b09e) on 28 Sep 2026.
 - Latest public release: none recorded.
-- Open issues: 0.
+- Open issues: 1.
 - Pull requests: 2 draft, 1 open, 0 merged, 0 closed without merge.
 - Closed milestones: 0.
 - Latest default-branch workflow: no run returned by the public API.
