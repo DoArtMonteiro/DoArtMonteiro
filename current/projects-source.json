@@ -955,6 +955,19 @@
           "title_xml": "docs: PROVENANCE.md placeholder for binary assets (origin unknown, owner to fill in)",
           "updated_at": "2026-11-12T09:50:49Z",
           "url": "https://github.com/DoArtMonteiro/murdoku/pull/4"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-18T20:53:07Z",
+          "draft": false,
+          "merged_at": null,
+          "number": 5,
+          "status": "open",
+          "title": "Release Alibi as a dedicated Cloudflare Worker",
+          "title_markdown": "Release Alibi as a dedicated Cloudflare Worker",
+          "title_xml": "Release Alibi as a dedicated Cloudflare Worker",
+          "updated_at": "2026-11-18T23:30:33Z",
+          "url": "https://github.com/DoArtMonteiro/murdoku/pull/5"
         }
       ],
       "recent_open_issues": [],
@@ -1380,6 +1393,17 @@
   ],
   "schema_version": 1,
   "timeline": [
+    {
+      "kind": "pull_request",
+      "number": 5,
+      "occurred_at": "2026-11-18T20:53:07Z",
+      "repository": "DoArtMonteiro/murdoku",
+      "status": "open",
+      "title": "Release Alibi as a dedicated Cloudflare Worker",
+      "title_markdown": "Release Alibi as a dedicated Cloudflare Worker",
+      "title_xml": "Release Alibi as a dedicated Cloudflare Worker",
+      "url": "https://github.com/DoArtMonteiro/murdoku/pull/5"
+    },
     {
       "conclusion": "success",
       "kind": "workflow_run",

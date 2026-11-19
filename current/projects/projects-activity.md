@@ -43,7 +43,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 - Latest default-branch commit: [4c5c5032](https://github.com/DoArtMonteiro/murdoku/commit/4c5c5032b5981c8a604242b3bc97fcc13d9ee247) on 28 Sep 2026.
 - Latest public release: none recorded.
 - Open issues: 0.
-- Pull requests: 0 draft, 4 open, 0 merged, 0 closed without merge.
+- Pull requests: 0 draft, 5 open, 0 merged, 0 closed without merge.
 - Closed milestones: 0.
 - Latest default-branch workflow: no run returned by the public API.
 
@@ -76,6 +76,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## Recent repository events
 
+- [18 Nov 2026 · DoArtMonteiro/murdoku · pull request #5 · open · Release Alibi as a dedicated Cloudflare Worker](https://github.com/DoArtMonteiro/murdoku/pull/5)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #36 · merged · docs: README status for M15\-M18 \(merged, acceptance pending\) and current GitHub handle](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · bec7b3f9](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310)
@@ -83,4 +84,3 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 - [12 Nov 2026 · DoArtMonteiro/murdoku · pull request #4 · open · docs: PROVENANCE\.md placeholder for binary assets \(origin unknown, owner to fill in\)](https://github.com/DoArtMonteiro/murdoku/pull/4)
 - [12 Nov 2026 · DoArtMonteiro/atlas-arcade · pull request #3 · open · docs: CREDITS\.md for hotlinked Wikimedia images and flags](https://github.com/DoArtMonteiro/atlas-arcade/pull/3)
 - [12 Nov 2026 · DoArtMonteiro/omniquiz · pull request #7 · open · docs: use the current GitHub handle in README links](https://github.com/DoArtMonteiro/omniquiz/pull/7)
-- [12 Nov 2026 · DoArtMonteiro/murdoku · pull request #3 · open · docs: use the current GitHub handle in README links](https://github.com/DoArtMonteiro/murdoku/pull/3)
