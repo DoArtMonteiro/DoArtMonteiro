@@ -1,10 +1,10 @@
 {
   "artifact_sha256": {
-    "calendar-accessible.svg": "ae604b9f27ce1c6310eca3e1599f13935fe86bb03a5a16645ab1d90cd6a47e7b",
-    "calendar-dark.svg": "ed293a044a7ca966452767105f5215dee6febb26aabcae795e0155293bd1b091",
-    "calendar-isometric.svg": "faf1d6361d1bc6f511a6c9f7a80380b9074b08a7d129205d8ae76debfce84b36",
-    "calendar-light.svg": "2b97fddf6eeb528abcee55ff0d2b92f8565642a50fe2e38337f0cf687541fdef",
-    "calendar-normalized.csv": "6adbce4dea1f5e11c0b4ccddbc03b53f37927a395f9b4928ad60e4196b241582"
+    "calendar-accessible.svg": "53959b1c979c6dc194bbd7051d3eef6a78b5c5c321280749a6fa5eda309b78d0",
+    "calendar-dark.svg": "d61d3027c97a62a362a86f9b6f5913e5c707b8b31ad7152de179a7302cb247da",
+    "calendar-isometric.svg": "fed4cdc1c625eb98a3d62a53c266c3d938380c77afe5ee78b07652bd6234e413",
+    "calendar-light.svg": "26c04b0224cb41bc9143e6d60f99dbc92bdb657b533a5a8ea708f8dc5baf0c9d",
+    "calendar-normalized.csv": "583040acc8017576e5cddc11ce81ad4dab2c23664d355cff89815e579fb3d0d0"
   },
   "commit_activity": {
     "active_days": 34,
@@ -65,8 +65,8 @@
   ],
   "observed_interval": {
     "dated_days": 365,
-    "end": "2026-11-19",
-    "start": "2025-11-20"
+    "end": "2026-11-20",
+    "start": "2025-11-21"
   },
   "quality_caveat": "Aggregate counts do not measure work quality or intensity.",
   "renderer": "living-portfolio-calendar",
@@ -74,7 +74,7 @@
   "source_file": "contributions.csv",
   "source_scope": "selected_public_repo_commits",
   "source_scope_description": "Distinct commits linked to DoArtMonteiro on selected public repositories' default branches; dated by author timestamp in UTC. This is a subset of GitHub activity, not the full profile graph.",
-  "source_sha256": "6adbce4dea1f5e11c0b4ccddbc03b53f37927a395f9b4928ad60e4196b241582",
-  "source_snapshot_date": "2026-11-19",
+  "source_sha256": "583040acc8017576e5cddc11ce81ad4dab2c23664d355cff89815e579fb3d0d0",
+  "source_snapshot_date": "2026-11-20",
   "source_snapshot_date_basis": "Latest dated row in the validated CSV."
 }
