@@ -552,6 +552,19 @@
           "title_xml": "docs: README status for M15-M18 (merged, acceptance pending) and current GitHub handle",
           "updated_at": "2026-11-15T09:05:30Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-24T01:13:06Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 37,
+          "status": "draft",
+          "title": "fix: M19.1 honest results in Studio (requirements vs safety rules, run identity, model limits)",
+          "title_markdown": "fix: M19\\.1 honest results in Studio \\(requirements vs safety rules, run identity, model limits\\)",
+          "title_xml": "fix: M19.1 honest results in Studio (requirements vs safety rules, run identity, model limits)",
+          "updated_at": "2026-11-24T01:36:53Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/37"
         }
       ],
       "recent_open_issues": [],
@@ -1393,6 +1406,17 @@
   ],
   "schema_version": 1,
   "timeline": [
+    {
+      "kind": "pull_request",
+      "number": 37,
+      "occurred_at": "2026-11-24T01:13:06Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "fix: M19.1 honest results in Studio (requirements vs safety rules, run identity, model limits)",
+      "title_markdown": "fix: M19\\.1 honest results in Studio \\(requirements vs safety rules, run identity, model limits\\)",
+      "title_xml": "fix: M19.1 honest results in Studio (requirements vs safety rules, run identity, model limits)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/37"
+    },
     {
       "kind": "pull_request",
       "number": 5,
