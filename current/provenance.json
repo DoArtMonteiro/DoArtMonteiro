@@ -24,13 +24,13 @@
     },
     "github_public_contributions": {
       "animation": {
-        "alt_text": "Isometric daily contribution calendar from 2025-11-25 to 2026-11-24: 1087 contributions across 80 active days and 365 dated days, including zero-count days.",
+        "alt_text": "Isometric daily contribution calendar from 2025-11-26 to 2026-11-25: 1087 contributions across 80 active days and 365 dated days, including zero-count days.",
         "files": [
           "github-calendar/live/calendar-light-animated.gif",
           "github-calendar/live/calendar-dark-animated.gif"
         ],
         "format": "finite GIF, eight frames, no infinite-loop extension",
-        "source_sha256": "d295c436350cb995289033b53a3bb216a8c728da2d918b6b460a1e054b0d8e5c",
+        "source_sha256": "ee3ae17ebc4aa27458834f416d5b744ac2c68046825932470c7a2f339aaef646",
         "static_fallbacks": [
           "github-calendar/live/calendar-light.svg",
           "github-calendar/live/calendar-dark.svg"
@@ -38,11 +38,11 @@
       },
       "authentication": "Job-scoped GitHub Actions GITHUB_TOKEN with contents:read; no read:user scope or personal access token.",
       "cadence": "daily scheduled GitHub Actions refresh",
-      "data_through": "2026-11-24",
+      "data_through": "2026-11-25",
       "metric": "Daily contribution counts as returned by GitHub for the approved public profile.",
       "scope": "Public contribution calendar; the query requests no private or restricted-contribution fields and the workflow token has no read:user permission.",
       "source": "GitHub GraphQL User.contributionsCollection.contributionCalendar",
-      "source_sha256": "d295c436350cb995289033b53a3bb216a8c728da2d918b6b460a1e054b0d8e5c"
+      "source_sha256": "ee3ae17ebc4aa27458834f416d5b744ac2c68046825932470c7a2f339aaef646"
     },
     "product_screenshots": {
       "cadence": "Refresh only after a material product change and review",
@@ -66,13 +66,13 @@
     },
     "public_commits": {
       "animation": {
-        "alt_text": "Isometric daily commit calendar from 2025-11-25 to 2026-11-24: 210 commits across 34 active days and 365 dated days, including zero-count days.",
+        "alt_text": "Isometric daily commit calendar from 2025-11-26 to 2026-11-25: 210 commits across 34 active days and 365 dated days, including zero-count days.",
         "files": [
           "calendar/live/calendar-light-animated.gif",
           "calendar/live/calendar-dark-animated.gif"
         ],
         "format": "finite GIF, eight frames, no infinite-loop extension",
-        "source_sha256": "5ef247bef391fbb156db0a37ff2bc944260ecf52230b3c20df91e870a3f8ffa5",
+        "source_sha256": "87eb1ce8061af1e3035b2225b32dcda19ea208d449b77e5c87470a46c414586a",
         "static_fallbacks": [
           "calendar/live/calendar-light.svg",
           "calendar/live/calendar-dark.svg"
@@ -80,7 +80,7 @@
       },
       "authentication": "Read-only GitHub Actions GITHUB_TOKEN with contents:read, sent only to api.github.com for the reviewed owner/repository allowlist; no read:user scope or personal access token.",
       "cadence": "daily scheduled GitHub Actions refresh",
-      "data_through": "2026-11-24",
+      "data_through": "2026-11-25",
       "metric": "Distinct commit objects linked to the profile in selected public default branches, bucketed by author timestamp in UTC.",
       "repositories": [
         "DoArtMonteiro/atlas-arcade",
@@ -94,7 +94,7 @@
       ],
       "scope": "selected_public_repo_commits",
       "source": "GitHub REST List commits endpoint",
-      "source_sha256": "5ef247bef391fbb156db0a37ff2bc944260ecf52230b3c20df91e870a3f8ffa5"
+      "source_sha256": "87eb1ce8061af1e3035b2225b32dcda19ea208d449b77e5c87470a46c414586a"
     }
   }
 }
