@@ -16,7 +16,7 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 - Latest default-branch commit: [bec7b3f9](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310) on 15 Nov 2026.
 - Latest public release: none recorded.
 - Open issues: 0.
-- Pull requests: 7 draft, 0 open, 25 merged, 5 closed without merge.
+- Pull requests: 7 draft, 0 open, 25 merged, 6 closed without merge.
 - Closed milestones: 0.
 - Latest default-branch workflow: [verification: success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459) on 15 Nov 2026.
 
@@ -76,11 +76,11 @@ Source: GitHub's public REST API. This summary reports repository facts; it does
 
 ## Recent repository events
 
+- [25 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #38 · draft · feat: enforceable run budget for pre\-registered campaigns \(M19 safeguard\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/38)
+- [25 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #15 · closed · M10: resilient navigation implementation \(draft, development seeds only\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15)
 - [24 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #37 · draft · fix: M19\.1 honest results in Studio \(requirements vs safety rules, run identity, model limits\)](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/37)
 - [18 Nov 2026 · DoArtMonteiro/murdoku · pull request #5 · open · Release Alibi as a dedicated Cloudflare Worker](https://github.com/DoArtMonteiro/murdoku/pull/5)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · workflow · verification · success](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/actions/runs/43697548459)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #36 · merged · docs: README status for M15\-M18 \(merged, acceptance pending\) and current GitHub handle](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/36)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · default-branch commit · bec7b3f9](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/commit/bec7b3f990291239313360b163ad999c31fb6310)
 - [15 Nov 2026 · DoArtMonteiro/autonomous-systems-vv-lab · pull request #35 · merged · Release: Studio 0\.18\.1 installed verification](https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/35)
-- [12 Nov 2026 · DoArtMonteiro/murdoku · pull request #4 · open · docs: PROVENANCE\.md placeholder for binary assets \(origin unknown, owner to fill in\)](https://github.com/DoArtMonteiro/murdoku/pull/4)
-- [12 Nov 2026 · DoArtMonteiro/atlas-arcade · pull request #3 · open · docs: CREDITS\.md for hotlinked Wikimedia images and flags](https://github.com/DoArtMonteiro/atlas-arcade/pull/3)

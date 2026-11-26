@@ -268,16 +268,16 @@
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/14"
         },
         {
-          "closed_at": null,
+          "closed_at": "2026-11-25T22:07:39Z",
           "created_at": "2026-11-02T16:11:10Z",
           "draft": true,
           "merged_at": null,
           "number": 15,
-          "status": "draft",
+          "status": "closed",
           "title": "M10: resilient navigation implementation (draft, development seeds only)",
           "title_markdown": "M10: resilient navigation implementation \\(draft, development seeds only\\)",
           "title_xml": "M10: resilient navigation implementation (draft, development seeds only)",
-          "updated_at": "2026-11-03T14:40:12Z",
+          "updated_at": "2026-11-25T22:07:39Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
         },
         {
@@ -565,6 +565,19 @@
           "title_xml": "fix: M19.1 honest results in Studio (requirements vs safety rules, run identity, model limits)",
           "updated_at": "2026-11-24T01:36:53Z",
           "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/37"
+        },
+        {
+          "closed_at": null,
+          "created_at": "2026-11-25T23:33:00Z",
+          "draft": true,
+          "merged_at": null,
+          "number": 38,
+          "status": "draft",
+          "title": "feat: enforceable run budget for pre-registered campaigns (M19 safeguard)",
+          "title_markdown": "feat: enforceable run budget for pre\\-registered campaigns \\(M19 safeguard\\)",
+          "title_xml": "feat: enforceable run budget for pre-registered campaigns (M19 safeguard)",
+          "updated_at": "2026-11-25T23:33:00Z",
+          "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/38"
         }
       ],
       "recent_open_issues": [],
@@ -1408,6 +1421,28 @@
   "timeline": [
     {
       "kind": "pull_request",
+      "number": 38,
+      "occurred_at": "2026-11-25T23:33:00Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "draft",
+      "title": "feat: enforceable run budget for pre-registered campaigns (M19 safeguard)",
+      "title_markdown": "feat: enforceable run budget for pre\\-registered campaigns \\(M19 safeguard\\)",
+      "title_xml": "feat: enforceable run budget for pre-registered campaigns (M19 safeguard)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/38"
+    },
+    {
+      "kind": "pull_request",
+      "number": 15,
+      "occurred_at": "2026-11-25T22:07:39Z",
+      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
+      "status": "closed",
+      "title": "M10: resilient navigation implementation (draft, development seeds only)",
+      "title_markdown": "M10: resilient navigation implementation \\(draft, development seeds only\\)",
+      "title_xml": "M10: resilient navigation implementation (draft, development seeds only)",
+      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
+    },
+    {
+      "kind": "pull_request",
       "number": 37,
       "occurred_at": "2026-11-24T01:13:06Z",
       "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
@@ -1752,17 +1787,6 @@
       "title_markdown": "M11: V&V Lab Studio desktop application \\(draft, stacked on \\#15\\)",
       "title_xml": "M11: V&amp;V Lab Studio desktop application (draft, stacked on #15)",
       "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/16"
-    },
-    {
-      "kind": "pull_request",
-      "number": 15,
-      "occurred_at": "2026-11-02T16:11:10Z",
-      "repository": "DoArtMonteiro/autonomous-systems-vv-lab",
-      "status": "draft",
-      "title": "M10: resilient navigation implementation (draft, development seeds only)",
-      "title_markdown": "M10: resilient navigation implementation \\(draft, development seeds only\\)",
-      "title_xml": "M10: resilient navigation implementation (draft, development seeds only)",
-      "url": "https://github.com/DoArtMonteiro/autonomous-systems-vv-lab/pull/15"
     },
     {
       "kind": "pull_request",
